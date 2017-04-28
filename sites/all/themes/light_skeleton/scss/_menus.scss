@@ -1,0 +1,12 @@
+.main-menu, .region-main-menu, .navbar-list{
+	display: flex;
+}
+
+#navigation{
+	@media #{$tablet}{
+	}
+}
+
+.region-main-menu{
+	justify-content: space-around;
+}

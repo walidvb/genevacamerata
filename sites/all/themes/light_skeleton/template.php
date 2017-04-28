@@ -7,6 +7,8 @@ function _light_skeleton_add_css() {
   drupal_add_css($theme_path . '/css/light_skeleton_skeleton.css');
   drupal_add_css($theme_path . '/css/light_skeleton_responsive_nav.css');
   drupal_add_css($theme_path . '/css/light_skeleton_style.css');
+  drupal_add_css($theme_path . '/css/application.css');
+  drupal_add_css($theme_path . '/bower_components/css-hamburgers/dist/hamburgers.min.css');
 }
 
 /**
@@ -15,6 +17,7 @@ function _light_skeleton_add_css() {
 function _light_skeleton_add_js() {
   $theme_path = path_to_theme();
   drupal_add_js($theme_path . '/js/light_skeleton_menu.js');
+  drupal_add_js($theme_path . '/js/myScripts.js');
 }
 
 /**
@@ -24,7 +27,7 @@ function _light_skeleton_add_js() {
  */
 function light_skeleton_preprocess_html(&$variables) {
   // Addin JS to the theme.
-  // _light_skeleton_add_js();
+  _light_skeleton_add_js();
   // Adding CSS to theme.
   _light_skeleton_add_css();
   drupal_add_html_head(
@@ -57,35 +60,6 @@ function light_skeleton_preprocess_page(&$variables) {
     $variables['content_class'] = $content_class;
   }
 
-// Defining breadcrumb.
-function light_skeleton_breadcrumb($variables) {
-  $breadcrumb = $variables['breadcrumb'];
-
-  if (!empty($breadcrumb)) {
-    $breadcrumb = $variables['breadcrumb'];
-    $breadcrumb = array_unique($breadcrumb);
-
-    if (!empty($breadcrumb)) {
-      // Provide a navigational heading to give context for breadcrumb links to
-      // screen-reader users. Make the heading invisible with .element-invisible.
-      //$output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
-      $crumbs = '<div class="breadcrumb">' . t('You are here:  ');
-      $array_size = count($breadcrumb);
-      $i = 0;
-      while ( $i < $array_size) {
-        $pos = strpos($breadcrumb[$i], drupal_get_title());
-        //we stop duplicates entering where there is a sub nav based on page jumps
-        if ($pos === false){
-          $crumbs .= '<span class="breadcrumb-' . $i;
-          $crumbs .=  '">' . $breadcrumb[$i] . '</span> &gt; ';
-        }
-        $i++;
-      }
-      $crumbs .= '<span class="active">'. drupal_get_title() .'</span></div>';
-      return $crumbs;
-    }
-  }
-}
 /**
  * [light_skeleton_table description]
  * @param  [type] $variables [description]

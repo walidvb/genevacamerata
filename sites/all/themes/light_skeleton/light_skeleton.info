@@ -12,6 +12,8 @@ stylesheets[all][] = system.theme.css
 
 ; Declaring Regions
 regions[main_menu] = Main menu
+regions[sidepanel_left] = Side Panel Left
+regions[sidepanel_right] = Side Panel Right
 regions[highlighted] = Highlighted
 regions[content] = Content
 regions[help] = Help
