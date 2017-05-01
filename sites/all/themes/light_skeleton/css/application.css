@@ -42,11 +42,20 @@ img {
 .region-main-menu {
   justify-content: space-around; }
 
+.view-display-id-type_in_list_1 {
+  float: left;
+  margin: .5rem;
+  padding: 1rem;
+  width: 25%;
+  border: 1px solid #111111; }
+
 .view-concerts .view-content {
   display: flex; }
   .view-concerts .view-content .views-row {
+    margin: .5rem;
     padding: 1rem;
-    width: 25%; }
+    width: 25%;
+    border: 1px solid #111111; }
 
 .trigger.trigger-right {
   position: fixed;

@@ -1,7 +1,19 @@
+@mixin concert-item(){
+	margin: .5rem;
+	padding: 1rem;
+	width: 25%;
+	border: 1px solid $border-color;
+}
+
+.view-display-id-type_in_list_1{
+	float: left;
+	@include concert-item();
+}
+#home-concert-list{
+}
 .view-concerts .view-content{
 	display: flex;
 	.views-row{
-		padding: 1rem;
-		width: 25%;
+		@include concert-item();
 	}
 }

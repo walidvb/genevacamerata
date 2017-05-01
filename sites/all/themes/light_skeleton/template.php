@@ -17,6 +17,7 @@ function _light_skeleton_add_css() {
 function _light_skeleton_add_js() {
   $theme_path = path_to_theme();
   drupal_add_js($theme_path . '/js/light_skeleton_menu.js');
+  drupal_add_js($theme_path . '/js/home_filters.js');
   drupal_add_js($theme_path . '/js/myScripts.js');
 }
 
