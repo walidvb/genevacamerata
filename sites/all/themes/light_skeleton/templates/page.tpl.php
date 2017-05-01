@@ -8,6 +8,7 @@
 
 <?php if($page['sidepanel_right']): ?>
   <div id="filters" class="sidepanel side-right">
+    <div data-panel-target=".region-sidepanel-right" class="trigger trigger-right"></div>
     <?php print render($page['sidepanel_right']) ?>
   </div>
 <?php endif; ?>
