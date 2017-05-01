@@ -8,6 +8,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+.admin-menu .region-sidepanel-left, .admin-menu .region-sidepanel-right {
+  top: 30px; }
+
 .region-sidepanel-left, .region-sidepanel-right {
   position: fixed;
   top: 0;
@@ -23,7 +26,8 @@ img {
 
 .region-sidepanel-left {
   left: -100%;
-  border-right: 1px solid #111111; }
+  border-right: 1px solid #111111;
+  padding-top: 85px; }
   .region-sidepanel-left.open {
     left: 0; }
 

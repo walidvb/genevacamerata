@@ -16,6 +16,7 @@
 .region-sidepanel-left{
 	left: -100%;
 	border-right: 1px solid $border-color;
+	padding-top: $header-height;
 	&.open{
 		left: 0;
 	}
