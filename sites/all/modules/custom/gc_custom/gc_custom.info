@@ -1,0 +1,4 @@
+name = Geneva Camerata custom module
+description = Provides various functionalities to the Geneva Camerata website
+core = 7.x
+package = Custom

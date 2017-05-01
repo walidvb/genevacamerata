@@ -1,0 +1,75 @@
+<?php
+
+/**
+ * @file
+ * TODO: Enter file description here.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function gc_custom_module_help($path, $arg) {
+  switch ($path) {
+    // Main module help for the block module
+    case 'admin/help#block':
+      return '<p>' . t('Blocks are boxes of content rendered into an area, or region, of a web page. The default theme Bartik, for example, implements the regions "Sidebar first", "Sidebar second", "Featured", "Content", "Header", "Footer", etc., and a block may appear in any one of these areas. The <a href="@blocks">blocks administration page</a> provides a drag-and-drop interface for assigning a block to a region, and for controlling the order of blocks within regions.', array('@blocks' => url('admin/structure/block'))) . '</p>';
+
+    // Help for another path in the block module
+    case 'admin/structure/block':
+      return '<p>' . t('This page provides a drag-and-drop interface for assigning a block to a region, and for controlling the order of blocks within regions. Since not all themes implement the same regions, or display regions in the same way, blocks are positioned on a per-theme basis. Remember that your changes will not be saved until you click the <em>Save blocks</em> button at the bottom of the page.') . '</p>';
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function gc_custom_module_menu() {
+  $items['example'] = array(
+    'title' => 'Example Page',
+    'page callback' => 'example_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_SUGGESTED_ITEM,
+  );
+  $items['example/feed'] = array(
+    'title' => 'Example RSS feed',
+    'page callback' => 'example_feed',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_views_query_substitutions().
+ */
+function gc_custom_module_views_query_substitutions($view) {
+  // Example from views_views_query_substitutions().
+  global $language_content;
+  return array(
+    '***CURRENT_VERSION***' => VERSION,
+    '***CURRENT_TIME***' => REQUEST_TIME,
+    '***CURRENT_LANGUAGE***' => $language_content->language,
+    '***DEFAULT_LANGUAGE***' => language_default('language'),
+  );
+}
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function gc_custom_views_query_alter(&$view, &$query) {
+
+  // (Example assuming a view with an exposed filter on node title.)
+  // If the input for the title filter is a positive integer, filter against
+  // node ID instead of node title.
+  if ($view->name == 'concerts') {
+    $selected_date = $view->args[1];
+    if($selected_date){
+      $view->query->add_where_expression(
+        1,
+        "DATE_FORMAT(field_data_field_date.field_date_value, '%Y-%m-%d') = :field_data_field_date_field_date_value_2", 
+        array(':field_data_field_date_field_date_value_2' => $selected_date)
+      );
+    }
+  }
+}
