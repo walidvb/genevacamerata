@@ -17,3 +17,11 @@
 		@include concert-item();
 	}
 }
+
+.view-id-news{
+	@include concert-item();
+	float: left;
+	&.inactive{
+		display: none;
+	}
+}

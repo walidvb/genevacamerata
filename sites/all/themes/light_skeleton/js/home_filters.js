@@ -39,6 +39,7 @@
 			else if(options.date){
 				options.clicked.addClass('active');
 			}
+			$('.view-id-news').addClass('inactive');
 		});
 	};
 })(jQuery);

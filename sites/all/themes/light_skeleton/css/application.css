@@ -61,6 +61,15 @@ img {
     width: 25%;
     border: 1px solid #111111; }
 
+.view-id-news {
+  margin: .5rem;
+  padding: 1rem;
+  width: 25%;
+  border: 1px solid #111111;
+  float: left; }
+  .view-id-news.inactive {
+    display: none; }
+
 .trigger.trigger-right {
   position: fixed;
   right: 0;
