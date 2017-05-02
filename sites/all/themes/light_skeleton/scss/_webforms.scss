@@ -1,0 +1,7 @@
+.webform-component-field-wrapper{
+	border: 1px solid $border-color;
+	padding: 1rem;
+	&.webform-component--billets .form-item{
+		display: inline-block;
+	}
+}

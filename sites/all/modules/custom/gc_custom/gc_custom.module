@@ -8,7 +8,7 @@ function gc_custom_views_query_alter(&$view, &$query) {
   // (Example assuming a view with an exposed filter on node title.)
   // If the input for the title filter is a positive integer, filter against
   // node ID instead of node title.
-  if ($view->name == 'concerts') {
+  if ($view->name == 'concerts' && $view->current_display == 'home_list') {
     $selected_date = $view->args[1];
     if($selected_date){
       $view->query->add_where_expression(

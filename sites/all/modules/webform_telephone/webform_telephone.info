@@ -1,0 +1,12 @@
+name = Webform Telephone
+description = Adds a Telephone webform component.
+core = 7.x
+package = Webform
+dependencies[] = webform
+
+; Information added by Drupal.org packaging script on 2017-01-30
+version = "7.x-1.0"
+core = "7.x"
+project = "webform_telephone"
+datestamp = "1485790109"
+

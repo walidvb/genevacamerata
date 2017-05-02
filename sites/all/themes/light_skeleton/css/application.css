@@ -80,3 +80,9 @@ img {
   background: white;
   border: 1px solid #111111;
   z-index: 200; }
+
+.webform-component-field-wrapper {
+  border: 1px solid #111111;
+  padding: 1rem; }
+  .webform-component-field-wrapper.webform-component--billets .form-item {
+    display: inline-block; }

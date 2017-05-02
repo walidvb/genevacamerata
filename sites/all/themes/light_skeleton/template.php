@@ -8,10 +8,10 @@ function _light_skeleton_add_css() {
   drupal_add_css($theme_path . '/css/light_skeleton_responsive_nav.css');
   drupal_add_css($theme_path . '/css/light_skeleton_style.css');
   $styles = [
-    '/css/application.css',
-    '/bower_components/css-hamburgers/dist/hamburgers.min.css',
-    '/bower_components/owl.carousel/dist/assets/owl.carousel.css',
-    '/bower_components/owl.carousel/dist/assets/owl.theme.default.css'
+  '/css/application.css',
+  '/bower_components/css-hamburgers/dist/hamburgers.min.css',
+  '/bower_components/owl.carousel/dist/assets/owl.carousel.css',
+  '/bower_components/owl.carousel/dist/assets/owl.theme.default.css'
   ];
   foreach ($styles as $key => $style) {
     drupal_add_css($theme_path . $style);
@@ -25,10 +25,10 @@ function _light_skeleton_add_js() {
   $theme_path = path_to_theme();
   drupal_add_js($theme_path . '/js/light_skeleton_menu.js');
   $scripts = [
-    '/bower_components/owl.carousel/dist/owl.carousel.min.js', 
-    '/js/myScripts.js', 
-    '/js/home_filters.js',
-    '/js/news.js'
+  '/bower_components/owl.carousel/dist/owl.carousel.min.js', 
+  '/js/myScripts.js', 
+  '/js/home_filters.js',
+  '/js/news.js'
   ];
   foreach ($scripts as $key => $script) {
     drupal_add_js($theme_path . $script);
@@ -47,13 +47,13 @@ function light_skeleton_preprocess_html(&$variables) {
   _light_skeleton_add_css();
   drupal_add_html_head(
     array(
-            '#tag' => 'meta',
-            '#attributes' => array(
-            'name' => 'viewport',
-            'content' => 'width=device-width, initial-scale=1',
-      ),
-          ), 'centum:viewport_meta'
-  );
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'name' => 'viewport',
+        'content' => 'width=device-width, initial-scale=1',
+        ),
+      ), 'centum:viewport_meta'
+    );
 }
 
 
@@ -64,16 +64,16 @@ function light_skeleton_preprocess_page(&$variables) {
     drupal_set_message(t('Jquery update is required, <a target="_blank" href="!url">Download it</a>,  install and switch jquery to version 1.7', array('!url' => 'http://drupal.org/project/jquery_update')), 'warning');
   }
 
-    $page = $variables['page'];
+  $page = $variables['page'];
 
 
-    $content_class = 'sixteen columns';
+  $content_class = 'sixteen columns';
 
-    $container_class = "";
+  $container_class = "";
 
-    $variables['containner_class'] = $container_class;
-    $variables['content_class'] = $content_class;
-  }
+  $variables['containner_class'] = $container_class;
+  $variables['content_class'] = $content_class;
+}
 
 /**
  * [light_skeleton_table description]
@@ -215,19 +215,19 @@ function light_skeleton_status_messages(&$variables) {
   $output = '';
 
   $message_info = array(
-      'status' => array(
-          'heading' => 'Status message',
-          'class' => 'success',
+    'status' => array(
+      'heading' => 'Status message',
+      'class' => 'success',
       ),
-      'error' => array(
-          'heading' => 'Error message',
-          'class' => 'error',
+    'error' => array(
+      'heading' => 'Error message',
+      'class' => 'error',
       ),
-      'warning' => array(
-          'heading' => 'Warning message',
-          'class' => '',
+    'warning' => array(
+      'heading' => 'Warning message',
+      'class' => '',
       ),
-  );
+    );
 
   foreach (drupal_get_messages($display) as $type => $messages) {
     $message_class = $type != 'warning' ? $message_info[$type]['class'] : 'warning';
@@ -292,70 +292,70 @@ function light_skeleton_pager($variables) {
   if ($pager_total[$element] > 1) {
     if ($li_first) {
       $items[] = array(
-          'class' => array('pager-first'),
-          'data' => $li_first,
-      );
+        'class' => array('pager-first'),
+        'data' => $li_first,
+        );
     }
     if ($li_previous) {
       $items[] = array(
-          'class' => array('pager-previous'),
-          'data' => $li_previous,
-      );
+        'class' => array('pager-previous'),
+        'data' => $li_previous,
+        );
     }
 
     // When there is more than one page, create the pager list.
     if ($i != $pager_max) {
       if ($i > 1) {
         $items[] = array(
-            'class' => array('pager-ellipsis'),
-            'data' => '…',
-        );
+          'class' => array('pager-ellipsis'),
+          'data' => '…',
+          );
       }
       // Now generate the actual pager piece.
       for (; $i <= $pager_last && $i <= $pager_max; $i++) {
         if ($i < $pager_current) {
           $items[] = array(
-              'class' => array('pager-item'),
-              'data' => theme('pager_previous', array('text' => $i, 'element' => $element, 'interval' => ($pager_current - $i), 'parameters' => $parameters)),
-          );
+            'class' => array('pager-item'),
+            'data' => theme('pager_previous', array('text' => $i, 'element' => $element, 'interval' => ($pager_current - $i), 'parameters' => $parameters)),
+            );
         }
         if ($i == $pager_current) {
           $items[] = array(
-              'class' => array('pager-current'),
-              'data' => '<a class="current">' . $i . '</a>',
-          );
+            'class' => array('pager-current'),
+            'data' => '<a class="current">' . $i . '</a>',
+            );
         }
         if ($i > $pager_current) {
           $items[] = array(
-              'class' => array('pager-item'),
-              'data' => theme('pager_next', array('text' => $i, 'element' => $element, 'interval' => ($i - $pager_current), 'parameters' => $parameters)),
-          );
+            'class' => array('pager-item'),
+            'data' => theme('pager_next', array('text' => $i, 'element' => $element, 'interval' => ($i - $pager_current), 'parameters' => $parameters)),
+            );
         }
       }
       if ($i < $pager_max) {
         $items[] = array(
-            'class' => array('pager-ellipsis'),
-            'data' => '…',
-        );
+          'class' => array('pager-ellipsis'),
+          'data' => '…',
+          );
       }
     }
     // End generation.
     if ($li_next) {
       $items[] = array(
-          'class' => array('pager-next'),
-          'data' => $li_next,
-      );
+        'class' => array('pager-next'),
+        'data' => $li_next,
+        );
     }
     if ($li_last) {
       $items[] = array(
-          'class' => array('pager-last'),
-          'data' => $li_last,
-      );
+        'class' => array('pager-last'),
+        'data' => $li_last,
+        );
     }
     return '<div class="pagination"><h2 class="element-invisible">' . t('Pages') . '</h2>' . theme('item_list', array(
-                'items' => $items,
-                'attributes' => array('class' => array('pager')),
-            )) . '</div>';
+      'items' => $items,
+      'attributes' => array('class' => array('pager')),
+      )) . '</div>';
   }
 }
 
@@ -476,4 +476,42 @@ function light_skeleton_link($variables) {
     }
   }
   return '<a href="' . check_plain(url($variables['path'], $variables['options'])) . '"' . drupal_attributes($variables['options']['attributes']) . '>' . ($variables['options']['html'] ? $variables['text'] : check_plain($variables['text'])) . '</a>';
+}
+
+
+
+/**
+* Theme the calendar title
+*/
+function light_skeleton_date_nav_title($granularity, $view, $link = FALSE, $format = NULL) {
+  switch ($granularity) {
+    case 'year':
+    $title = $view->date_info->year;
+    $date_arg = $view->date_info->year;
+    break;
+    case 'month':
+    $format = !empty($format) ? $format : (empty($view->date_info->mini) ? 'F Y' : 'F');
+    $title = date_format_date($view->date_info->min_date, 'custom', $format);
+    $date_arg = $view->date_info->year .'-'. date_pad($view->date_info->month);
+    break;
+    case 'day':
+    $format = !empty($format) ? $format : (empty($view->date_info->mini) ? 'l j F Y' : 'l j F');
+    $title = date_format_date($view->date_info->min_date, 'custom', $format);
+    $date_arg = $view->date_info->year .'-'. date_pad($view->date_info->month) .'-'. date_pad($view->date_info->day);
+    break;
+    case 'week':
+    $format = !empty($format) ? $format : (empty($view->date_info->mini) ? 'j F Y' : 'j F ');
+    $title = t('Week of @date', array('@date' => date_format_date($view->date_info->min_date, 'custom', $format)));
+    $date_arg = $view->date_info->year .'-W'. date_pad($view->date_info->week);
+    break;
+  }
+  if (!empty($view->date_info->mini) || $link) {
+// Month navigation titles are used as links in the mini view.
+    $attributes = array('title' => t('View full page month'));
+    $url = date_real_url($view, $granularity, $date_arg, TRUE);
+    return l($title, $url, array('attributes' => $attributes));
+  }
+  else {
+    return $title;
+  }
 }
