@@ -53,6 +53,9 @@ img {
   width: 25%;
   border: 1px solid #111111; }
 
+#home-concert-list {
+  padding-right: 5rem; }
+
 .view-concerts .view-content {
   display: flex; }
   .view-concerts .view-content .views-row {
