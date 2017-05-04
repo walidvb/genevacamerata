@@ -42,6 +42,9 @@ function _light_skeleton_add_js() {
  * In addition, this function load all the css and js.
  */
 function light_skeleton_preprocess_html(&$variables) {
+  // dpm(format_date(time(),'custom', 'D j F ', NULL, 'fr'));
+  // global $language;
+  // dpm($language->language);
   // Addin JS to the theme.
   _light_skeleton_add_js();
   // Adding CSS to theme.

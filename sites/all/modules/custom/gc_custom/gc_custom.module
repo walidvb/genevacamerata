@@ -30,7 +30,6 @@ function gc_custom_views_query_alter(&$view, &$query) {
 function gc_custom_field_formatter_info() {
   $info = [];
   $info['buy_link'] = _buy_link_formatter_info();
-  dpm(_buy_link_formatter_info());
   return $info;
 }
 
