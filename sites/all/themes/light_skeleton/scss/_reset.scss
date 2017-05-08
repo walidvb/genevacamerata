@@ -15,3 +15,10 @@ img{
 		top: 30px;
 	}
 }
+
+.i18n-en .fr-only{
+	display: none!important;
+}
+.i18n-fr .en-only{
+	display: none!important;
+}

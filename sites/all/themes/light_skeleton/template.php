@@ -29,7 +29,7 @@ function _light_skeleton_add_js() {
   '/bower_components/owl.carousel/dist/owl.carousel.min.js', 
   '/js/myScripts.js', 
   '/js/home_filters.js',
-  '/js/news.js'
+  '/js/carousels.js'
   ];
   foreach ($scripts as $key => $script) {
     drupal_add_js($theme_path . $script);
@@ -42,9 +42,6 @@ function _light_skeleton_add_js() {
  * In addition, this function load all the css and js.
  */
 function light_skeleton_preprocess_html(&$variables) {
-  // dpm(format_date(time(),'custom', 'D j F ', NULL, 'fr'));
-  // global $language;
-  // dpm($language->language);
   // Addin JS to the theme.
   _light_skeleton_add_js();
   // Adding CSS to theme.

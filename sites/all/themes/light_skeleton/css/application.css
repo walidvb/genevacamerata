@@ -11,6 +11,12 @@ img {
 .admin-menu .region-sidepanel-left, .admin-menu .region-sidepanel-right {
   top: 30px; }
 
+.i18n-en .fr-only {
+  display: none !important; }
+
+.i18n-fr .en-only {
+  display: none !important; }
+
 .region-sidepanel-left, .region-sidepanel-right {
   position: fixed;
   top: 0;
