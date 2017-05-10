@@ -114,15 +114,4 @@
 
 
   <!-- Footer Bottom / Start  -->
-  <footer id="footer-bottom">
-
-    <!-- 960 Container -->
-    <div class="container">
-      <div class="sixteen columns">
-        <?php print render($page['footer']); ?>
-      </div>
-    </div>
-    <!-- 960 Container / End -->
-
-  </footer>
   <!-- Footer Bottom / End -->

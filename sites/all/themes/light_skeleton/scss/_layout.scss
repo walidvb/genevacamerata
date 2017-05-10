@@ -4,6 +4,9 @@ html, body{
 	margin: 0;
 }
 
+body.has-panel-open{
+	overflow-y: hidden;
+}
 .container{
 	@media (min-width: 400px){
 		width: 100vw;
@@ -12,23 +15,11 @@ html, body{
 }
 
 .region-sidepanel-left, .region-sidepanel-right{
-	top: 0;
-	bottom: 0;
-	overflow: auto;
-	background: $background-color;
-	padding: 1rem;
-	
-	display: flex;
-	flex-flow: column;
-	justify-content: space-between;
-	transition: all .3s ease-in-out;
-	z-index: 200;
+	@include over-panel();
 }
 
 .region-sidepanel-left{
 	left: -100%;
-	position: fixed;
-	border-right: 1px solid $border-color;
 	padding-top: $header-height;
 	&.open{
 		left: 0;
@@ -37,9 +28,6 @@ html, body{
 
 .region-sidepanel-right{
 	right: -100%;
-	border-left: 1px solid $border-color;
-	@extend .column;
-	@extend .four	;
 	&.open{
 		right: 0;
 	}

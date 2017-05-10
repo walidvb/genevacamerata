@@ -1,48 +1,64 @@
-@mixin concert-item(){
+#home-panels .section{
+	@media #{$tablet}{
+		height: calc(100vh - #{$header-height});
+		// padding-top: $header-height;
+		overflow: auto;
+	}
 }
+
 
 .view-display-id-type_in_list_1{
 	float: left;
-	@include concert-item();
 }
 
 .view-concerts .view-content{
 	display: flex;
 	flex-flow: column;
+	@media #{$tablet}{
+		flex-flow: row wrap;
+	}
 	.views-row{
-		@include concert-item();
+		@media #{$sm}{
+			flex-basis: 100%;
+		}
+		@media #{$md}{
+			flex-basis: 50%;
+		}
+		@media #{$lg}{
+			flex-basis: 33.333%;
+		}
+		padding: 0 $padding-xs;
 	}
 }
 
 .view-id-news{
-	@include concert-item();
 	&.inactive{
 		display: none;
 	}
 }
 
-body.front .center{
-	position: relative;
-	max-width: 100vw;
-	overflow: hidden;
-}
-body.front .right{
-	position: absolute;
-	top: 0;
-	right: -100%;
-	transition: all .3s ease-in-out;
-	@include padding();
-	&.open{
-		right: 0%;
-		@include backdrop();
-	}
+// body.front .center{
+// 	position: relative;
+// 	max-width: 100vw;
+// 	overflow: hidden;
+// }
+// body.front .right{
+// 	position: absolute;
+// 	top: 0;
+// 	right: -100%;
+// 	transition: all .3s ease-in-out;
+// 	@include padding();
+// 	&.open{
+// 		right: 0%;
+// 		@include backdrop();
+// 	}
 
-	.trigger{
-		position: absolute;
-		width: 3rem;
-		height: 3rem;
-		top: 0;
-		left: -3rem;
-		@include padding();
-	}
-}
+// 	.trigger{
+// 		position: absolute;
+// 		width: 3rem;
+// 		height: 3rem;
+// 		top: 0;
+// 		left: -3rem;
+// 		@include padding();
+// 	}
+// }

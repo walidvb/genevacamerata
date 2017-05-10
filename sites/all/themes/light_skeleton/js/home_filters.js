@@ -27,9 +27,8 @@
 		var url = location.pathname;
 		url += options.id ? '?&field_type=' + options.id : '';
 		url += options.date ? '?&field_date=' + options.date : '';
-		var container = $('#home-concert-list').parent();
-		console.log("url:", url);
-		container.addClass('loading').load(url + ' #home-concert-list', function(){
+		var container = $('#home-panels').parent();
+		container.addClass('loading').load(url + ' #home-panels', function(){
 			container.removeClass('loading');
 			$('a[data-type]').removeClass('active');
 			$('.pretty-calendar-week a').removeClass('active');
@@ -39,6 +38,7 @@
 			else if(options.date){
 				options.clicked.addClass('active');
 			}
+			console.log("url:", url);
 			$('.view-id-news').addClass('inactive');
 		});
 	};

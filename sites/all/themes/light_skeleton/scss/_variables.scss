@@ -1,3 +1,4 @@
+//================= VARIABLES
 $mobile                 : "(max-width: 767px)";
 $portrait               : "(orientation: portrait)";
 $landscape              : "(orientation: landscape)";
@@ -8,7 +9,7 @@ $md                     : "(min-width: 991px)";
 $lg                     : "(min-width: 1200px)";
 $xlg                     : "(min-width: 1500px)";
 
-$padding-xs: 10px;
+$padding-xs: 15px;
 
 $background-color: white;
 $border-color: #111;
@@ -21,6 +22,16 @@ $icon-height: 3rem;
 
 $touch-padding: 2rem;
 
+$border-radius: 3px;
+
+//================= COLORS
+$black: #333333;
+$white: #FFF;
+$dark-grey: #333333;
+$light-grey: #E3E3E3;
+$brand-color: #FF424D;
+
+//================= MIXINS
 @mixin padding(){
 	padding: 1rem;
 }
@@ -31,4 +42,23 @@ $touch-padding: 2rem;
 		background-color: rgba(255,255,255,.6);
 		backdrop-filter: blur(10px);
 	}
+}
+
+@mixin over-panel(){
+	$over-panel-padding-left: $touch-padding + $icon-width;
+	padding-left: $over-panel-padding-left;
+	padding-right: $padding-xs;
+	top: 0;
+	height: 100vh;
+	position: fixed;
+	@media #{$mobile}{
+		width: calc(100vw);
+	}
+	overflow: auto;
+	z-index: 800;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	transition: all .3s ease-in-out;
+	@include backdrop();
 }

@@ -1,0 +1,41 @@
+a{
+	color: $black;
+	&:hover{
+		color: $brand-color;
+	}
+}
+
+@mixin button(){
+	background-color: $light-grey;
+	color: $black;
+	border-radius: $border-radius;
+	padding: 0 1rem;
+	&.active, &:hover{
+		background-color: $black;
+		color: $brand-color;
+	}
+}
+
+.button{
+	@include button();
+}
+
+
+
+//============== custom
+
+.views-field-field-type{
+	text-transform: uppercase;
+	color: $brand-color;
+}
+.views-field-title, .views-field-field-artists{
+	text-transform: uppercase;
+}
+
+.concert-actions{
+	display: flex;
+	justify-content: space-between;
+	.button{
+		flex: 0 0 calc(50% - .5rem);
+	}
+}

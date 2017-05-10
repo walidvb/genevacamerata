@@ -3,29 +3,29 @@
     width: 100%;
   }
 
-  .container .column, .container .region-sidepanel-right,
+  .container .column,
   .container .columns {
     margin-left: 1.2%;
     margin-right: 1.2%px;
   }
 
-  .column.alpha, .alpha.region-sidepanel-right, .columns.alpha {
+  .column.alpha, .columns.alpha {
     margin-left: 0;
     margin-right: 1.2%;
   }
 
-  .column.omega, .omega.region-sidepanel-right, .columns.omega {
+  .column.omega, .columns.omega {
     margin-right: 0;
     margin-left: 1.2%;
   }
 
-  .column.alpha.omega, .alpha.omega.region-sidepanel-right,
+  .column.alpha.omega,
   .columns.alpha.omega {
     margin-left: 0;
     margin-right: 0;
   }
 
-  .container .one.column, .container .one.region-sidepanel-right {
+  .container .one.column {
     width: 4.58333%;
   }
 
@@ -37,7 +37,7 @@
     width: 17.1%;
   }
 
-  .container .four.columns, .container .columns.region-sidepanel-right {
+  .container .four.columns {
     width: 23.333%;
   }
 
@@ -89,11 +89,11 @@
     width: 98.333%;
   }
 
-  .container .one-third.column, .container .one-third.region-sidepanel-right {
+  .container .one-third.column {
     width: 31.666%;
   }
 
-  .container .two-thirds.column, .container .two-thirds.region-sidepanel-right {
+  .container .two-thirds.column {
     width: 65%;
   }
 
@@ -161,7 +161,26 @@
 #admin-menu {
   box-shadow: none;
 }
+@media (max-width: 767px) {
+  #admin-menu {
+    display: none !important;
+  }
+}
 
+@media (min-width: 767px) {
+  .admin-menu .region-sidepanel-left, .admin-menu .region-sidepanel-right {
+    top: 30px;
+  }
+
+  .navbar, .navbar-spacer {
+    margin-bottom: 0;
+    border: none;
+  }
+
+  .sidebar, .page-content {
+    padding: 0;
+  }
+}
 .navbar-item {
   float: none;
 }
@@ -171,8 +190,8 @@ img {
   height: auto;
 }
 
-.admin-menu .region-sidepanel-left, .admin-menu .region-sidepanel-right {
-  top: 30px;
+ul {
+  list-style: none;
 }
 
 .i18n-en .fr-only {
@@ -187,10 +206,49 @@ img {
   box-sizing: border-box;
 }
 
+a {
+  color: #333333;
+}
+a:hover {
+  color: #ff424d;
+}
+
+.button {
+  background-color: #e3e3e3;
+  color: #333333;
+  border-radius: 3px;
+  padding: 0 1rem;
+}
+.button.active, .button:hover {
+  background-color: #333333;
+  color: #ff424d;
+}
+
+.views-field-field-type {
+  text-transform: uppercase;
+  color: #ff424d;
+}
+
+.views-field-title, .views-field-field-artists {
+  text-transform: uppercase;
+}
+
+.concert-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.concert-actions .button {
+  flex: 0 0 calc(50% - .5rem);
+}
+
 html, body {
   max-width: 100vw;
   overflow-x: visible;
   margin: 0;
+}
+
+body.has-panel-open {
+  overflow-y: hidden;
 }
 
 @media (min-width: 400px) {
@@ -201,22 +259,33 @@ html, body {
 }
 
 .region-sidepanel-left, .region-sidepanel-right {
+  padding-left: 4.5rem;
+  padding-right: 15px;
   top: 0;
-  bottom: 0;
+  height: 100vh;
+  position: fixed;
   overflow: auto;
-  background: white;
-  padding: 1rem;
+  z-index: 800;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   transition: all .3s ease-in-out;
-  z-index: 200;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 767px) {
+  .region-sidepanel-left, .region-sidepanel-right {
+    width: calc(100vw);
+  }
+}
+@supports (backdrop-filter: blur()) {
+  .region-sidepanel-left, .region-sidepanel-right {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+  }
 }
 
 .region-sidepanel-left {
   left: -100%;
-  position: fixed;
-  border-right: 1px solid #111111;
   padding-top: 85px;
 }
 .region-sidepanel-left.open {
@@ -225,7 +294,6 @@ html, body {
 
 .region-sidepanel-right {
   right: -100%;
-  border-left: 1px solid #111111;
 }
 .region-sidepanel-right.open {
   right: 0;
@@ -243,6 +311,13 @@ html, body {
   justify-content: space-around;
 }
 
+@media (min-width: 767px) {
+  #home-panels .section {
+    height: calc(100vh - 85px);
+    overflow: auto;
+  }
+}
+
 .view-display-id-type_in_list_1 {
   float: left;
 }
@@ -251,45 +326,69 @@ html, body {
   display: flex;
   flex-flow: column;
 }
+@media (min-width: 767px) {
+  .view-concerts .view-content {
+    flex-flow: row wrap;
+  }
+}
+.view-concerts .view-content .views-row {
+  padding: 0 15px;
+}
+@media (min-width: 767px) {
+  .view-concerts .view-content .views-row {
+    flex-basis: 100%;
+  }
+}
+@media (min-width: 991px) {
+  .view-concerts .view-content .views-row {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .view-concerts .view-content .views-row {
+    flex-basis: 33.333%;
+  }
+}
 
 .view-id-news.inactive {
   display: none;
 }
 
-body.front .center {
-  position: relative;
-  max-width: 100vw;
-  overflow: hidden;
-}
-
-body.front .right {
-  position: absolute;
+#filters {
+  padding-left: 4.5rem;
+  padding-right: 15px;
   top: 0;
-  right: -100%;
+  height: 100vh;
+  position: fixed;
+  overflow: auto;
+  z-index: 800;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
   transition: all .3s ease-in-out;
-  padding: 1rem;
-}
-body.front .right.open {
-  right: 0%;
   background-color: rgba(255, 255, 255, 0.7);
+  right: -100%;
+}
+@media (max-width: 767px) {
+  #filters {
+    width: calc(100vw);
+  }
 }
 @supports (backdrop-filter: blur()) {
-  body.front .right.open {
+  #filters {
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
   }
 }
-body.front .right .trigger {
-  position: absolute;
-  width: 3rem;
-  height: 3rem;
-  top: 0;
-  left: -3rem;
-  padding: 1rem;
+#filters.open {
+  right: 0%;
 }
-
-#filters {
-  padding-left: 4.5rem;
+@media (min-width: 767px) {
+  #filters {
+    right: 0;
+    position: static;
+    padding: 0;
+  }
 }
 
 .trigger {
@@ -316,7 +415,13 @@ body.front .right .trigger {
   z-index: 200;
   border-radius: 3px 0 0 3px;
 }
+@media (min-width: 767px) {
+  .trigger.trigger-right {
+    display: none;
+  }
+}
 .trigger.is-active {
+  position: fixed;
   background-color: transparent !important;
   right: calc(100% - 2.5rem);
   transform: rotateZ(180deg);
