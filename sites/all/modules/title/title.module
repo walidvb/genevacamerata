@@ -263,6 +263,7 @@ function title_entity_prepare_view($entities, $type, $langcode) {
  *   TRUE if field replacement is enabled for the given field, FALSE otherwise.
  */
 function title_field_replacement_enabled($entity_type, $bundle, $legacy_field) {
+
   $info = title_field_replacement_info($entity_type, $legacy_field);
   if (!empty($info['field']['field_name'])) {
     $instance = field_info_instance($entity_type, $info['field']['field_name'], $bundle);

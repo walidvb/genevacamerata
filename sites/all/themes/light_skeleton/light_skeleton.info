@@ -25,6 +25,9 @@ regions[footer_second] = Footer second column
 regions[footer_third] = Footer third column
 regions[footer] = Footer
 
+plugins[panels][layouts] = templates/layouts
+
+
 ; Information added by Drupal.org packaging script on 2015-09-26
 version = "7.x-1.x-dev"
 core = "7.x"

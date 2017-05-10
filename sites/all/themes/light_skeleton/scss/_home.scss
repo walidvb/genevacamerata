@@ -1,19 +1,14 @@
 @mixin concert-item(){
-	margin: .5rem;
-	padding: 1rem;
-	width: 25%;
-	border: 1px solid $border-color;
 }
 
 .view-display-id-type_in_list_1{
 	float: left;
 	@include concert-item();
 }
-#home-concert-list{
-	padding-right: $filter-trigger-width;
-}
+
 .view-concerts .view-content{
 	display: flex;
+	flex-flow: column;
 	.views-row{
 		@include concert-item();
 	}
@@ -21,8 +16,33 @@
 
 .view-id-news{
 	@include concert-item();
-	float: left;
 	&.inactive{
 		display: none;
+	}
+}
+
+body.front .center{
+	position: relative;
+	max-width: 100vw;
+	overflow: hidden;
+}
+body.front .right{
+	position: absolute;
+	top: 0;
+	right: -100%;
+	transition: all .3s ease-in-out;
+	@include padding();
+	&.open{
+		right: 0%;
+		@include backdrop();
+	}
+
+	.trigger{
+		position: absolute;
+		width: 3rem;
+		height: 3rem;
+		top: 0;
+		left: -3rem;
+		@include padding();
 	}
 }

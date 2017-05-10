@@ -13,7 +13,7 @@
   </div>
 <?php endif; ?>
 <!-- Wrapper / Start -->
-<div id="wrapper">
+<div class="container" id="wrapper">
   <?php if (($page['main_menu'])): ?>
     <div class="main-menu">
       <button class="hamburger hamburger--arrow" type="button" data-panel-target=".region-sidepanel-left">

@@ -8,6 +8,7 @@ $md                     : "(min-width: 991px)";
 $lg                     : "(min-width: 1200px)";
 $xlg                     : "(min-width: 1500px)";
 
+$padding-xs: 10px;
 
 $background-color: white;
 $border-color: #111;
@@ -15,4 +16,19 @@ $border-color: #111;
 
 
 $header-height: 85px;
-$filter-trigger-width: 5rem;
+$icon-width: 2.5rem;
+$icon-height: 3rem;
+
+$touch-padding: 2rem;
+
+@mixin padding(){
+	padding: 1rem;
+}
+
+@mixin backdrop(){
+	background-color: rgba(255,255,255,.7);
+	@supports (backdrop-filter: blur()){
+		background-color: rgba(255,255,255,.6);
+		backdrop-filter: blur(10px);
+	}
+}

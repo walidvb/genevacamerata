@@ -1,12 +1,27 @@
+#filters{
+	@include over-panel();
+}
 
-.trigger.trigger-right{
-	position: fixed;
+.trigger{
+	position: absolute;
 	right: 0;
 	top: 0;
-	bottom: 0;
-	right: 0;
-	width: $filter-trigger-width;
-	background: $background-color;
-	border: 1px solid $border-color;
-	z-index: 200;
+	width: $icon-width;
+	height: $icon-height;
+	padding: $touch-padding;
+	@include backdrop();
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	transition: all .3s ease-in-out;
+	&.trigger-right{
+		background-image: url('/sites/all/themes/light_skeleton/resources/arrow_left.png');
+		z-index: 200;
+		border-radius: 3px 0 0 3px;
+	}
+	&.is-active{
+		background-color: transparent!important;
+		right: calc(100% - #{$icon-width});
+		transform: rotateZ(180deg);
+	}
 }
