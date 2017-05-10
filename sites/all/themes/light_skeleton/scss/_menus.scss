@@ -1,5 +1,15 @@
+.side-left{
+	.navbar-list{
+		display: flex;
+		flex-flow: column;
+	}
+}
 
-
+.navbar-link{
+	color: $black;
+	display: inline-block;
+	@include underlined-link();
+}
 .main-menu, .region-main-menu, .navbar-list{
 	display: flex;
 }

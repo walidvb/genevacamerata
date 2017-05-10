@@ -173,7 +173,7 @@
   }
 
   .navbar, .navbar-spacer {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     border: none;
   }
 
@@ -209,8 +209,9 @@ ul {
 a {
   color: #333333;
 }
-a:hover {
-  color: #ff424d;
+a:hover, a.active {
+  color: #333333;
+  box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .button {
@@ -301,6 +302,21 @@ body.has-panel-open {
 
 .hamburger {
   z-index: 1000;
+}
+
+.side-left .navbar-list {
+  display: flex;
+  flex-flow: column;
+}
+
+.navbar-link {
+  color: #333333;
+  display: inline-block;
+  color: #333333;
+}
+.navbar-link:hover, .navbar-link.active {
+  color: #333333;
+  box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .main-menu, .region-main-menu, .navbar-list {

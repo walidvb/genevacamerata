@@ -1,8 +1,13 @@
-a{
+@mixin underlined-link(){
 	color: $black;
-	&:hover{
-		color: $brand-color;
+	&:hover, &.active{
+		color: $black;
+		box-shadow: inset 0 -1px 0px $brand-color;
 	}
+}
+
+a{
+	@include underlined-link();
 }
 
 @mixin button(){
