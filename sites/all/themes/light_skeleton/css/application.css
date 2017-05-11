@@ -179,6 +179,29 @@ body.has-panel-open {
   justify-content: space-around;
 }
 
+.language-switcher-locale-url {
+  text-transform: uppercase;
+}
+.main-menu .language-switcher-locale-url {
+  position: relative;
+}
+.main-menu .language-switcher-locale-url li {
+  padding: 15px;
+}
+.main-menu .language-switcher-locale-url li.active {
+  background: white;
+  z-index: 100;
+  position: relative;
+}
+.main-menu .language-switcher-locale-url:hover li:not(.active) {
+  transform: translateX(-100%);
+}
+.main-menu .language-switcher-locale-url li:not(.active) {
+  position: absolute;
+  z-index: 0;
+  transition: all .3s ease-in-out;
+}
+
 @media (min-width: 767px) {
   #home-panels .section {
     height: calc(100vh - 85px);

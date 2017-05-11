@@ -22,3 +22,30 @@
 .region-main-menu{
 	justify-content: space-around;
 }
+
+
+//=========== LOCALES
+
+.language-switcher-locale-url{
+	text-transform: uppercase;
+	
+	.main-menu &{
+		position: relative;
+		li{
+			padding: $padding-xs;
+		}
+		li.active{
+			background: $white;
+			z-index: 100;
+			position: relative;
+		}
+		&:hover li:not(.active){
+			transform: translateX(-100%);	
+		}
+		li:not(.active){
+			position: absolute;
+			z-index: 0;
+			transition: all .3s ease-in-out;
+		}
+	}
+}
