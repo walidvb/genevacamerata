@@ -28,12 +28,23 @@
 
 .language-switcher-locale-url{
 	text-transform: uppercase;
-	
+	li a{
+		padding: $padding-xs .5*$padding-xs;
+	}
+	.sidepanel &{
+		li{
+			display: inline-block;
+			&:first-child:after{
+				content: '/';
+				padding-left: .5*$padding-xs;
+			}
+			&:last-child{
+				padding-left: 0;
+			}
+		}
+	}
 	.main-menu &{
 		position: relative;
-		li{
-			padding: $padding-xs;
-		}
 		li.active{
 			background: $white;
 			z-index: 100;
@@ -45,7 +56,19 @@
 		li:not(.active){
 			position: absolute;
 			z-index: 0;
-			transition: all .3s ease-in-out;
+			transition: all .2s ease-in-out;
 		}
+	}
+}
+
+//============ SOCIAL
+.block-social-media-links .horizontal li, .pane-social-media-link-widget .horizontal li{
+	max-width: 5rem;
+}
+
+//============ CONTACT
+#block-block-1{
+	p{
+		margin-bottom: 0;
 	}
 }
