@@ -2,6 +2,9 @@ var $ = jQuery;
 (function($){
 	var owlOptions = {
 		items: 1,
+		loop: true,
+		autoplay: true,
+		autoplayTimeout: 5000,
 	};
 
 	var selectors = [

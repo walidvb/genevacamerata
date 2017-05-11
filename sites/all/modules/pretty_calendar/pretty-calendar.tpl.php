@@ -15,6 +15,15 @@
 
 <div class="block-calendar">
   <div class="calendar-container">
+    <div class="pretty-calendar-month">
+      <a href="javascript:calendar_go('prev');" rel="<?php print $month_prev; ?>">
+        <div class="calendar-prev">&nbsp;</div>
+      </a>
+      <div class="month-title"><?php print $month_name; ?></div>
+      <a href="javascript:calendar_go('next');" rel="<?php print $month_next; ?>">
+        <div class="calendar-next">&nbsp;</div>
+      </a>
+    </div>
     <div class="calendar-daynames">
       <div class="pretty-calendar-day"><div class="calendar-value"><?php print $daynames[0]; ?></div></div>
       <div class="pretty-calendar-day"><div class="calendar-value"><?php print $daynames[1]; ?></div></div>
@@ -25,14 +34,5 @@
       <div class="pretty-calendar-weekend pretty-calendar-last"><div class="calendar-value"><?php print $daynames[6]; ?></div></div>
     </div>
     <?php print $content; ?>
-    <div class="pretty-calendar-month">
-      <a href="javascript:calendar_go('prev');" rel="<?php print $month_prev; ?>">
-        <div class="calendar-prev">&nbsp;</div>
-      </a>
-      <div class="month-title"><?php print $month_name; ?></div>
-      <a href="javascript:calendar_go('next');" rel="<?php print $month_next; ?>">
-        <div class="calendar-next">&nbsp;</div>
-      </a>
-    </div>
   </div>
 </div>

@@ -15,9 +15,11 @@ a{
 	color: $black;
 	border-radius: $border-radius;
 	padding: 0 1rem;
+	border: none;
 	&.active, &:hover{
 		background-color: $black;
 		color: $brand-color;
+		box-shadow: none;
 	}
 }
 
@@ -25,7 +27,18 @@ a{
 	@include button();
 }
 
+//============== owl
 
+body .owl-theme .owl-dots .owl-dot.active span, body .owl-theme .owl-dots .owl-dot:hover span{
+	background: $brand-color;
+}
+body .owl-theme .owl-dots .owl-dot span{
+	background: $black;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	
+}
 
 //============== custom
 

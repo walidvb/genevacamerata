@@ -1,5 +1,5 @@
 @import "variables";
-@import "fluid";
+// @import "fluid";
 @import "reset";
 @import "theme";
 @import "layout";
@@ -7,3 +7,10 @@
 @import "home";
 @import "filters";
 @import "webforms";
+
+.container{
+	width: 100%;
+	@media #{$tablet}{
+		padding: 0 15px;
+	}
+}
