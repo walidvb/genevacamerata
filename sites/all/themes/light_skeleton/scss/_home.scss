@@ -4,6 +4,9 @@
 		// padding-top: $header-height;
 		overflow: auto;
 	}
+	.inactive + .columns{
+		margin-left: 0%!important;
+	}
 }
 
 
@@ -40,7 +43,7 @@
 		height: 80vh;
 		@media #{$tablet}{
 			height: calc(100vh - #{$header-height});
-			padding: $padding-xs 0;
+			padding: 0 0 2*$padding-xs 0;
 		}
     width: 100%;
 	}
@@ -54,7 +57,7 @@
 	.info{
 		background: $white;
 		position: absolute;
-		bottom: 2*$padding-xs;
+		bottom: 3*$padding-xs;
 		left:  2*$padding-xs;
 		padding: $padding-xs $padding-xs 2*$padding-xs $padding-xs;
 	}
@@ -67,7 +70,7 @@
 	}
 	.owl-dots{
 		position: absolute;
-		bottom: 2*$padding-xs;
+		bottom: 3*$padding-xs;
 		left: calc(#{3*$padding-xs} - 5px);	
 	}
 }

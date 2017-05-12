@@ -38,15 +38,12 @@
   <div id="content">
 
     <?php if ($page['highlighted']): ?>
-      <div class="">
-        <div id="highlighted">
-          <?php print render($page['highlighted']); ?>
-        </div>
+      <div id="highlighted">
+        <?php print render($page['highlighted']); ?>
       </div>
     <?php endif; ?>
 
     <!-- 960 Container -->
-    <div class="<?php print $containner_class; ?>">
 
       <!-- Page Content -->
       <div class="<?php print $content_class; ?>">
@@ -68,7 +65,6 @@
 
       <div class="clearfix"></div>
 
-    </div>
     <!-- 960 Container / End -->
 
   </div>
