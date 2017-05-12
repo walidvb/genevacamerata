@@ -27,13 +27,10 @@
 		var url = location.pathname;
 		url += options.id ? '?&field_type=' + options.id : '';
 		url += options.date ? '?&field_date=' + options.date : '';
-		var container = $('#home-panels').parent();
-		var concertContainer = container.find('.center');
+		var container = $('.left-container');
 		container.addClass('loading');
-		concertContainer.load(url + ' #home-panels .center .pane-content', function(){
-			container.removeClass('loading');
-			concertContainer.removeClass('four').addClass('ten');
-			$('.left').addClass('inactive').hide();
+		container.load(url + ' #home-panels .center-column', function(){
+			container.removeClass('loading').addClass('full-width-concerts');
 			$('a[data-type]').removeClass('active');
 			$('.pretty-calendar-week a').removeClass('active');
 			if(options.id){

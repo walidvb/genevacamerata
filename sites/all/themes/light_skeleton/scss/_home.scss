@@ -3,7 +3,6 @@
 	overflow: auto;
 }
 .section{
-	padding-bottom: $padding-xs;
 	@media #{$sm}{
 		overflow: auto;
 	}
@@ -12,6 +11,9 @@
 	}
 }
 .left-container{
+	.center-column{
+		margin-top: $margin-xs;
+	}
 	@media #{$sm}{
 		@include full-height-section();
 	}
@@ -33,16 +35,9 @@
 		flex-flow: row wrap;
 	}
 	.views-row{
-		@media #{$sm}{
-			flex-basis: 100%;
-		}
-		@media #{$md}{
-			flex-basis: 100%;
-			padding: 0 $padding-xs;
-		}
-		@media #{$lg}{
-			flex-basis: 50%;
-		}
+		@extend .col-sm-6;
+		@extend .col-md-12;
+		@extend .col-lg-6;
 	}
 }
 
@@ -74,5 +69,30 @@
 		position: absolute;
 		bottom: 3*$padding-xs;
 		left: calc(#{3*$padding-xs} - 5px);	
+	}
+}
+
+
+//=========== filters on
+
+.full-width-concerts{
+	.center-column{
+		@extend .col-xs-12;
+	}
+	.pane-types-type-in-list-1{
+		@extend .col-xs-12;
+		@extend .col-sm-4;
+		@extend .col-lg-2;
+	}
+	.view-concerts{
+		@extend .col-xs-12;
+		@extend .col-sm-8;
+		@extend .col-lg-8;
+	}
+	.view-concerts .view-content .views-row{
+		@extend .col-xs-12;
+		@extend .col-sm-12;
+		@extend .col-md-6;
+		@extend .col-lg-4;
 	}
 }

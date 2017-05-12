@@ -6,6 +6,7 @@
 		right: 0%;
 	}
 	@media #{$tablet}{
+		border-left: solid 1px $black;
 		right: 0;
 		position: static;
 		padding: 0 $padding-xs;
