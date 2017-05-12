@@ -1216,12 +1216,15 @@ body .vertical-tabs {
   flex-flow: row wrap;
   justify-content: space-between;
   border-top: none;
+  justify-content: space-between;
+  display: flex;
   margin-left: -5px;
   margin-right: -5px;
 }
 .vertical-tabs ul.vertical-tabs-list li {
   margin-left: 5px;
   margin-right: 5px;
+  flex: 0 1 50%;
 }
 .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button {
   flex-grow: 1;
@@ -1268,14 +1271,22 @@ a, a:hover {
   box-shadow: inset 0 -1px 0px #ff424d;
 }
 
-.button {
+.button, .field-name-node-link a {
   background-color: #e3e3e3;
   color: #333333;
   border-radius: 3px;
   padding: 0 1rem;
   border: none;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
 }
-.button.active, .button:hover {
+.button.active, .field-name-node-link a.active, .button:hover, .field-name-node-link a:hover {
   background-color: #333333;
   color: #ff424d;
   box-shadow: none;
@@ -1509,6 +1520,10 @@ body.has-panel-open {
     flex-flow: row wrap;
   }
 }
+.view-concerts .view-content .views-row {
+  display: inline-flex;
+  flex-flow: column;
+}
 
 .view-id-artist_from_concert.view-display-id-panel_pane_2 .views-row {
   height: 70vh;
@@ -1568,6 +1583,23 @@ body.has-panel-open {
   left: calc(45px - 5px);
 }
 
+.field-name-node-link a {
+  display: inline-block;
+}
+
+.group-buttons {
+  justify-content: space-between;
+  display: flex;
+  margin-left: -5px;
+  margin-right: -5px;
+  justify-self: flex-end;
+}
+.group-buttons > * {
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 0 1 50%;
+}
+
 #filters {
   padding-left: 4.5rem;
   padding-right: 15px;
@@ -1608,7 +1640,7 @@ body.has-panel-open {
     padding: 0 15px;
   }
 }
-#filters .button {
+#filters .button, #filters .field-name-node-link a, .field-name-node-link #filters a {
   width: 100%;
 }
 

@@ -27,6 +27,14 @@ a, a:hover{
 	border-radius: $border-radius;
 	padding: 0 1rem;
 	border: none;
+	margin-bottom: 1rem;
+	line-height: 4rem;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: bold;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
 	&.active, &:hover{
 		background-color: $black;
 		color: $brand-color;

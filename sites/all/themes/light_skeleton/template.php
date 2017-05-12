@@ -361,6 +361,22 @@ function light_skeleton_pager($vars) {
 }
 
 function light_skeleton_preprocess_field(&$vars) { //Replace your theme name MYTHEME here.
+  // relace tickets by reservation
+  if($vars['element']['#field_name'] == 'field_tickets' && empty($vars['items'])){
+    $node = $vars['element']['#object'];
+    $nid = $node->nid;
+    $text = t('book');
+    global $language;
+    $locale = $language->language;
+    $alias = drupal_get_path_alias("/node/9", $locale);
+    $url = "$alias?id=$nid";
+    $vars['items'] = array(
+      0 => array(
+        '#markup' => "<a href='$url' class='button'>$text</a>"
+      )
+    );
+
+  }
   if ($node = menu_get_object()){
     if($node->type == 'concert'){
       // if it's a prestige concert and it's in full view mode

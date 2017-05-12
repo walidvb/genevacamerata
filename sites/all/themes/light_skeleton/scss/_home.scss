@@ -42,6 +42,8 @@
 		@extend .col-sm-6;
 		@extend .col-md-12;
 		@extend .col-lg-6;
+		display: inline-flex;
+    flex-flow: column;
 	}
 }
 
@@ -79,6 +81,16 @@
 
 //=========== filters on
 
+.field-name-node-link{
+	a{
+		@extend .button;
+		display: inline-block;
+	}
+}
+.group-buttons{
+	@include gapped-buttons();
+	justify-self: flex-end;
+}
 .full-width-concerts{
 	.center-column{
 		@extend .col-xs-12;
