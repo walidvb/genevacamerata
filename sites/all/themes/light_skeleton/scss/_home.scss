@@ -1,11 +1,22 @@
+@mixin full-height-section(){
+	height: calc(100vh - #{$header-height});
+	overflow: auto;
+}
 .section{
-	@media #{$tablet}{
-		height: calc(100vh - #{$header-height});
-		// padding-top: $header-height;
+	@media #{$sm}{
 		overflow: auto;
 	}
-	.inactive + .columns{
-		margin-left: 0%!important;
+	@media #{$md}{
+		@include full-height-section();
+	}
+}
+.left-container{
+	@media #{$sm}{
+		@include full-height-section();
+	}
+	@media #{$md}{
+		height: auto;
+		overflow: visible;
 	}
 }
 
@@ -24,13 +35,13 @@
 		@media #{$sm}{
 			flex-basis: 100%;
 		}
-		@media #{$lg}{
+		@media #{$md}{
 			flex-basis: 100%;
+			padding: 0 $padding-xs;
 		}
 		@media #{$lg}{
 			flex-basis: 50%;
 		}
-		padding: 0 $padding-xs;
 	}
 }
 
