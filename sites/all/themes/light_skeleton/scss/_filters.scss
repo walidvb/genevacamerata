@@ -8,7 +8,7 @@
 	@media #{$tablet}{
 		right: 0;
 		position: static;
-		padding: 0;
+		padding: 0 $padding-xs;
 	}
 
 	.button{

@@ -1458,7 +1458,7 @@ body.has-panel-open {
 }
 @media (min-width: 991px) {
   .section {
-    height: calc(80vh - 85px);
+    height: calc(100vh - 85px);
     overflow: auto;
   }
 }
@@ -1598,7 +1598,7 @@ body.has-panel-open {
   #filters {
     right: 0;
     position: static;
-    padding: 0;
+    padding: 0 15px;
   }
 }
 #filters .button {
@@ -1666,6 +1666,11 @@ body.has-panel-open {
 }
 .webform-component-field-wrapper.webform-component--billets .form-item {
   display: inline-block;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
 }
 
 .debug-helpers {

@@ -10,7 +10,10 @@
 @import "webforms";
 
 
-
+body{
+	height: 100vh;
+	overflow: hidden;
+}
 
 .debug-helpers{
   position: fixed;
