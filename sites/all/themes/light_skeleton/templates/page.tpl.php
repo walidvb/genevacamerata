@@ -109,7 +109,7 @@
   <?php endif; ?>
 
   
-  <div class="debug-helpers">
+  <div class="debug-helpers" onclick="javascript:this.remove()">
     <div class="size">
       <div class="visible-xs">XS</div>
       <div class="visible-sm">SM</div>

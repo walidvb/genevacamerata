@@ -6,7 +6,18 @@
 	}
 }
 
-a{
+a, a:hover{
+	color: $black;
+}
+
+.node-content a{
+	text-decoration: none;
+	color: $brand-color;
+	&:hover{
+		color: $black;
+	}
+}
+.menu a{
 	@include underlined-link();
 }
 

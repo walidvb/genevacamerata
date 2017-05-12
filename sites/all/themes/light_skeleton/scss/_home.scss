@@ -1,13 +1,14 @@
-@mixin full-height-section(){
-	height: calc(100vh - #{$header-height});
+@mixin full-height-section($height: 100vh){
+	height: calc(#{$height} - #{$header-height});
 	overflow: auto;
 }
 .section{
+	padding-bottom: $padding-xs;
 	@media #{$sm}{
 		overflow: auto;
 	}
 	@media #{$md}{
-		@include full-height-section();
+		@include full-height-section($height: '80vh');
 	}
 }
 .left-container{

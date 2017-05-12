@@ -1,5 +1,6 @@
 #filters{
 	@include over-panel();
+	height: calc(100vh - #{$header-height});
 	right: -100%;
 	&.open{
 		right: 0%;
@@ -40,5 +41,24 @@
 		background-color: transparent!important;
 		right: calc(100% - #{$icon-width});
 		transform: rotateZ(180deg);
+	}
+}
+
+.program{
+	text-align: center;
+	margin: $padding-xs;
+	span{
+		display: block;
+	}
+	&:before{
+	  content: '';
+	  display: inline-block;
+	  width: 100%;
+	  height: 12rem;
+	  margin: auto;
+	  background-image: url(/sites/all/themes/light_skeleton/resources/program-cover@2x.png);
+	  background-size: contain;
+	  background-position: center;
+	  background-repeat: no-repeat;
 	}
 }
