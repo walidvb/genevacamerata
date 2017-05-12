@@ -128,7 +128,9 @@ $fluidGutterWidthAlphaOmega : 1%; //Width of gutter for alpha/omega
     .alpha.omega                                { width: 100%; }
 
     /* Base fluid Grid */
-    @include fluidColumnClasses();
+    @media #{$tablet}{
+        @include fluidColumnClasses();
+    }
 
 
 /* #Tablet (Portrait) fluid

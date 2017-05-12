@@ -80,44 +80,7 @@
  */
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
-
-<div class="ten columns">
-
-  <?php
-  if (!empty($content['field_image'])) {
-
-    print render($content['field_image']);
-  }
-  ?>
-  </div>
   <?php $content_class = ''; ?>
-
-
-  </div>
-
-  <?php if ($display_submitted): ?>
-    <section class="author_info">
-      <span class="title_color">
-      <span>Author: </span>
-      <span class="author_name"> <?php print $name ?></span>
-    </span>
-    </section>
-    <div class="submitted">
-      <section class="date">
-        <span class="title_color">
-
-          <span>Publishing Date:</span>
-          <span class="month"><?php print format_date($node->created, 'custom', 'F'); ?></span>
-          <span class="day"><?php print format_date($node->created, 'custom', 'd'); ?></span>,
-          <span class="day"><?php print format_date($node->created, 'custom', 'Y'); ?></span>
-        </span>
-
-        </span>
-
-      </section>
-    </div>
-  <?php endif; ?>
 
   <div class="content<?php print $content_class; ?>"<?php print $content_attributes; ?>>
 

@@ -68,7 +68,7 @@ function light_skeleton_preprocess_page(&$variables) {
   $page = $variables['page'];
 
 
-  $content_class = 'sixteen columns';
+  $content_class = 'twelve columns';
 
   $container_class = "";
 
