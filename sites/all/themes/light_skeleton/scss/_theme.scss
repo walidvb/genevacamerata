@@ -43,12 +43,11 @@ a, a:hover{
 body .owl-theme .owl-dots .owl-dot.active span, body .owl-theme .owl-dots .owl-dot:hover span{
 	background: $brand-color;
 }
-body .owl-theme .owl-dots .owl-dot span{
+body .owl-theme .owl-dots .owl-dot span{	
 	background: $black;
 	width: 5px;
 	height: 5px;
 	border-radius: 50%;
-	
 }
 
 //============== custom
@@ -67,23 +66,29 @@ body .owl-theme .owl-dots .owl-dot span{
 }
 .field-collection-view{
 	border: none;	
+	margin: auto;
 	.field-name-field-compositor{
 		font-size: .9em;
 	}
 }
 
-.views-field-field-type, .field-type-taxonomy-term-reference{
-	text-transform: uppercase;
-	color: $brand-color;
-}
-.views-field-title, .views-field-field-artists{
-	text-transform: uppercase;
+.field-name-field-recommendation{
+	.node{
+		margin: auto;
+	}	
 }
 
-.concert-actions{
-	display: flex;
-	justify-content: space-between;
-	.button{
-		flex: 0 0 calc(50% - .5rem);
+.prices-pdfs{
+	margin-bottom: 1rem;
+	a{
+		display: inline-block;
+		border: solid 1px $dark-grey; 
+		color: $dark-grey;
+		border-radius: $border-radius;
+		padding: 2px 15px;
+		&:hover{
+			background-color: $dark-grey;
+			color: $white;
+		}
 	}
 }

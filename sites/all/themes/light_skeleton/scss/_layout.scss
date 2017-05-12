@@ -16,10 +16,11 @@ body.has-panel-open{
 
 .region-sidepanel-left, .region-sidepanel-right{
 	@include over-panel();
-	margin-top: $header-height;
+	padding-bottom: $padding-xs;
 }
 
 .region-sidepanel-left{
+	min-width: 290px;
 	left: -100%;
 	&.open{
 		left: 0;

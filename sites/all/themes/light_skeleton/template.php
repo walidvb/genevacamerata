@@ -41,7 +41,7 @@ function _light_skeleton_add_js() {
  * This function will a load on every html request.
  * In addition, this function load all the css and js.
  */
-function light_skeleton_preprocess_html(&$variables) {
+function light_skeleton_preprocess_html(&$vars) {
   // Addin JS to the theme.
   _light_skeleton_add_js();
   // Adding CSS to theme.
@@ -58,37 +58,37 @@ function light_skeleton_preprocess_html(&$variables) {
 }
 
 
-function light_skeleton_preprocess_page(&$variables) {
+function light_skeleton_preprocess_page(&$vars) {
    //Check is jquery_update is installed.
   if (!module_exists('jquery_update')) {
    // TODO Check what Jquery update is been running.
     drupal_set_message(t('Jquery update is required, <a target="_blank" href="!url">Download it</a>,  install and switch jquery to version 1.7', array('!url' => 'http://drupal.org/project/jquery_update')), 'warning');
   }
 
-  $page = $variables['page'];
+  $page = $vars['page'];
 
 
-  $content_class = 'twelve columns';
+  $content_class = '.col-xs-12';
 
   $container_class = "";
 
-  $variables['containner_class'] = $container_class;
-  $variables['content_class'] = $content_class;
+  $vars['containner_class'] = $container_class;
+  $vars['content_class'] = $content_class;
 }
 
 /**
  * [light_skeleton_table description]
- * @param  [type] $variables [description]
+ * @param  [type] $vars [description]
  * @return [type]            [description]
  */
-function light_skeleton_table($variables) {
-  $header = $variables['header'];
-  $rows = $variables['rows'];
-  $attributes = $variables['attributes'];
-  $caption = $variables['caption'];
-  $colgroups = $variables['colgroups'];
-  $sticky = $variables['sticky'];
-  $empty = $variables['empty'];
+function light_skeleton_table($vars) {
+  $header = $vars['header'];
+  $rows = $vars['rows'];
+  $attributes = $vars['attributes'];
+  $caption = $vars['caption'];
+  $colgroups = $vars['colgroups'];
+  $sticky = $vars['sticky'];
+  $empty = $vars['empty'];
 
   // Add sticky headers, if applicable.
   if (count($header) && $sticky) {
@@ -211,8 +211,8 @@ function light_skeleton_table($variables) {
 }
 
 // Defining status messages.
-function light_skeleton_status_messages(&$variables) {
-  $display = $variables['display'];
+function light_skeleton_status_messages(&$vars) {
+  $display = $vars['display'];
   $output = '';
 
   $message_info = array(
@@ -252,11 +252,11 @@ function light_skeleton_status_messages(&$variables) {
 /**
  * theme_pager
  */
-function light_skeleton_pager($variables) {
-  $tags = $variables['tags'];
-  $element = $variables['element'];
-  $parameters = $variables['parameters'];
-  $quantity = $variables['quantity'];
+function light_skeleton_pager($vars) {
+  $tags = $vars['tags'];
+  $element = $vars['element'];
+  $parameters = $vars['parameters'];
+  $quantity = $vars['quantity'];
   global $pager_page_array, $pager_total;
 
   // Calculate various markers within this pager piece:
@@ -360,61 +360,75 @@ function light_skeleton_pager($variables) {
   }
 }
 
-function light_skeleton_preprocess_node(&$variables) {
-  $variables['view_mode'] = $variables['elements']['#view_mode'];
-  // Provide a distinct $teaser boolean.
-  $variables['teaser'] = $variables['view_mode'] == 'teaser';
-  $variables['node'] = $variables['elements']['#node'];
-  $node = $variables['node'];
+function light_skeleton_preprocess_field(&$vars) { //Replace your theme name MYTHEME here.
+  if ($node = menu_get_object()){
+    if($node->type == 'concert'){
+      // if it's a prestige concert and it's in full view mode
+      // don't display the prices links
+      if($vars['element']['#field_name'] == 'prices' && $node->field_type['und'][0]['tid'] != 5){
+        $vars['items']['0']['#markup'] = null;
+      }
+    }
+  }
+}
 
-  $variables['date'] = format_date($node->created);
-  $variables['name'] = theme('username', array('account' => $node));
+function light_skeleton_preprocess_node(&$vars) {
+
+
+  $vars['view_mode'] = $vars['elements']['#view_mode'];
+  // Provide a distinct $teaser boolean.
+  $vars['teaser'] = $vars['view_mode'] == 'teaser';
+  $vars['node'] = $vars['elements']['#node'];
+  $node = $vars['node'];
+
+  $vars['date'] = format_date($node->created);
+  $vars['name'] = theme('username', array('account' => $node));
 
   $uri = entity_uri('node', $node);
-  $variables['node_url'] = url($uri['path'], $uri['options']);
-  $variables['title'] = check_plain($node->title);
-  $variables['page'] = $variables['view_mode'] == 'full' && node_is_page($node);
+  $vars['node_url'] = url($uri['path'], $uri['options']);
+  $vars['title'] = check_plain($node->title);
+  $vars['page'] = $vars['view_mode'] == 'full' && node_is_page($node);
 
   // Flatten the node object's member fields.
-  $variables = array_merge((array) $node, $variables);
+  $vars = array_merge((array) $node, $vars);
 
   // Helpful $content variable for templates.
-  $variables += array('content' => array());
-  foreach (element_children($variables['elements']) as $key) {
-    $variables['content'][$key] = $variables['elements'][$key];
+  $vars += array('content' => array());
+  foreach (element_children($vars['elements']) as $key) {
+    $vars['content'][$key] = $vars['elements'][$key];
   }
 
-  // Make the field variables available with the appropriate language.
-  field_attach_preprocess('node', $node, $variables['content'], $variables);
+  // Make the field vars available with the appropriate language.
+  field_attach_preprocess('node', $node, $vars['content'], $vars);
 
 
   // Gather node classes.
-  $variables['classes_array'][] = drupal_html_class('node-' . $node->type);
-  if ($variables['promote']) {
-    $variables['classes_array'][] = 'node-promoted';
+  $vars['classes_array'][] = drupal_html_class('node-' . $node->type);
+  if ($vars['promote']) {
+    $vars['classes_array'][] = 'node-promoted';
   }
-  if ($variables['sticky']) {
-    $variables['classes_array'][] = 'node-sticky';
+  if ($vars['sticky']) {
+    $vars['classes_array'][] = 'node-sticky';
   }
-  if (!$variables['status']) {
-    $variables['classes_array'][] = 'node-unpublished';
+  if (!$vars['status']) {
+    $vars['classes_array'][] = 'node-unpublished';
   }
-  if ($variables['teaser']) {
-    $variables['classes_array'][] = 'node-teaser';
+  if ($vars['teaser']) {
+    $vars['classes_array'][] = 'node-teaser';
   }
-  if (isset($variables['preview'])) {
-    $variables['classes_array'][] = 'node-preview';
+  if (isset($vars['preview'])) {
+    $vars['classes_array'][] = 'node-preview';
   }
 
   // Clean up name so there are no underscores.
-  $variables['theme_hook_suggestions'][] = 'node__' . $node->type;
-  $variables['theme_hook_suggestions'][] = 'node__' . $node->nid;
+  $vars['theme_hook_suggestions'][] = 'node__' . $node->type;
+  $vars['theme_hook_suggestions'][] = 'node__' . $node->nid;
 }
 
 
-function light_skeleton_menu_link(array $variables) {
+function light_skeleton_menu_link(array $vars) {
 
-  $element = $variables['element'];
+  $element = $vars['element'];
   $sub_menu = '';
 
   $custom_class = ('navbar-item');
@@ -457,26 +471,26 @@ function light_skeleton_menu_link(array $variables) {
  * Overrides theme_menu_tree().
  * Add bootstrap 'navbar-nav' class to Top Navigation menu
  */
-function light_skeleton_menu_tree(&$variables) {
-  $output = '<ul id="menu" class="navbar-list">' . $variables['tree'] . '</ul>';
+function light_skeleton_menu_tree(&$vars) {
+  $output = '<ul id="menu" class="navbar-list">' . $vars['tree'] . '</ul>';
   return $output;
 }
 
-function light_skeleton_link($variables) {
+function light_skeleton_link($vars) {
 
   $classes = array();
-  if (!empty($variables['options']['attributes']['class'])) {
-    $classes = $variables['options']['attributes']['class'];
+  if (!empty($vars['options']['attributes']['class'])) {
+    $classes = $vars['options']['attributes']['class'];
 
     if (count($classes) > 1) {
       foreach ($classes as $key => $class) {
         if (substr($class, 0, 9) == 'halflings') {
-          unset($variables['options']['attributes']['class'][$key]);
+          unset($vars['options']['attributes']['class'][$key]);
         }
       }
     }
   }
-  return '<a href="' . check_plain(url($variables['path'], $variables['options'])) . '"' . drupal_attributes($variables['options']['attributes']) . '>' . ($variables['options']['html'] ? $variables['text'] : check_plain($variables['text'])) . '</a>';
+  return '<a href="' . check_plain(url($vars['path'], $vars['options'])) . '"' . drupal_attributes($vars['options']['attributes']) . '>' . ($vars['options']['html'] ? $vars['text'] : check_plain($vars['text'])) . '</a>';
 }
 
 

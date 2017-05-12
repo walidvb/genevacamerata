@@ -9,4 +9,10 @@
 		$(targetSelector).add(burger).toggleClass('open is-active');
 		$('body').toggleClass("has-panel-open");
 	});
+
+	$(document).on('click', '.krumo-root',function(e){
+		$('body').css({
+			'overflow-y': 'auto',
+		})
+	});
 })(jQuery);

@@ -1148,11 +1148,12 @@
 
 @media (min-width: 767px) {
   .admin-menu .region-sidepanel-left, .admin-menu .region-sidepanel-right {
-    top: 30px;
+    top: calc(30px + $header-height);
   }
 
   .navbar, .navbar-spacer {
     margin-bottom: 0;
+    border-bottom: none;
   }
 
   .sidebar, .page-content {
@@ -1213,13 +1214,20 @@ body .vertical-tabs {
 .vertical-tabs ul.vertical-tabs-list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: none;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.vertical-tabs ul.vertical-tabs-list li {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button {
-  flex: 0 0 50%;
+  flex-grow: 1;
   border-radius: 3px;
   background-color: #e3e3e3;
+  border: none;
 }
 .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button.selected, .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button:hover {
   background-color: #333333;
@@ -1299,26 +1307,29 @@ body .owl-theme .owl-dots .owl-dot span {
 
 .field-collection-view {
   border: none;
+  margin: auto;
 }
 .field-collection-view .field-name-field-compositor {
   font-size: .9em;
 }
 
-.views-field-field-type, .field-type-taxonomy-term-reference {
-  text-transform: uppercase;
-  color: #ff424d;
+.field-name-field-recommendation .node {
+  margin: auto;
 }
 
-.views-field-title, .views-field-field-artists {
-  text-transform: uppercase;
+.prices-pdfs {
+  margin-bottom: 1rem;
 }
-
-.concert-actions {
-  display: flex;
-  justify-content: space-between;
+.prices-pdfs a {
+  display: inline-block;
+  border: solid 1px #95989a;
+  color: #95989a;
+  border-radius: 3px;
+  padding: 2px 15px;
 }
-.concert-actions .button {
-  flex: 0 0 calc(50% - .5rem);
+.prices-pdfs a:hover {
+  background-color: #95989a;
+  color: white;
 }
 
 html, body {
@@ -1341,9 +1352,9 @@ body.has-panel-open {
 .region-sidepanel-left, .region-sidepanel-right {
   padding-left: 4.5rem;
   padding-right: 15px;
-  top: 0;
+  top: 65px;
   position: fixed;
-  height: calc(100vh - 85px);
+  height: calc(100vh - 65px);
   overflow: auto;
   z-index: 800;
   display: flex;
@@ -1351,12 +1362,13 @@ body.has-panel-open {
   justify-content: space-between;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.7);
-  margin-top: 85px;
+  padding-bottom: 15px;
 }
 @media (max-width: 767px) {
   .region-sidepanel-left, .region-sidepanel-right {
     height: 100vh;
     width: calc(100vw);
+    top: 0;
   }
 }
 @supports (backdrop-filter: blur()) {
@@ -1367,6 +1379,7 @@ body.has-panel-open {
 }
 
 .region-sidepanel-left {
+  min-width: 290px;
   left: -100%;
 }
 .region-sidepanel-left.open {
@@ -1449,6 +1462,9 @@ body.has-panel-open {
   margin-bottom: 0;
 }
 
+.section {
+  padding-bottom: 15px;
+}
 @media (min-width: 767px) {
   .section {
     overflow: auto;
@@ -1456,24 +1472,27 @@ body.has-panel-open {
 }
 @media (min-width: 991px) {
   .section {
-    height: calc(100vh - 85px);
+    height: calc(100vh - 65px);
     overflow: auto;
   }
 }
 
-.left-container .center-column {
-  margin-top: 15px;
-}
 @media (min-width: 767px) {
   .left-container {
-    height: calc(100vh - 85px);
+    height: calc(100vh - 65px);
     overflow: auto;
+  }
+  .left-container .center-column {
+    margin-top: 15px;
   }
 }
 @media (min-width: 991px) {
   .left-container {
     height: auto;
     overflow: visible;
+  }
+  .left-container .center-column {
+    margin-top: 0;
   }
 }
 
@@ -1497,7 +1516,7 @@ body.has-panel-open {
 }
 @media (min-width: 991px) {
   .view-id-artist_from_concert.view-display-id-panel_pane_2 .views-row {
-    height: calc(100vh - 85px);
+    height: calc(100vh - 65px);
     padding: 0 0 30px 0;
   }
 }
@@ -1518,7 +1537,7 @@ body.has-panel-open {
 }
 @media (min-width: 991px) {
   .view-id-news .views-row {
-    height: calc(100vh - 85px);
+    height: calc(100vh - 65px);
     padding: 0 0 30px 0;
   }
 }
@@ -1552,9 +1571,9 @@ body.has-panel-open {
 #filters {
   padding-left: 4.5rem;
   padding-right: 15px;
-  top: 0;
+  top: 65px;
   position: fixed;
-  height: calc(100vh - 85px);
+  height: calc(100vh - 65px);
   overflow: auto;
   z-index: 800;
   display: flex;
@@ -1562,13 +1581,14 @@ body.has-panel-open {
   justify-content: space-between;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.7);
-  height: calc(100vh - 85px);
+  height: calc(100vh - 65px);
   right: -100%;
 }
 @media (max-width: 767px) {
   #filters {
     height: 100vh;
     width: calc(100vw);
+    top: 0;
   }
 }
 @supports (backdrop-filter: blur()) {

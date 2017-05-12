@@ -19,12 +19,14 @@ body .vertical-tabs{
 	ul.vertical-tabs-list{
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-around;
+		justify-content: space-between;
 		border-top: none;
+		@include gapped-buttons($child-selector: 'li');
 		li.vertical-tab-button{
-			flex: 0 0 50%;
+			flex-grow: 1;
 			border-radius: $border-radius;
 			background-color: $light-grey;
+			border: none;
 			&.selected, &:hover{
 				background-color: $black;
 				color: $brand-color;
