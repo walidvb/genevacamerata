@@ -28,12 +28,15 @@
 
 .language-switcher-locale-url{
 	text-transform: uppercase;
-	li a{
-		padding: $padding-xs .5*$padding-xs;
+	display: flex;
+	li{ 
+		display: inline-block;
+		a{
+			padding: $padding-xs .5*$padding-xs;
+		}
 	}
 	.sidepanel &{
 		li{
-			display: inline-block;
 			&:first-child:after{
 				content: '/';
 				padding-left: .5*$padding-xs;

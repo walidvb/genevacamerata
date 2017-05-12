@@ -1,4 +1,4 @@
-#home-panels .section{
+.section{
 	@media #{$tablet}{
 		height: calc(100vh - #{$header-height});
 		// padding-top: $header-height;
@@ -34,26 +34,16 @@
 	}
 }
 
+.view-id-artist_from_concert.view-display-id-panel_pane_2{
+	@include full-height-element($outer: '.views-row', $inner: '.carousel-item');
+}
+
 .view-id-news{
 	&.inactive{
 		display: none;
 	}
 
-	.views-row{
-		height: 80vh;
-		@media #{$tablet}{
-			height: calc(100vh - #{$header-height});
-			padding: 0 0 2*$padding-xs 0;
-		}
-    width: 100%;
-	}
-	.news{
-    background-size: cover;
-    background-position: center;
-    display: inline-block;
-		width: 100%;
-		height: 100%;
-	}
+	@include full-height-element($outer: '.views-row', $inner: '.news');
 	.info{
 		background: $white;
 		position: absolute;

@@ -520,6 +520,9 @@
     display: none !important;
   }
 }
+#admin-menu input[type="text"] {
+  height: 18px;
+}
 
 @media (min-width: 767px) {
   .admin-menu .region-sidepanel-left, .admin-menu .region-sidepanel-right {
@@ -547,6 +550,15 @@ ul {
   list-style: none;
 }
 
+body fieldset {
+  background: none;
+  box-shadow: none;
+}
+
+.field-collection-container {
+  border: none;
+}
+
 .i18n-en .fr-only {
   display: none !important;
 }
@@ -557,6 +569,53 @@ ul {
 
 * {
   box-sizing: border-box;
+}
+
+body .vertical-tabs {
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  border: none;
+  background-color: none;
+}
+
+.vertical-tabs ul.vertical-tabs-list, .vertical-tabs ul.vertical-tabs-panes {
+  flex-basis: 100%;
+  width: auto;
+  margin: 0;
+  padding: 15px 0;
+}
+.vertical-tabs fieldset.vertical-tabs-pane {
+  padding: 0;
+}
+.vertical-tabs ul.vertical-tabs-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border-top: none;
+}
+.vertical-tabs ul.vertical-tabs-list li.vertical-tab-button {
+  flex: 0 0 50%;
+  border-radius: 3px;
+  background-color: #e3e3e3;
+}
+.vertical-tabs ul.vertical-tabs-list li.vertical-tab-button.selected, .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button:hover {
+  background-color: #333333;
+  color: #ff424d;
+}
+.vertical-tabs ul.vertical-tabs-list li.vertical-tab-button a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.vertical-tabs ul.vertical-tabs-list li.vertical-tab-button a:hover {
+  text-decoration: none;
+  outline: none;
+}
+.vertical-tabs ul.vertical-tabs-list li.vertical-tab-button a, .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button strong {
+  font-weight: normal;
+  color: inherit;
 }
 
 a {
@@ -591,7 +650,27 @@ body .owl-theme .owl-dots .owl-dot span {
   border-radius: 50%;
 }
 
-.views-field-field-type {
+.node-type-concert .section.center {
+  text-align: center;
+}
+
+.pane-artist-from-concert-panel-pane-1 .pane-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.field-name-field-program {
+  text-align: center;
+}
+
+.field-collection-view {
+  border: none;
+}
+.field-collection-view .field-name-field-compositor {
+  font-size: .9em;
+}
+
+.views-field-field-type, .field-type-taxonomy-term-reference {
   text-transform: uppercase;
   color: #ff424d;
 }
@@ -695,12 +774,13 @@ body.has-panel-open {
 
 .language-switcher-locale-url {
   text-transform: uppercase;
+  display: flex;
+}
+.language-switcher-locale-url li {
+  display: inline-block;
 }
 .language-switcher-locale-url li a {
   padding: 15px 7.5px;
-}
-.sidepanel .language-switcher-locale-url li {
-  display: inline-block;
 }
 .sidepanel .language-switcher-locale-url li:first-child:after {
   content: '/';
@@ -735,12 +815,12 @@ body.has-panel-open {
 }
 
 @media (min-width: 767px) {
-  #home-panels .section {
+  .section {
     height: calc(100vh - 85px);
     overflow: auto;
   }
 }
-#home-panels .section .inactive + .columns {
+.section .inactive + .columns {
   margin-left: 0% !important;
 }
 
@@ -774,6 +854,24 @@ body.has-panel-open {
   .view-concerts .view-content .views-row {
     flex-basis: 50%;
   }
+}
+
+.view-id-artist_from_concert.view-display-id-panel_pane_2 .views-row {
+  height: 80vh;
+  width: 100%;
+}
+@media (min-width: 767px) {
+  .view-id-artist_from_concert.view-display-id-panel_pane_2 .views-row {
+    height: calc(100vh - 85px);
+    padding: 0 0 30px 0;
+  }
+}
+.view-id-artist_from_concert.view-display-id-panel_pane_2 .carousel-item {
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .view-id-news.inactive {

@@ -42,7 +42,26 @@ body .owl-theme .owl-dots .owl-dot span{
 
 //============== custom
 
-.views-field-field-type{
+.node-type-concert .section.center{
+	text-align: center;
+}
+
+.pane-artist-from-concert-panel-pane-1 .pane-title{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.field-name-field-program{
+	text-align: center;
+}
+.field-collection-view{
+	border: none;	
+	.field-name-field-compositor{
+		font-size: .9em;
+	}
+}
+
+.views-field-field-type, .field-type-taxonomy-term-reference{
 	text-transform: uppercase;
 	color: $brand-color;
 }

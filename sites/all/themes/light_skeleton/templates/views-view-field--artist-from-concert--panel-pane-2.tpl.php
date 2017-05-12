@@ -22,6 +22,9 @@
  * the view is modified.
  */
 ?>
-<div class="carousel-item">
-	<?php print $output; ?>
-</div>
+<?php if($output): ?>
+	<div class="views-row">
+		<div class="carousel-item" style="background-image:url(<?php print $output; ?>)">
+		</div>
+	</div>
+<?php endif; ?>

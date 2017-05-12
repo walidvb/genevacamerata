@@ -63,3 +63,21 @@ $brand-color: #FF424D;
 	transition: all .3s ease-in-out;
 	@include backdrop();
 }
+
+@mixin full-height-element($outer: '.views-row', $inner: '.carousel-item'){
+	#{$outer}{
+		height: 80vh;
+		@media #{$tablet}{
+			height: calc(100vh - #{$header-height});
+			padding: 0 0 2*$padding-xs 0;
+		}
+	  width: 100%;
+	}
+	#{$inner}{
+		    background-size: cover;
+    background-position: center;
+    display: inline-block;
+		width: 100%;
+		height: 100%;
+	}
+}

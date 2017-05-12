@@ -3,6 +3,9 @@
 	@media #{$mobile}{
 		display: none!important;
 	}
+	input[type="text"]{
+		height: 18px;
+	}
 }
 @media #{$tablet}{
 	.admin-menu{
@@ -31,6 +34,13 @@ ul{
 	list-style: none;
 }
 
+body fieldset{
+	background: none;
+	box-shadow: none;
+}
+.field-collection-container{
+	border: none;
+}
 
 .i18n-en .fr-only{
 	display: none!important;
