@@ -1224,7 +1224,7 @@ body .vertical-tabs {
 .vertical-tabs ul.vertical-tabs-list li {
   margin-left: 5px;
   margin-right: 5px;
-  flex: 0 1 50%;
+  flex: "0 0 auto";
 }
 .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button {
   flex-grow: 1;
@@ -1282,7 +1282,6 @@ a, a:hover {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: bold;
-  width: 100%;
   display: inline-block;
   text-align: center;
 }
@@ -1597,7 +1596,7 @@ body.has-panel-open {
 .group-buttons > * {
   margin-left: 5px;
   margin-right: 5px;
-  flex: 0 1 50%;
+  flex: "0 0 auto";
 }
 
 #filters {

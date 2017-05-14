@@ -68,7 +68,7 @@ function light_skeleton_preprocess_page(&$vars) {
   $page = $vars['page'];
 
 
-  $content_class = '.col-xs-12';
+  $content_class = 'col-xs-12';
 
   $container_class = "";
 
