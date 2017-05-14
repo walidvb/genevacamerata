@@ -21,9 +21,8 @@ body .vertical-tabs{
 		flex-flow: row wrap;
 		justify-content: space-between;
 		border-top: none;
-		@include gapped-buttons($child-selector: 'li');
+		@include gapped-buttons($child-selector: 'li', $flex: '0 1 16rem');
 		li.vertical-tab-button{
-			flex-grow: 1;
 			border-radius: $border-radius;
 			background-color: $light-grey;
 			border: none;

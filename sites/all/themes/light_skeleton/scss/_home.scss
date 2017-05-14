@@ -31,7 +31,9 @@
 .view-display-id-type_in_list_1{
 	float: left;
 }
-
+.view-concerts{
+	@extend .row;
+}
 .view-concerts .view-content{
 	display: flex;
 	flex-flow: column;

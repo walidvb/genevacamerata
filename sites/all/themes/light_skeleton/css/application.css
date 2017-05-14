@@ -245,7 +245,7 @@
   padding-right: 15px;
 }
 
-.row {
+.row, .view-concerts {
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -1100,7 +1100,9 @@
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
-.row:after {
+.view-concerts:before,
+.row:after,
+.view-concerts:after {
   content: " ";
   display: table;
 }
@@ -1108,7 +1110,8 @@
 .clearfix:after,
 .container:after,
 .container-fluid:after,
-.row:after {
+.row:after,
+.view-concerts:after {
   clear: both;
 }
 
@@ -1224,10 +1227,9 @@ body .vertical-tabs {
 .vertical-tabs ul.vertical-tabs-list li {
   margin-left: 5px;
   margin-right: 5px;
-  flex: "0 0 auto";
+  flex: 0 1 16rem;
 }
 .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button {
-  flex-grow: 1;
   border-radius: 3px;
   background-color: #e3e3e3;
   border: none;
@@ -1300,6 +1302,25 @@ body .owl-theme .owl-dots .owl-dot span {
   width: 5px;
   height: 5px;
   border-radius: 50%;
+}
+
+.node-concert {
+  position: relative;
+  width: 100%;
+}
+
+.flippy li {
+  position: absolute;
+  top: -11px;
+}
+.flippy li a {
+  padding: 0 10px;
+}
+.flippy li.prev {
+  left: 30%;
+}
+.flippy li.next {
+  right: 30%;
 }
 
 .node-type-concert .section.center {
@@ -1596,7 +1617,7 @@ body.has-panel-open {
 .group-buttons > * {
   margin-left: 5px;
   margin-right: 5px;
-  flex: "0 0 auto";
+  flex: 0 0 auto;
 }
 
 #filters {

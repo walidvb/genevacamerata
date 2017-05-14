@@ -381,7 +381,7 @@ function light_skeleton_preprocess_field(&$vars) { //Replace your theme name MYT
     if($node->type == 'concert'){
       // if it's a prestige concert and it's in full view mode
       // don't display the prices links
-      if($vars['element']['#field_name'] == 'prices' && $node->field_type['und'][0]['tid'] != 5){
+      if($vars['element']['#field_name'] == 'prices' && (!$node->field_type || $node->field_type['und'][0]['tid'] != 5)){
         $vars['items']['0']['#markup'] = null;
       }
     }

@@ -59,6 +59,26 @@ body .owl-theme .owl-dots .owl-dot span{
 
 //============== custom
 
+.node-concert{
+	position: relative;
+	width: 100%;
+}
+.flippy{
+	li{
+		position: absolute;
+    top: -11px;
+    a{
+    	padding: 0 10px;
+    }
+    // magic number that leaves space for the type
+    &.prev{
+    	left: 30%;
+    }
+    &.next{
+    	right: 30%;
+    }
+	}
+}
 .node-type-concert .section.center{
 	text-align: center;
 }
