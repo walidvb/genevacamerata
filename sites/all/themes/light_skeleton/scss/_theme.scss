@@ -21,22 +21,24 @@ a, a:hover{
 	@include underlined-link();
 }
 
-@mixin button(){
+@mixin button($color: $black, $color-hover: $brand-color){
 	background-color: $light-grey;
-	color: $black;
+	color: $color;
 	border-radius: $border-radius;
 	padding: 0 1rem;
 	border: none;
 	margin-bottom: 1rem;
-	line-height: 4rem;
+	line-height: 2rem;
 	text-transform: uppercase;
-	font-size: 1rem;
-	font-weight: bold;
+	font-size: $font-small;
+	font-weight: $bold;
 	display: inline-block;
 	text-align: center;
+	letter-spacing: $letter-spacing-large;
+	height: auto;
 	&.active, &:hover{
 		background-color: $black;
-		color: $brand-color;
+		color: $color-hover;
 		box-shadow: none;
 	}
 }
@@ -79,6 +81,8 @@ body .owl-theme .owl-dots .owl-dot span{
     }
 	}
 }
+
+
 .node-type-concert .section.center{
 	text-align: center;
 }
@@ -88,21 +92,55 @@ body .owl-theme .owl-dots .owl-dot span{
 	text-align: center;
 }
 
+.field-name-title{
+	h1{
+		font-size: $font-xlarge;
+		font-weight: $bold;
+		letter-spacing: $letter-spacing-large;
+	}
+}
 .field-name-field-program{
 	text-align: center;
-}
-.field-collection-view{
 	border: none;	
 	margin: auto;
 	.field-name-field-compositor{
-		font-size: .9em;
+		font-size: $font-small;
+	}
+	.field-name-field-pieces{
+		font-weight: $bold;
 	}
 }
+
+.field-name-field-type{
+	text-transform: uppercase;
+	color: $brand-color;
+	font-size: $font-small;
+	letter-spacing: $letter-spacing-large;
+}
+
+.buy-button{
+	@include button($color: $brand-color);
+}
+
+.field-name-field-artists{
+	font-style: italic;	
+	text-transform: uppercase;
+}
+
+.field-collection-item-field-program{
+	margin: 0rem auto 1rem;
+}
+
+
 
 .field-name-field-recommendation{
 	.node{
 		margin: auto;
-	}	
+	}
+	h2{
+		font-size: $font-smallest;
+		text-transform: uppercase;
+	}
 }
 
 .prices-pdfs{

@@ -20,7 +20,7 @@ function _buy_link_formatter_view($entity_type, $entity, $field, $instance, $lan
     foreach($items as $index => $item)
     {
       $element[$index]['#type'] = 'markup';
-      $link = '<a class="button" href="' . $item['url'] . '" target="_blank">' . t('Buy') . '</a>';
+      $link = '<a class="buy-button" href="' . $item['url'] . '" target="_blank">' . t('Buy') . '</a>';
       $element[$index]['#markup'] = $link; // Assign it to the #markup of the element
     }
     $element['#prefix'] = '<div class="buy-link">';

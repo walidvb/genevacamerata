@@ -98,10 +98,12 @@
   padding-top: 2px;
   text-align: center;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .pretty-calendar-month .month-title {
   padding-top: 2px;
+  text-transform: uppercase;
 }
 
 .pretty-calendar-month .calendar-prev,
@@ -138,11 +140,13 @@
 .pretty-calendar-month a .calendar-next {
   background: transparent url("/sites/all/themes/light_skeleton/resources/arrow_left.png") no-repeat 0;
   background-size: contain;
+  transform: rotateY(180deg);
 }
 
 .pretty-calendar-month a:hover .calendar-next {
   background: transparent url("/sites/all/themes/light_skeleton/resources/arrow_left.png") no-repeat 0;
   background-size: contain;
+  transform: rotateY(180deg);
 }
 
 /* calendar loader styles */

@@ -1,4 +1,5 @@
 @import "variables";
+@import "fonts";
 @import "fluid";
 @import "reset";
 @import "horz-tabs";
@@ -10,9 +11,15 @@
 @import "webforms";
 
 
+
+html, body{
+  font-size: 16px;
+}
+
 body{
 	height: 100vh;
 	overflow: hidden;
+  letter-spacing: $letter-spacing-small;
 }
 
 .debug-helpers{

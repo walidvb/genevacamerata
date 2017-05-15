@@ -71,7 +71,7 @@
 		color: $brand-color;
 	}
 	.subtitle{
-		font-weight: bold;
+		font-weight: $bold;
 	}
 	.owl-dots{
 		position: absolute;
@@ -112,5 +112,32 @@
 		@extend .col-sm-12;
 		@extend .col-md-6;
 		@extend .col-lg-4;
+	}
+}
+
+
+
+//============= CUSTOM TYPOGRAPHY
+.view-concerts 
+{
+	.field-name-field-date {
+		font-weight: $bold;
+	}
+	.field-name-title h2{
+		font-weight: $bold;
+		font-size: $font-large;
+		text-transform: uppercase;
+		letter-spacing: $letter-spacing-large;
+	}
+	.node-artist{
+		margin-bottom: .5*$margin-xs;
+		h3{
+			font-size: $font-smallest;
+			margin-bottom: 0;
+		}
+		.field-name-field-instrument{
+			font-size: $font-smallest;
+			text-transform: none;
+		}
 	}
 }
