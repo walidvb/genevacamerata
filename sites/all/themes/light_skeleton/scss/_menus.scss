@@ -18,7 +18,7 @@
 	@include underlined-link();
 	line-height: 2.5rem;
 }
-.main-menu, .region-main-menu, .navbar-list{
+.main-menu, .region-main-menu, .main-menu .navbar-list{
 	display: flex;
 	align-items: center;
 }

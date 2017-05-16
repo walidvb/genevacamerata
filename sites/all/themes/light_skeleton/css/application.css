@@ -1190,7 +1190,7 @@ h1, h2, h3 {
 
 @media (min-width: 767px) {
   .admin-menu .region-sidepanel-left, .admin-menu .region-sidepanel-right {
-    top: calc(30px + $header-height);
+    top: calc(30px + 65px);
   }
 
   .navbar, .navbar-spacer {
@@ -1327,6 +1327,7 @@ a, a:hover {
   text-align: center;
   letter-spacing: 0.1rem;
   height: auto;
+  white-space: pre-wrap;
 }
 .button.active, .field-name-node-link a.active, .button:hover, .field-name-node-link a:hover {
   background-color: #333333;
@@ -1343,6 +1344,11 @@ body .owl-theme .owl-dots .owl-dot span {
   width: 5px;
   height: 5px;
   border-radius: 50%;
+}
+
+.pane-title, .month-title {
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .node-concert {
@@ -1413,6 +1419,7 @@ body .owl-theme .owl-dots .owl-dot span {
   text-align: center;
   letter-spacing: 0.1rem;
   height: auto;
+  white-space: pre-wrap;
 }
 .buy-button.active, .buy-button:hover {
   background-color: #333333;
@@ -1537,7 +1544,7 @@ body.has-panel-open {
   box-shadow: inset 0 -1px 0px #ff424d;
 }
 
-.main-menu, .region-main-menu, .navbar-list {
+.main-menu, .region-main-menu, .main-menu .navbar-list {
   display: flex;
   align-items: center;
 }
@@ -1779,6 +1786,8 @@ body.has-panel-open {
 }
 #filters .button, #filters .field-name-node-link a, .field-name-node-link #filters a {
   width: 100%;
+  font-size: 0.75rem;
+  line-height: 1.8;
 }
 
 .trigger {

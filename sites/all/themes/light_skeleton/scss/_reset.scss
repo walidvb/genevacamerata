@@ -20,7 +20,7 @@ h1,h2,h3{
 @media #{$tablet}{
 	.admin-menu{
 		.region-sidepanel-left, .region-sidepanel-right{
-			top: calc(30px + $header-height);
+			top: calc(30px + #{$header-height});
 		}
 	}
 
