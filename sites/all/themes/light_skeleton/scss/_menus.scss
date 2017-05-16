@@ -28,8 +28,18 @@
 .main-menu, .region-main-menu, .main-menu .navbar-list{
 	display: flex;
 	align-items: center;
+	.navbar{
+		flex: 1 0 auto;
+		justify-content: flex-start;
+		li:not(:first-child){
+			margin-left: $margin-xs;
+		}
+	}
 }
 
+#block-system-main-menu{
+	width: 100%;
+}
 #navigation{
 	@media #{$tablet}{
 	}
@@ -43,6 +53,7 @@
 //=========== LOCALES
 
 .language-switcher-locale-url{
+	display: none!important;
 	text-transform: uppercase;
 	display: flex;
 	li{ 
@@ -106,6 +117,7 @@
 .logo{
 	padding-right: 2rem;
 	@media #{$tablet}{
+		margin-left: 4rem;
 		max-width: 10rem;
 	}
 }

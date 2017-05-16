@@ -1180,6 +1180,7 @@ body {
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1188,8 +1189,7 @@ a, a:hover {
 }
 
 #admin-menu {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 @media (max-width: 767px) {
   #admin-menu {
@@ -1217,7 +1217,7 @@ h1, h2, h3 {
 
 @media (min-width: 767px) {
   .admin-menu .region-sidepanel-left, .admin-menu .region-sidepanel-right {
-    top: calc(30px + 65px);
+    top: calc(30px + 56px);
   }
 
   .navbar, .navbar-spacer {
@@ -1240,12 +1240,12 @@ img {
 
 ul {
   list-style: none;
+  margin-bottom: 0;
 }
 
 body fieldset {
   background: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .field-collection-container {
@@ -1265,26 +1265,19 @@ body fieldset {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body .vertical-tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
   margin: 0;
   border: none;
   background-color: none;
 }
 
 .vertical-tabs ul.vertical-tabs-list, .vertical-tabs ul.vertical-tabs-panes {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
   width: auto;
   margin: 0;
   padding: 15px 0;
@@ -1293,16 +1286,9 @@ body .vertical-tabs {
   padding: 0;
 }
 .vertical-tabs ul.vertical-tabs-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-between;
   border-top: none;
   justify-content: space-between;
   display: flex;
@@ -1312,9 +1298,7 @@ body .vertical-tabs {
 .vertical-tabs ul.vertical-tabs-list li {
   margin-left: 5px;
   margin-right: 5px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 16rem;
-          flex: 0 1 16rem;
+  flex: 0 1 16rem;
 }
 .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button {
   border-radius: 3px;
@@ -1357,8 +1341,7 @@ a, a:hover {
 }
 .menu a:hover, .menu a.active {
   color: #333333;
-  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
-          box-shadow: inset 0 -1px 0px #ff424d;
+  box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .button, .field-name-node-link a {
@@ -1381,8 +1364,7 @@ a, a:hover {
 .button.active, .field-name-node-link a.active, .button:hover, .field-name-node-link a:hover {
   background-color: #333333;
   color: #ff424d;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 body .owl-theme .owl-dots .owl-dot.active span, body .owl-theme .owl-dots .owl-dot:hover span {
@@ -1474,8 +1456,7 @@ body .owl-theme .owl-dots .owl-dot span {
 .buy-button.active, .buy-button:hover {
   background-color: #333333;
   color: #ff424d;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .field-name-field-artists {
@@ -1543,23 +1524,15 @@ body.has-panel-open {
 .region-sidepanel-left, .region-sidepanel-right {
   padding-left: 3rem;
   padding-right: 15px;
-  top: 65px;
+  top: 56px;
   position: fixed;
-  height: calc(100vh - 65px);
+  height: calc(100vh - 56px);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 800;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: all .3s ease-in-out;
+  flex-flow: column;
+  justify-content: space-between;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.7);
   padding-bottom: 15px;
@@ -1572,11 +1545,10 @@ body.has-panel-open {
     top: 91px;
   }
 }
-@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
+@supports (backdrop-filter: blur()) {
   .region-sidepanel-left, .region-sidepanel-right {
     background-color: rgba(255, 255, 255, 0.6);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
   }
 }
 
@@ -1626,23 +1598,13 @@ body.has-panel-open {
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
 }
 
 .side-left .navbar-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
 }
 
 .navbar-link {
@@ -1653,28 +1615,32 @@ body.has-panel-open {
 }
 .navbar-link:hover, .navbar-link.active {
   color: #333333;
-  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
-          box-shadow: inset 0 -1px 0px #ff424d;
+  box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .main-menu, .region-main-menu, .main-menu .navbar-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+}
+.main-menu .navbar, .region-main-menu .navbar, .main-menu .navbar-list .navbar {
+  flex: 1 0 auto;
+  justify-content: flex-start;
+}
+.main-menu .navbar li:not(:first-child), .region-main-menu .navbar li:not(:first-child), .main-menu .navbar-list .navbar li:not(:first-child) {
+  margin-left: 15px;
+}
+
+#block-system-main-menu {
+  width: 100%;
 }
 
 .region-main-menu {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .language-switcher-locale-url {
+  display: none !important;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .language-switcher-locale-url li {
@@ -1699,13 +1665,11 @@ body.has-panel-open {
   position: relative;
 }
 .main-menu .language-switcher-locale-url:hover li:not(.active) {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 .main-menu .language-switcher-locale-url li:not(.active) {
   position: absolute;
   z-index: 0;
-  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
@@ -1722,8 +1686,6 @@ body.has-panel-open {
 }
 
 .js #menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1736,6 +1698,7 @@ body.has-panel-open {
 }
 @media (min-width: 767px) {
   .logo {
+    margin-left: 4rem;
     max-width: 10rem;
   }
 }
@@ -1750,14 +1713,14 @@ body.has-panel-open {
 }
 @media (min-width: 991px) {
   .section {
-    height: calc(100vh - 65px);
+    height: calc(100vh - 56px);
     overflow: auto;
   }
 }
 
 @media (min-width: 767px) {
   .left-container {
-    height: calc(100vh - 65px);
+    height: calc(100vh - 56px);
     overflow: auto;
   }
   .left-container .center-column {
@@ -1783,30 +1746,17 @@ body.has-panel-open {
 }
 
 .view-concerts .view-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
 }
 @media (min-width: 767px) {
   .view-concerts .view-content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
   }
 }
 .view-concerts .view-content .views-row {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
 }
 
 .view-id-artist_from_concert.view-display-id-panel_pane_2 .views-row {
@@ -1815,7 +1765,7 @@ body.has-panel-open {
 }
 @media (min-width: 991px) {
   .view-id-artist_from_concert.view-display-id-panel_pane_2 .views-row {
-    height: calc(100vh - 65px);
+    height: calc(100vh - 56px);
     padding: 0 0 30px 0;
   }
 }
@@ -1846,7 +1796,7 @@ body.has-panel-open {
 }
 @media (min-width: 991px) {
   .view-id-news .views-row {
-    height: calc(100vh - 65px);
+    height: calc(100vh - 56px);
     padding: 0 0 30px 0;
   }
 }
@@ -1887,11 +1837,7 @@ body.has-panel-open {
 }
 
 .group-buttons {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: space-between;
   display: flex;
   margin-left: -5px;
   margin-right: -5px;
@@ -1900,9 +1846,7 @@ body.has-panel-open {
 .group-buttons > * {
   margin-left: 5px;
   margin-right: 5px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .view-concerts .field-name-field-date {
@@ -1935,27 +1879,19 @@ body.has-panel-open {
 #filters {
   padding-left: 3rem;
   padding-right: 15px;
-  top: 65px;
+  top: 56px;
   position: fixed;
-  height: calc(100vh - 65px);
+  height: calc(100vh - 56px);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 800;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: all .3s ease-in-out;
+  flex-flow: column;
+  justify-content: space-between;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
-  height: calc(100vh - 65px);
+  height: calc(100vh - 56px);
   right: -100%;
 }
 @media (max-width: 767px) {
@@ -1966,11 +1902,10 @@ body.has-panel-open {
     top: 91px;
   }
 }
-@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
+@supports (backdrop-filter: blur()) {
   #filters {
     background-color: rgba(255, 255, 255, 0.6);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
   }
 }
 #filters.open {
@@ -2001,14 +1936,12 @@ body.has-panel-open {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  -webkit-transition: alllaur3s ease-in-out;
   transition: alllaur3s ease-in-out;
 }
-@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
+@supports (backdrop-filter: blur()) {
   .trigger {
     background-color: rgba(255, 255, 255, 0.6);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
   }
 }
 .trigger.trigger-right {
@@ -2025,8 +1958,7 @@ body.has-panel-open {
   position: fixed;
   background-color: transparent !important;
   right: calc(100% - 2rem);
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
 }
 
 .program {
@@ -2077,11 +2009,10 @@ body {
   padding: 5px;
   background: white;
   color: #111111;
-  -webkit-box-shadow: inset 0px 0px 1px #111111;
-          box-shadow: inset 0px 0px 1px #111111;
+  box-shadow: inset 0px 0px 1px #111111;
 }
 .debug-helpers .size {
   text-align: center;
 }
 
-/*# sourceMappingURL=to.css.map */
+/*# sourceMappingURL=application.css.map */
