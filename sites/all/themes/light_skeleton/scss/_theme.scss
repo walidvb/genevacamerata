@@ -81,10 +81,10 @@ body .owl-theme .owl-dots .owl-dot span{
     }
     // magic number that leaves space for the type
     &.prev{
-    	left: 30%;
+    	left: 0%;
     }
     &.next{
-    	right: 30%;
+    	right: 0%;
     }
 	}
 }
@@ -132,6 +132,9 @@ body .owl-theme .owl-dots .owl-dot span{
 .field-name-field-artists{
 	font-style: italic;	
 	text-transform: uppercase;
+}
+.field-name-field-instrument {
+	text-transform: lowercase;
 }
 
 .field-collection-item-field-program{

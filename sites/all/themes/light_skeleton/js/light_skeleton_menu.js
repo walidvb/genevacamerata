@@ -3,7 +3,6 @@
   // This will fire when document is ready:
   $(document).ready(function() {
 
-
     $("table.views-table").addClass("u-full-width");
 
     $(window).resize(function() {
@@ -14,11 +13,7 @@
         $(".breadcrumb").prev('.navbar').remove();
 
         // Removing Menu Skeleton For Mobile
-        $(".navbar").removeClass("navbar")
         $('nav#navigation').removeAttr('id');
-        $(".navbar-list").removeClass("navbar-list")
-        $(".navbar-item").removeClass("navbar-item")
-        $(".navbar-link").removeClass("navbar-link")
 
         if (!$("#show-menu").hasClass("stop-exit")) {
           // This will prevent an infinite loop on adding the mobile menu.

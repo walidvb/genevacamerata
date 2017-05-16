@@ -3,7 +3,7 @@ var $ = jQuery;
 	var owlOptions = {
 		items: 1,
 		loop: true,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 5000,
 	};
 

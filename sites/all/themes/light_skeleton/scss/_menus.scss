@@ -1,8 +1,15 @@
 .navbar-list{
+	.navbar-item{
+		width: auto;
+		display: inline-block;
+	}
 	.navbar-link{
 		font-size: $font-large;
 	}
-	
+}
+.menu{
+	display: flex;
+	flex-flow: column;
 }
 
 .side-left{
@@ -75,12 +82,30 @@
 
 //============ SOCIAL
 .block-social-media-links .horizontal li, .pane-social-media-link-widget .horizontal li{
-	max-width: 5rem;
+	max-width: 3rem;
 }
 
 //============ CONTACT
 #block-block-1{
 	p{
 		margin-bottom: 0;
+	}
+}
+
+// mobile
+.show-menu, .stop-exit, #show-menu{
+	display: none;
+}
+.js #menu{
+	display: flex;
+}
+
+#navigation-2{
+	display: none;
+}
+.logo{
+	padding-right: 2rem;
+	@media #{$tablet}{
+		max-width: 10rem;
 	}
 }

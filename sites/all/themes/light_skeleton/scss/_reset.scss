@@ -1,3 +1,7 @@
+a, a:hover{
+	text-decoration: none;
+}
+
 
 #admin-menu{
 	box-shadow: none;
@@ -8,7 +12,11 @@
 		height: 18px;
 	}
 }
-
+@media #{$mobile}{
+	html body.admin-menu{
+		margin-top: 0px!important;
+	}
+}
 h2{
 	font-size: $font-large;
 	margin-bottom: 1rem;
@@ -60,6 +68,22 @@ body fieldset{
 	display: none!important;
 }
 
+.sidebar, .page-content{
+	padding-top: 0px;
+}
 *{
 	box-sizing: border-box;
 }
+
+// body nav li a {
+//   display: block;
+//   min-width: auto;
+//   height: auto;
+//   text-align: left;
+//   line-height: auto;
+//   background: none;
+//   text-decoration: none;
+//   background-color: none;
+//   border: none;
+//   box-shadow: none;
+// }

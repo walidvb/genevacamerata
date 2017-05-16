@@ -6,13 +6,13 @@
 function _light_skeleton_add_css() {
   $theme_path = path_to_theme();
   drupal_add_css($theme_path . '/css/light_skeleton_skeleton.css');
-  drupal_add_css($theme_path . '/css/light_skeleton_responsive_nav.css');
-  drupal_add_css($theme_path . '/css/light_skeleton_style.css');
+  //drupal_add_css($theme_path . '/css/light_skeleton_responsive_nav.css');
+  // drupal_add_css($theme_path . '/css/light_skeleton_style.css');
   $styles = [
-  '/css/application.css',
   '/bower_components/css-hamburgers/dist/hamburgers.min.css',
   '/bower_components/owl.carousel/dist/assets/owl.carousel.css',
-  '/bower_components/owl.carousel/dist/assets/owl.theme.default.css'
+  '/bower_components/owl.carousel/dist/assets/owl.theme.default.css',
+  '/css/application.css'
   ];
   foreach ($styles as $key => $style) {
     drupal_add_css($theme_path . $style);
@@ -24,7 +24,6 @@ function _light_skeleton_add_css() {
  */
 function _light_skeleton_add_js() {
   $theme_path = path_to_theme();
-  drupal_add_js($theme_path . '/js/light_skeleton_menu.js');
   $scripts = [
   '/bower_components/owl.carousel/dist/owl.carousel.min.js', 
   '/js/myScripts.js', 

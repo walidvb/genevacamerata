@@ -21,7 +21,6 @@
  * regardless of any changes in the aliasing that might happen if
  * the view is modified.
  */
-dpm($field);
 ?>
 
 <?php print htmlentities($field->original_value); ?>

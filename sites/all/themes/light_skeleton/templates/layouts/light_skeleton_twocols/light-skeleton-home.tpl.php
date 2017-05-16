@@ -1,7 +1,6 @@
 <div id="home-panels" class="row">
-  <div class="left-container col-xs-12 col-sm-8 col-md-10">
+  <div class="left-container section-container col-xs-12 col-sm-8 col-md-10">
     <div class="row">
-      
       <?php if(!empty($content['left'])): ?>
         <div class="section left-column col-xs-12 col-md-7">
           <?php print $content['left']; ?>

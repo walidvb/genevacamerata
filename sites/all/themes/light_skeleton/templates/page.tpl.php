@@ -16,16 +16,17 @@
 <div class="container" id="wrapper">
   <?php if (($page['main_menu'])): ?>
     <div class="main-menu">
-      <button class="hamburger hamburger--arrow" type="button" data-panel-target=".region-sidepanel-left">
+      <button class="hamburger hamburger--squeeze" type="button" data-panel-target=".region-sidepanel-left">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-        <img class="logo" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        <img class="logo visible-xs" src="/sites/all/themes/light_skeleton/resources/logo-small.png" alt="<?php print t('Home'); ?>" />
+        <img class="logo hidden-xs" src="/sites/all/themes/light_skeleton/resources/logo.png" alt="<?php print t('Home'); ?>" />
       </a>
 
-      <nav id="navigation" class="navbar replaceme">
+      <nav id="navigation-2" class="navbar">
         <?php print render($page['main_menu']); ?>
       </nav>
     </div>

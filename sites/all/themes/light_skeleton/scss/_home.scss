@@ -60,26 +60,36 @@
 	&.inactive{
 		display: none;
 	}
-
+	margin-left: -$padding-mobile;
+	margin-right: -$padding-mobile;
+	@media #{$tablet}{
+		margin-left: 0;
+		margin-right: 0;
+	}
 	@include full-height-element($outer: '.views-row', $inner: '.news');
 	.info{
 		background: $white;
 		position: absolute;
-		bottom: 3*$padding-xs;
+		bottom: $padding-xs;
 		left:  2*$padding-xs;
-		padding: $padding-xs $padding-xs 2*$padding-xs $padding-xs;
+		max-width: 75%;
+		width: 75%;
+		min-height: 8rem;
+		border-radius: $border-radius;
+		padding: .5*$padding-xs;
 	}
 	.title{
 		text-transform: uppercase;
 		color: $brand-color;
+		font-size: $font-smallest;
 	}
 	.subtitle{
-		font-weight: $bold;
+		font-weight: $bolder;
 	}
 	.owl-dots{
 		position: absolute;
-		bottom: 3*$padding-xs;
-		left: calc(#{3*$padding-xs} - 5px);	
+		bottom: $padding-xs;
+		left: calc(#{2*$padding-xs} + 5px);	
 	}
 }
 
@@ -125,22 +135,28 @@
 {
 	.field-name-field-date {
 		font-weight: $bold;
+		font-size: $font-small;
+		margin-bottom: .5rem;
 	}
 	.field-name-title h2{
 		font-weight: $bold;
 		font-size: $font-large;
 		text-transform: uppercase;
 		letter-spacing: $letter-spacing-large;
+		margin-bottom: 0;
+	}
+	.field-name-field-artists{
+		margin-bottom: .1rem;
 	}
 	.node-artist{
-		margin-bottom: .5*$margin-xs;
+		margin-bottom: .3rem;
 		h3{
 			font-size: $font-smallest;
 			margin-bottom: 0;
 		}
 		.field-name-field-instrument{
 			font-size: $font-smallest;
-			text-transform: none;
+			line-height: $font-smallest;
 		}
 	}
 }
