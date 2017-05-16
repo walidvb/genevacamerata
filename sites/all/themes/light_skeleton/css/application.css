@@ -1633,6 +1633,10 @@ body.has-panel-open {
   float: left;
 }
 
+.view-concerts .item-list {
+  display: none;
+}
+
 .view-concerts .view-content {
   display: flex;
   flex-flow: column;
@@ -1858,9 +1862,13 @@ html, body {
 }
 
 body {
-  height: 100vh;
-  overflow: hidden;
   letter-spacing: 0.05rem;
+}
+@media (min-width: 767px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .debug-helpers {

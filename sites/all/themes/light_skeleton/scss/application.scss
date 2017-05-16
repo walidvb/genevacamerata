@@ -17,8 +17,10 @@ html, body{
 }
 
 body{
-	height: 100vh;
-	overflow: hidden;
+  @media #{$tablet}{
+  	height: 100vh;
+  	overflow: hidden;
+  }
   letter-spacing: $letter-spacing-small;
 }
 

@@ -33,6 +33,9 @@
 }
 .view-concerts{
 	@extend .row;
+	.item-list{
+		display: none;
+	}
 }
 .view-concerts .view-content{
 	display: flex;
