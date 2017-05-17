@@ -271,8 +271,8 @@ body {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 23px;
-  padding-right: 23px;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media (min-width: 767px) {
   .container-fluid {
@@ -282,8 +282,8 @@ body {
 }
 
 .row, .view-concerts {
-  margin-left: -23px;
-  margin-right: -23px;
+  margin-left: -0;
+  margin-right: -0;
 }
 @media (min-width: 767px) {
   .row, .view-concerts {
@@ -295,8 +295,8 @@ body {
 .col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .full-width-concerts .pane-types-type-in-list-1, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .full-width-concerts .view-concerts .view-content .views-row, .col-xs-4, .col-sm-4, .full-width-concerts .pane-types-type-in-list-1, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-concerts .view-content .views-row, .col-md-6, .full-width-concerts .view-concerts .view-content .views-row, .col-lg-6, .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .full-width-concerts .view-concerts, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .full-width-concerts .view-concerts, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .full-width-concerts .center-column, .full-width-concerts .pane-types-type-in-list-1, .full-width-concerts .view-concerts, .full-width-concerts .view-concerts .view-content .views-row, .col-sm-12, .full-width-concerts .view-concerts .view-content .views-row, .col-md-12, .view-concerts .view-content .views-row, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 23px;
-  padding-right: 23px;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media (min-width: 767px) {
   .col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .full-width-concerts .pane-types-type-in-list-1, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .full-width-concerts .view-concerts .view-content .views-row, .col-xs-4, .col-sm-4, .full-width-concerts .pane-types-type-in-list-1, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-concerts .view-content .views-row, .col-md-6, .full-width-concerts .view-concerts .view-content .views-row, .col-lg-6, .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .full-width-concerts .view-concerts, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .full-width-concerts .view-concerts, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .full-width-concerts .center-column, .full-width-concerts .pane-types-type-in-list-1, .full-width-concerts .view-concerts, .full-width-concerts .view-concerts .view-content .views-row, .col-sm-12, .full-width-concerts .view-concerts .view-content .views-row, .col-md-12, .view-concerts .view-content .views-row, .col-lg-12 {
@@ -1357,6 +1357,7 @@ a, a:hover {
   letter-spacing: 0.1rem;
   height: auto;
   width: 100%;
+  min-width: 150px;
 }
 .button.active, .field-name-node-link a.active, .button:hover, .field-name-node-link a:hover {
   background-color: #333333;
@@ -1387,7 +1388,10 @@ body .owl-theme .owl-dots .owl-dot span {
 
 .flippy li {
   position: absolute;
-  top: -11px;
+  font-size: 2rem;
+  line-height: 1;
+  top: -17px;
+  font-weight: 600;
 }
 .flippy li a {
   padding: 0 10px;
@@ -1414,6 +1418,10 @@ body .owl-theme .owl-dots .owl-dot span {
   letter-spacing: 0.1rem;
 }
 
+.field-name-field-date {
+  font-weight: 600;
+}
+
 .field-name-field-program {
   text-align: center;
   border: none;
@@ -1425,6 +1433,10 @@ body .owl-theme .owl-dots .owl-dot span {
 .field-name-field-program .field-name-field-pieces {
   font-weight: 600;
 }
+.field-name-field-program .field-name-field-mention-1 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
 
 .field-name-field-type {
   text-transform: uppercase;
@@ -1433,7 +1445,12 @@ body .owl-theme .owl-dots .owl-dot span {
   letter-spacing: 0.1rem;
 }
 
+.field-name-field-type {
+  margin-bottom: 1rem;
+}
+
 .buy-button {
+  margin-top: 1rem;
   background-color: #e3e3e3;
   color: #ff424d;
   border-radius: 3px;
@@ -1449,6 +1466,8 @@ body .owl-theme .owl-dots .owl-dot span {
   letter-spacing: 0.1rem;
   height: auto;
   width: 100%;
+  min-width: 150px;
+  width: auto;
 }
 .buy-button.active, .buy-button:hover {
   background-color: #333333;
@@ -1477,19 +1496,54 @@ body .owl-theme .owl-dots .owl-dot span {
   text-transform: uppercase;
 }
 
-.prices-pdfs {
-  margin-bottom: 1rem;
-}
 .prices-pdfs a {
-  display: inline-block;
-  border: solid 1px #95989a;
-  color: #95989a;
+  background-color: #e3e3e3;
+  color: #777777;
   border-radius: 3px;
-  padding: 2px 15px;
+  padding: 0 1rem;
+  border: none;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  height: auto;
+  width: 100%;
+  min-width: 150px;
+  font-size: 0.75rem;
+  width: auto;
+  line-height: 1.4217;
+  margin-bottom: 0;
 }
-.prices-pdfs a:hover {
-  background-color: #95989a;
+.prices-pdfs a.active, .prices-pdfs a:hover {
+  background-color: #777777;
   color: white;
+  box-shadow: none;
+}
+
+.right-col .field-name-field-recommendation {
+  display: inline-block;
+}
+@media (min-width: 767px) {
+  .right-col .field-name-field-recommendation {
+    display: none;
+  }
+}
+
+.node .field-name-field-recommendation {
+  display: none;
+}
+@media (min-width: 767px) {
+  .node .field-name-field-recommendation {
+    display: inline-block;
+  }
+}
+
+.vertical-tabs-list {
+  font-style: italic;
 }
 
 html, body {
@@ -1519,7 +1573,7 @@ html, body {
 }
 
 .region-sidepanel-left, .region-sidepanel-right {
-  padding-left: 3rem;
+  padding-left: 4.1rem;
   padding-right: 15px;
   top: 56px;
   position: fixed;
@@ -1529,7 +1583,7 @@ html, body {
   z-index: 800;
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.9);
   padding-bottom: 15px;
@@ -1551,12 +1605,9 @@ html, body {
 
 .region-sidepanel-left {
   min-width: 290px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   left: -100%;
-}
-@media (min-width: 767px) {
-  .region-sidepanel-left {
-    padding-top: 3rem;
-  }
 }
 .region-sidepanel-left.open {
   left: 0;
@@ -1591,8 +1642,8 @@ body {
 }
 .hamburger {
   z-index: 1000;
-  margin-left: 8px;
-  padding: 15px 15px 7px 15px;
+  margin-left: calc(23px - 1rem);
+  padding: 1rem 1rem 7px 1rem;
 }
 .hamburger .hamburger-box {
   width: 1.71rem;
@@ -1697,7 +1748,12 @@ body {
 }
 
 .block-social-media-links .horizontal li, .pane-social-media-link-widget .horizontal li {
-  max-width: 3rem;
+  max-width: 4rem;
+}
+@media (min-width: 767px) {
+  .block-social-media-links .horizontal li, .pane-social-media-link-widget .horizontal li {
+    max-width: 3rem;
+  }
 }
 
 #block-block-1 p {
@@ -1917,7 +1973,7 @@ body {
 }
 
 #filters {
-  padding-left: 3rem;
+  padding-left: 4.1rem;
   padding-right: 15px;
   top: 56px;
   position: fixed;
@@ -1927,7 +1983,7 @@ body {
   z-index: 800;
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.9);
   text-align: center;

@@ -21,8 +21,8 @@ a, a:hover{
 	@include underlined-link();
 }
 
-@mixin button($color: $black, $color-hover: $brand-color){
-	background-color: $light-grey;
+@mixin button($color: $black, $color-hover: $brand-color, $background: $light-grey, $background-hover: $black){
+	background-color: $background;
 	color: $color;
 	border-radius: $border-radius;
 	padding: 0 1rem;
@@ -37,9 +37,10 @@ a, a:hover{
 	letter-spacing: $letter-spacing-large;
 	height: auto;
 	width: 100%;
+	min-width: 150px;
 	// white-space: pre-wrap;
 	&.active, &:hover{
-		background-color: $black;
+		background-color: $background-hover;
 		color: $color-hover;
 		box-shadow: none;
 	}
@@ -76,7 +77,10 @@ body .owl-theme .owl-dots .owl-dot span{
 .flippy{
 	li{
 		position: absolute;
-    top: -11px;
+    font-size: 2rem;
+    line-height: 1;
+    top: -17px;
+    font-weight: $bold;
     a{
     	padding: 0 10px;
     }
@@ -107,6 +111,9 @@ body .owl-theme .owl-dots .owl-dot span{
 		letter-spacing: $letter-spacing-large;
 	}
 }
+.field-name-field-date{
+	font-weight: $bold;
+}
 .field-name-field-program{
 	text-align: center;
 	border: none;	
@@ -117,6 +124,10 @@ body .owl-theme .owl-dots .owl-dot span{
 	.field-name-field-pieces{
 		font-weight: $bold;
 	}
+	.field-name-field-mention-1 {
+		font-size: $font-smallest;
+		text-transform: uppercase;
+	}
 }
 
 .field-name-field-type{
@@ -126,8 +137,13 @@ body .owl-theme .owl-dots .owl-dot span{
 	letter-spacing: $letter-spacing-large;
 }
 
+.field-name-field-type{
+	margin-bottom: 1rem;
+}
 .buy-button{
+	margin-top: 1rem;
 	@include button($color: $brand-color);
+	width: auto;
 }
 
 .field-name-field-artists{
@@ -155,16 +171,34 @@ body .owl-theme .owl-dots .owl-dot span{
 }
 
 .prices-pdfs{
-	margin-bottom: 1rem;
 	a{
-		display: inline-block;
-		border: solid 1px $dark-grey; 
-		color: $dark-grey;
-		border-radius: $border-radius;
-		padding: 2px 15px;
-		&:hover{
-			background-color: $dark-grey;
-			color: $white;
+		@include button($color: $dark-grey, $color-hover: $white, $background: $light-grey, $background-hover: $dark-grey);
+		font-size: $font-smallest;
+		width: auto;
+		line-height: 1.4217;
+		margin-bottom: 0;
+		
+	}
+}
+
+.right-col{
+	.field-name-field-recommendation{
+			display: inline-block;	
+		@media #{$tablet}{
+			display: none;
 		}
 	}
+}
+.node{
+	.field-name-field-recommendation{
+		display: none;
+		@media #{$tablet}{
+			display: inline-block;	
+		}
+	}
+}
+
+// ARTISTS
+.vertical-tabs-list{
+	font-style: italic;
 }

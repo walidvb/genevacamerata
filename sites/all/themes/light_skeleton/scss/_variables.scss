@@ -9,7 +9,11 @@ $md                     : "(min-width: 991px)";
 $lg                     : "(min-width: 1200px)";
 $xlg                     : "(min-width: 1500px)";
 
+$padding-container-mobile: 23px;
+$padding-container-sm: 15px;
+
 $padding-xs: 15px;
+$padding-large: 1.5rem;
 $margin-xs: 15px;
 
 $letter-spacing-small: .05rem;
@@ -38,7 +42,7 @@ $background-color: white;
 $border-color: #111;
 $black: #333333;
 $white: #FFF;
-$dark-grey: #95989A;
+$dark-grey: #777777;
 $light-grey: #E3E3E3;
 $brand-color: #FF424D;
 
@@ -56,8 +60,8 @@ $brand-color: #FF424D;
 }
 
 @mixin over-panel(){
-	$over-panel-padding-left: $touch-padding + $icon-width;
-	padding-left: $over-panel-padding-left;
+	// padding-left: calc(#{$padding-container-mobile} + #{$icon-width} + #{2*$touch-padding});
+	padding-left: 4.1rem;
 	padding-right: $padding-xs;
 	top: $header-height;
 	position: fixed;
@@ -73,7 +77,7 @@ $brand-color: #FF424D;
 	z-index: 800;
 	display: flex;
 	flex-flow: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	transition: all .3s ease-in-out;
 	@include backdrop();
 }

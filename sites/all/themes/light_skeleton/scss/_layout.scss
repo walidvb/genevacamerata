@@ -28,8 +28,9 @@ html, body{
 
 .region-sidepanel-left{
 	min-width: 290px;
+	padding-top: $padding-large;
+	padding-bottom: $padding-large;
 	@media #{$tablet}{
-		padding-top: 3rem;
 	}
 	left: -100%;
 	&.open{
@@ -63,9 +64,8 @@ body{
 }
 
 .hamburger{
-	$padding-burger: 15px;
 	z-index: 1000;
-	margin-left: $padding-container-mobile - $padding-burger;
+	margin-left: calc(#{$padding-container-mobile} - #{$touch-padding});
 	.hamburger-box{
 		width: 1.71rem;
 	}
@@ -83,5 +83,5 @@ body{
 	}
 	
 	// centerv ertically on mobile
-	padding: 15px 15px 7px 15px;
+	padding: $touch-padding $touch-padding 7px $touch-padding;
 }

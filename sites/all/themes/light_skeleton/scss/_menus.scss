@@ -98,7 +98,10 @@
 
 //============ SOCIAL
 .block-social-media-links .horizontal li, .pane-social-media-link-widget .horizontal li{
-	max-width: 3rem;
+	max-width: 4rem;
+	@media #{$tablet}{
+		max-width: 3rem;
+	}
 }
 
 //============ CONTACT

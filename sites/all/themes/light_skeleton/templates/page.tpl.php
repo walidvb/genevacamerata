@@ -36,7 +36,7 @@
 
   <!-- Content
   ================================================== -->
-  <div id="content">
+  <div id="content" class="row">
 
     <?php if ($page['highlighted']): ?>
       <div id="highlighted">
