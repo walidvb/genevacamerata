@@ -29,7 +29,7 @@ $bold: 600;
 $bolder: 800;
 
 $header-height-xs: 85px;
-$header-height: 56px;
+$header-height: 101px;
 $icon-width: 2rem;
 $icon-height: 2rem;
 
@@ -66,6 +66,7 @@ $brand-color: #FF424D;
 	top: $header-height;
 	position: fixed;
 	height: calc(100vh - #{$header-height});
+	padding-bottom: 2*$margin-xs;
 	@media #{$mobile}{
 		height: 100vh;
 		height: calc(100vh - #{$header-height-xs});
@@ -85,11 +86,12 @@ $brand-color: #FF424D;
 @mixin full-height-element($outer: '.views-row', $inner: '.carousel-item'){
 	#{$outer}{
 		height: 120.5vw;
-		@media #{$sm}{
-			height: calc(100vh - #{$header-height});
+		@media #{$tablet}{
+			// height: calc(100vh - #{$header-height});
+			height: 60vh;
 		}
 		@media #{$md}{
-			height: calc(100vh - #{$header-height});
+			height: calc(100vh - #{$header-height + 2*$padding-xs});
 			padding: 0 0 2*$padding-xs 0;
 		}
 	  width: 100%;

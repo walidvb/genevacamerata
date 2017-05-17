@@ -18,6 +18,11 @@
 			margin-top: $margin-xs;
 		}
 	}
+	@media #{$sm}{
+		.left-container{
+			@include full-height-section();
+		}
+	}
 	@media #{$md}{
 		height: auto;
 		overflow: visible;
@@ -64,13 +69,10 @@
 	&.inactive{
 		display: none;
 	}
-	margin-left: -$padding-container-mobile;
-	margin-right: -$padding-container-mobile;
-	@media #{$tablet}{
-		margin-left: 0;
-		margin-right: 0;
-	}
 	@include full-height-element($outer: '.views-row', $inner: '.news');
+	.news{
+		position: relative;
+	}
 	.info{
 		background: $white;
 		position: absolute;
@@ -94,6 +96,12 @@
 		position: absolute;
 		bottom: $padding-xs;
 		left: calc(#{2*$padding-xs} + 5px);	
+		@media #{$tablet}{
+			bottom: $padding-xs;
+		}
+		@media #{$md}{
+			bottom: 3*$padding-xs;
+		}
 	}
 
 	.info, .owl-dots{
@@ -107,6 +115,16 @@
 	}
 }
 
+.page-node.node-type-concert{
+	.owl-dots{
+		display: none;
+	}
+}
+
+.view-types .views-field-name{
+	text-transform: uppercase;
+	color: $brand-color;
+}
 
 //=========== filters on
 
@@ -119,29 +137,16 @@
 .group-buttons{
 	@include gapped-buttons();
 	justify-self: flex-end;
-}
-.full-width-concerts{
-	.center-column{
-		@extend .col-xs-12;
-	}
-	.pane-types-type-in-list-1{
-		@extend .col-xs-12;
-		@extend .col-sm-4;
-		@extend .col-lg-2;
-	}
-	.view-concerts{
-		@extend .col-xs-12;
-		@extend .col-sm-8;
-		@extend .col-lg-10;
-	}
-	.view-concerts .view-content .views-row{
-		@extend .col-xs-12;
-		@extend .col-sm-12;
-		@extend .col-md-6;
-		@extend .col-lg-3;
+	@media (min-width: 1200px) and (max-width:1300px){
+		flex-direction: column;
+		> *{
+			min-width: 100%;
+		}
+		.button{
+			margin-bottom: .5*$padding-xs;
+		}
 	}
 }
-
 
 
 //============= CUSTOM TYPOGRAPHY

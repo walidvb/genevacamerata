@@ -15,7 +15,7 @@
 <!-- Wrapper / Start -->
 <div class="container" id="wrapper">
   <?php if (($page['main_menu'])): ?>
-    <div class="main-menu">
+    <div class="full-width main-menu">
       <button class="hamburger hamburger--squeeze" type="button" data-panel-target=".region-sidepanel-left">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>

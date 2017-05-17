@@ -328,7 +328,7 @@ function pretty_calendar_block_content($month) {
   }
 
   // Get month name. Add context to t() for extended translation.
-  $month_name = t(format_date($month, 'custom', 'F', NULL, 'en'), array(), array('context' => 'Nominative')) . ' ' . date('Y', $month);
+  $month_name = t(format_date($month, 'custom', 'F', NULL, $language->language), array(), array('context' => 'Nominative')) . ' ' . date('Y', $month);
   $field_name = variable_get('pretty_calendar_field_date', '');
   $node_type = variable_get('pretty_calendar_node_type', '');
   $use_tooltips = variable_get('pretty_calendar_preload_tooltips', '-');

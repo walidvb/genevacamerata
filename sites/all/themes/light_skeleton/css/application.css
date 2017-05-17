@@ -29,11 +29,17 @@ body {
 
 .container {
   width: 100%;
-  padding: 0;
+  padding: 0 23px;
+}
+
+.full-width {
+  margin-left: -23px;
+  margin-right: -23px;
 }
 @media (min-width: 767px) {
-  .container {
-    padding: 0 15px;
+  .full-width {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -271,8 +277,8 @@ body {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 23px;
+  padding-right: 23px;
 }
 @media (min-width: 767px) {
   .container-fluid {
@@ -282,8 +288,8 @@ body {
 }
 
 .row, .view-concerts {
-  margin-left: -0;
-  margin-right: -0;
+  margin-left: -23px;
+  margin-right: -23px;
 }
 @media (min-width: 767px) {
   .row, .view-concerts {
@@ -292,24 +298,24 @@ body {
   }
 }
 
-.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .full-width-concerts .pane-types-type-in-list-1, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .full-width-concerts .view-concerts .view-content .views-row, .col-xs-4, .col-sm-4, .full-width-concerts .pane-types-type-in-list-1, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-concerts .view-content .views-row, .col-md-6, .full-width-concerts .view-concerts .view-content .views-row, .col-lg-6, .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .full-width-concerts .view-concerts, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .full-width-concerts .view-concerts, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .full-width-concerts .center-column, .full-width-concerts .pane-types-type-in-list-1, .full-width-concerts .view-concerts, .full-width-concerts .view-concerts .view-content .views-row, .col-sm-12, .full-width-concerts .view-concerts .view-content .views-row, .col-md-12, .view-concerts .view-content .views-row, .col-lg-12 {
+.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-concerts .view-content .views-row, .col-md-6, .col-lg-6, .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .view-concerts .view-content .views-row, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 23px;
+  padding-right: 23px;
 }
 @media (min-width: 767px) {
-  .col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .full-width-concerts .pane-types-type-in-list-1, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .full-width-concerts .view-concerts .view-content .views-row, .col-xs-4, .col-sm-4, .full-width-concerts .pane-types-type-in-list-1, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-concerts .view-content .views-row, .col-md-6, .full-width-concerts .view-concerts .view-content .views-row, .col-lg-6, .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .full-width-concerts .view-concerts, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .full-width-concerts .view-concerts, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .full-width-concerts .center-column, .full-width-concerts .pane-types-type-in-list-1, .full-width-concerts .view-concerts, .full-width-concerts .view-concerts .view-content .views-row, .col-sm-12, .full-width-concerts .view-concerts .view-content .views-row, .col-md-12, .view-concerts .view-content .views-row, .col-lg-12 {
+  .col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-concerts .view-content .views-row, .col-md-6, .col-lg-6, .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .view-concerts .view-content .views-row, .col-lg-12 {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-.col, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .full-width-concerts .center-column, .full-width-concerts .pane-types-type-in-list-1, .full-width-concerts .view-concerts, .full-width-concerts .view-concerts .view-content .views-row {
+.col, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
 
-.col-xs-12, .full-width-concerts .center-column, .full-width-concerts .pane-types-type-in-list-1, .full-width-concerts .view-concerts, .full-width-concerts .view-concerts .view-content .views-row {
+.col-xs-12 {
   width: 100%;
 }
 
@@ -514,11 +520,11 @@ body {
 }
 
 @media (min-width: 768px) {
-  .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .full-width-concerts .pane-types-type-in-list-1, .col-sm-5, .col-sm-6, .view-concerts .view-content .views-row, .col-sm-7, .col-sm-8, .full-width-concerts .view-concerts, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .full-width-concerts .view-concerts .view-content .views-row {
+  .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .view-concerts .view-content .views-row, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
 
-  .col-sm-12, .full-width-concerts .view-concerts .view-content .views-row {
+  .col-sm-12 {
     width: 100%;
   }
 
@@ -534,7 +540,7 @@ body {
     width: 75%;
   }
 
-  .col-sm-8, .full-width-concerts .view-concerts {
+  .col-sm-8 {
     width: 66.66666667%;
   }
 
@@ -550,7 +556,7 @@ body {
     width: 41.66666667%;
   }
 
-  .col-sm-4, .full-width-concerts .pane-types-type-in-list-1 {
+  .col-sm-4 {
     width: 33.33333333%;
   }
 
@@ -723,7 +729,7 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .col, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .full-width-concerts .view-concerts .view-content .views-row, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .view-concerts .view-content .views-row {
+  .col, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .view-concerts .view-content .views-row {
     float: left;
   }
 
@@ -751,7 +757,7 @@ body {
     width: 58.33333333%;
   }
 
-  .col-md-6, .full-width-concerts .view-concerts .view-content .views-row {
+  .col-md-6 {
     width: 50%;
   }
 
@@ -932,7 +938,7 @@ body {
   }
 }
 @media (min-width: 1200px) {
-  .col, .col-lg-1, .col-lg-2, .full-width-concerts .pane-types-type-in-list-1, .col-lg-3, .full-width-concerts .view-concerts .view-content .views-row, .col-lg-4, .col-lg-5, .col-lg-6, .view-concerts .view-content .views-row, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .full-width-concerts .view-concerts, .col-lg-11, .col-lg-12 {
+  .col, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .view-concerts .view-content .views-row, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
 
@@ -944,7 +950,7 @@ body {
     width: 91.66666667%;
   }
 
-  .col-lg-10, .full-width-concerts .view-concerts {
+  .col-lg-10 {
     width: 83.33333333%;
   }
 
@@ -972,11 +978,11 @@ body {
     width: 33.33333333%;
   }
 
-  .col-lg-3, .full-width-concerts .view-concerts .view-content .views-row {
+  .col-lg-3 {
     width: 25%;
   }
 
-  .col-lg-2, .full-width-concerts .pane-types-type-in-list-1 {
+  .col-lg-2 {
     width: 16.66666667%;
   }
 
@@ -1181,16 +1187,16 @@ body {
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-a, a:hover {
+a, a:hover, a:active {
   text-decoration: none;
 }
 
 #admin-menu {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 @media (max-width: 767px) {
   #admin-menu {
@@ -1218,7 +1224,7 @@ h1, h2, h3 {
 
 @media (min-width: 767px) {
   .admin-menu .region-sidepanel-left, .admin-menu .region-sidepanel-right {
-    top: calc(30px + 56px);
+    top: calc(30px + 101px);
   }
 
   .navbar, .navbar-spacer {
@@ -1246,7 +1252,8 @@ ul {
 
 body fieldset {
   background: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .field-collection-container {
@@ -1266,12 +1273,18 @@ body fieldset {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body .vertical-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   margin: 0;
   border: none;
   background-color: none;
@@ -1286,21 +1299,31 @@ body .vertical-tabs {
   padding: 0;
 }
 .vertical-tabs ul.vertical-tabs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-top: none;
   justify-content: space-between;
   display: flex;
 }
 .vertical-tabs ul.vertical-tabs-list li {
-  flex: 0 1 16rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 5px);
+          flex: 0 0 calc(50% - 5px);
   width: 50%;
 }
 .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button {
   border-radius: 3px;
   background-color: #e3e3e3;
   border: none;
+  margin-bottom: 10px;
 }
 .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button.selected, .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button:hover {
   background-color: #333333;
@@ -1321,6 +1344,10 @@ body .vertical-tabs {
   color: inherit;
 }
 
+.vertical-tabs ul.vertical-tabs-list li a:focus strong, .vertical-tabs ul.vertical-tabs-list li a:active strong, .vertical-tabs ul.vertical-tabs-list li a:hover strong {
+  text-decoration: inherit;
+}
+
 a, a:hover {
   color: #333333;
 }
@@ -1338,14 +1365,15 @@ a, a:hover {
 }
 .menu a:hover, .menu a.active {
   color: #333333;
-  box-shadow: inset 0 -1px 0px #ff424d;
+  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
+          box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .button, .field-name-node-link a {
   background-color: #e3e3e3;
   color: #333333;
   border-radius: 3px;
-  padding: 0 1rem;
+  padding: 0 5px;
   border: none;
   margin-bottom: 1rem;
   line-height: 2rem;
@@ -1357,12 +1385,12 @@ a, a:hover {
   letter-spacing: 0.1rem;
   height: auto;
   width: 100%;
-  min-width: 150px;
 }
 .button.active, .field-name-node-link a.active, .button:hover, .field-name-node-link a:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 body .owl-theme .owl-dots .owl-dot.active span, body .owl-theme .owl-dots .owl-dot:hover span {
@@ -1425,10 +1453,11 @@ body .owl-theme .owl-dots .owl-dot span {
 .field-name-field-program {
   text-align: center;
   border: none;
-  margin: auto;
+  margin: 15px auto 0;
 }
 .field-name-field-program .field-name-field-compositor {
   font-size: 0.875rem;
+  text-transform: uppercase;
 }
 .field-name-field-program .field-name-field-pieces {
   font-weight: 600;
@@ -1436,6 +1465,7 @@ body .owl-theme .owl-dots .owl-dot span {
 .field-name-field-program .field-name-field-mention-1 {
   font-size: 0.75rem;
   text-transform: uppercase;
+  color: #ff424d;
 }
 
 .field-name-field-type {
@@ -1450,11 +1480,10 @@ body .owl-theme .owl-dots .owl-dot span {
 }
 
 .buy-button {
-  margin-top: 1rem;
   background-color: #e3e3e3;
   color: #ff424d;
   border-radius: 3px;
-  padding: 0 1rem;
+  padding: 0 5px;
   border: none;
   margin-bottom: 1rem;
   line-height: 2rem;
@@ -1466,21 +1495,25 @@ body .owl-theme .owl-dots .owl-dot span {
   letter-spacing: 0.1rem;
   height: auto;
   width: 100%;
-  min-width: 150px;
   width: auto;
 }
 .buy-button.active, .buy-button:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.node-type-concert .buy-button {
+  margin-top: 1rem;
 }
 
-.field-name-field-artists {
+.field-name-field-artists, .field-name-field-director {
   font-style: italic;
   text-transform: uppercase;
 }
 
 .field-name-field-instrument {
+  font-style: italic;
   text-transform: lowercase;
 }
 
@@ -1500,7 +1533,7 @@ body .owl-theme .owl-dots .owl-dot span {
   background-color: #e3e3e3;
   color: #777777;
   border-radius: 3px;
-  padding: 0 1rem;
+  padding: 0 5px;
   border: none;
   margin-bottom: 1rem;
   line-height: 2rem;
@@ -1512,7 +1545,7 @@ body .owl-theme .owl-dots .owl-dot span {
   letter-spacing: 0.1rem;
   height: auto;
   width: 100%;
-  min-width: 150px;
+  min-width: 130px;
   font-size: 0.75rem;
   width: auto;
   line-height: 1.4217;
@@ -1521,7 +1554,8 @@ body .owl-theme .owl-dots .owl-dot span {
 .prices-pdfs a.active, .prices-pdfs a:hover {
   background-color: #777777;
   color: white;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .right-col .field-name-field-recommendation {
@@ -1575,15 +1609,24 @@ html, body {
 .region-sidepanel-left, .region-sidepanel-right {
   padding-left: 4.1rem;
   padding-right: 15px;
-  top: 56px;
+  top: 101px;
   position: fixed;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 101px);
+  padding-bottom: 30px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.9);
   padding-bottom: 15px;
@@ -1596,10 +1639,11 @@ html, body {
     top: 85px;
   }
 }
-@supports (backdrop-filter: blur()) {
+@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
   .region-sidepanel-left, .region-sidepanel-right {
     background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
   }
 }
 
@@ -1658,6 +1702,11 @@ body {
 .hamburger .hamburger-inner:after {
   bottom: -8px;
 }
+@media (min-width: 767px) {
+  .hamburger {
+    padding: 1rem;
+  }
+}
 
 .navbar-list .navbar-item {
   width: auto;
@@ -1668,13 +1717,23 @@ body {
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .side-left .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .navbar-link {
@@ -1685,23 +1744,37 @@ body {
 }
 .navbar-link:hover, .navbar-link.active {
   color: #333333;
-  box-shadow: inset 0 -1px 0px #ff424d;
+  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
+          box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .main-menu {
   padding: 16px 0;
 }
+@media (min-width: 767px) {
+  .main-menu {
+    padding: 19px 0;
+  }
+}
 
 .main-menu, .region-main-menu, .main-menu .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main-menu .navbar, .region-main-menu .navbar, .main-menu .navbar-list .navbar {
-  flex: 1 0 auto;
-  justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .main-menu .navbar li:not(:first-child), .region-main-menu .navbar li:not(:first-child), .main-menu .navbar-list .navbar li:not(:first-child) {
-  margin-left: 15px;
+  margin-left: 3rem;
 }
 
 #block-system-main-menu {
@@ -1709,12 +1782,19 @@ body {
 }
 
 .region-main-menu {
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-menu.full-width {
+  padding-right: 23px;
 }
 
 .language-switcher-locale-url {
   display: none !important;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .language-switcher-locale-url li {
@@ -1739,11 +1819,13 @@ body {
   position: relative;
 }
 .main-menu .language-switcher-locale-url:hover li:not(.active) {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 .main-menu .language-switcher-locale-url li:not(.active) {
   position: absolute;
   z-index: 0;
+  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
@@ -1765,11 +1847,20 @@ body {
 }
 
 .js #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .main-menu .navbar {
   display: none;
+}
+@media (min-width: 767px) {
+  .main-menu .navbar {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 .logo {
@@ -1778,6 +1869,7 @@ body {
 @media (min-width: 767px) {
   .logo {
     margin-left: 4rem;
+    margin-right: 4.5rem;
     max-width: 10rem;
   }
 }
@@ -1792,18 +1884,24 @@ body {
 }
 @media (min-width: 991px) {
   .section {
-    height: calc(100vh - 56px);
+    height: calc(100vh - 101px);
     overflow: auto;
   }
 }
 
 @media (min-width: 767px) {
   .left-container {
-    height: calc(100vh - 56px);
+    height: calc(100vh - 101px);
     overflow: auto;
   }
   .left-container .center-column {
     margin-top: 15px;
+  }
+}
+@media (min-width: 767px) {
+  .left-container .left-container {
+    height: calc(100vh - 101px);
+    overflow: auto;
   }
 }
 @media (min-width: 991px) {
@@ -1825,17 +1923,30 @@ body {
 }
 
 .view-concerts .view-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 @media (min-width: 767px) {
   .view-concerts .view-content {
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }
 .view-concerts .view-content .views-row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 .view-concerts .view-content .buy-button {
   width: 100%;
@@ -1847,12 +1958,12 @@ body {
 }
 @media (min-width: 767px) {
   .view-id-artist_from_concert.view-display-id-panel_pane_2 .views-row {
-    height: calc(100vh - 56px);
+    height: 60vh;
   }
 }
 @media (min-width: 991px) {
   .view-id-artist_from_concert.view-display-id-panel_pane_2 .views-row {
-    height: calc(100vh - 56px);
+    height: calc(100vh - 131px);
     padding: 0 0 30px 0;
   }
 }
@@ -1864,18 +1975,8 @@ body {
   height: 100%;
 }
 
-.view-id-news {
-  margin-left: -23px;
-  margin-right: -23px;
-}
 .view-id-news.inactive {
   display: none;
-}
-@media (min-width: 767px) {
-  .view-id-news {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 .view-id-news .views-row {
   height: 120.5vw;
@@ -1883,12 +1984,12 @@ body {
 }
 @media (min-width: 767px) {
   .view-id-news .views-row {
-    height: calc(100vh - 56px);
+    height: 60vh;
   }
 }
 @media (min-width: 991px) {
   .view-id-news .views-row {
-    height: calc(100vh - 56px);
+    height: calc(100vh - 131px);
     padding: 0 0 30px 0;
   }
 }
@@ -1898,6 +1999,9 @@ body {
   display: inline-block;
   width: 100%;
   height: 100%;
+}
+.view-id-news .news {
+  position: relative;
 }
 .view-id-news .info {
   background: white;
@@ -1923,12 +2027,32 @@ body {
   bottom: 15px;
   left: calc(30px + 5px);
 }
+@media (min-width: 767px) {
+  .view-id-news .owl-dots {
+    bottom: 15px;
+  }
+}
+@media (min-width: 991px) {
+  .view-id-news .owl-dots {
+    bottom: 45px;
+  }
+}
 .view-id-news .info, .view-id-news .owl-dots {
   opacity: 1;
+  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 .view-id-news .owl-carousel:active .info, .view-id-news .owl-carousel:active .owl-dots, .view-id-news .owl-item:not(.active) .info, .view-id-news .owl-item:not(.active) .owl-dots {
   opacity: 0;
+}
+
+.page-node.node-type-concert .owl-dots {
+  display: none;
+}
+
+.view-types .views-field-name {
+  text-transform: uppercase;
+  color: #ff424d;
 }
 
 .field-name-node-link a {
@@ -1936,13 +2060,33 @@ body {
 }
 
 .group-buttons {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-self: flex-end;
 }
 .group-buttons > * {
-  flex: 0 0 calc(50% - 5px);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 5px);
+          flex: 0 0 calc(50% - 5px);
   width: 50%;
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .group-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .group-buttons > * {
+    min-width: 100%;
+  }
+  .group-buttons .button, .group-buttons .field-name-node-link a, .field-name-node-link .group-buttons a {
+    margin-bottom: 7.5px;
+  }
 }
 
 .view-concerts .field-name-field-date {
@@ -1975,19 +2119,28 @@ body {
 #filters {
   padding-left: 4.1rem;
   padding-right: 15px;
-  top: 56px;
+  top: 101px;
   position: fixed;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 101px);
+  padding-bottom: 30px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 101px);
   right: -100%;
 }
 @media (max-width: 767px) {
@@ -1998,10 +2151,11 @@ body {
     top: 85px;
   }
 }
-@supports (backdrop-filter: blur()) {
+@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
   #filters {
     background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
   }
 }
 #filters.open {
@@ -2032,21 +2186,24 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  -webkit-transition: alllaur3s ease-in-out;
   transition: alllaur3s ease-in-out;
 }
-@supports (backdrop-filter: blur()) {
+@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
   .trigger {
     background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
   }
 }
 .trigger.trigger-right {
   background-image: url("/sites/all/themes/light_skeleton/resources/arrow_left.png");
   z-index: 200;
   border-radius: 3px 0 0 3px;
+  position: -webkit-sticky;
   position: sticky;
   top: calc(85px + 15px);
-  left: 0;
+  left: 100%;
 }
 @media (min-width: 767px) {
   .trigger.trigger-right {
@@ -2057,7 +2214,8 @@ body {
   position: fixed;
   background-color: transparent !important;
   right: calc(100% - 2rem);
-  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
 }
 
 .program {
@@ -2087,6 +2245,27 @@ body {
   display: inline-block;
 }
 
+.view-types-list .view-content .button, .view-types-list .view-content .field-name-node-link a, .field-name-node-link .view-types-list .view-content a {
+  white-space: pre-wrap;
+}
+
+@media (max-width: 767px) {
+  .panel-col-first, .panel-col-last {
+    width: 100%;
+  }
+}
+
+#edit-submitted-abonnement-tarif {
+  outline: none;
+  border: none;
+}
+
+.loading {
+  opacity: .6;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 html, body {
   font-size: 16px;
 }
@@ -2095,7 +2274,7 @@ body {
   letter-spacing: 0.05rem;
 }
 @media (min-width: 767px) {
-  body:not(.node-type-webform) {
+  body.page-concerts, body.node-type-concert {
     height: 100vh;
     overflow: hidden;
   }
@@ -2108,10 +2287,11 @@ body {
   padding: 5px;
   background: white;
   color: #111111;
-  box-shadow: inset 0px 0px 1px #111111;
+  -webkit-box-shadow: inset 0px 0px 1px #111111;
+          box-shadow: inset 0px 0px 1px #111111;
 }
 .debug-helpers .size {
   text-align: center;
 }
 
-/*# sourceMappingURL=application.css.map */
+/*# sourceMappingURL=to.css.map */

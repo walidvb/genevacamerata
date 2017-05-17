@@ -27,10 +27,9 @@
 		var url = location.pathname;
 		url += options.id ? '?&field_type=' + options.id : '';
 		url += options.date ? '?&field_date=' + options.date : '';
-		var container = $('.left-container');
-		container.addClass('loading');
-		container.load(url + ' #home-panels .center-column', function(){
-			container.removeClass('loading').addClass('full-width-concerts');
+		var container = $('.replace-content');
+		container.addClass('loading').load(url + ' #home-panels .replace-content', function(){
+			container.removeClass('loading');
 			$('a[data-type]').removeClass('active');
 			$('.pretty-calendar-week a').removeClass('active');
 			if(options.id){
@@ -39,8 +38,6 @@
 			else if(options.date){
 				options.clicked.addClass('active');
 			}
-			console.log("url:", url);
-			$('.view-id-news').addClass('inactive');
 		});
 	};
 })(jQuery);

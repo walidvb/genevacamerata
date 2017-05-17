@@ -20,11 +20,12 @@ body .vertical-tabs{
 		flex-flow: row wrap;
 		justify-content: space-between;
 		border-top: none;
-		@include gapped-buttons($child-selector: 'li', $flex: '0 1 16rem');
+		@include gapped-buttons($child-selector: 'li');
 		li.vertical-tab-button{
 			border-radius: $border-radius;
 			background-color: $light-grey;
 			border: none;
+			margin-bottom: 10px;
 			&.selected, &:hover{
 				background-color: $black;
 				color: $brand-color;
@@ -45,4 +46,8 @@ body .vertical-tabs{
 			}
 		}
 	}
+}
+
+.vertical-tabs ul.vertical-tabs-list li a:focus strong, .vertical-tabs ul.vertical-tabs-list li a:active strong, .vertical-tabs ul.vertical-tabs-list li a:hover strong{
+	text-decoration: inherit;
 }

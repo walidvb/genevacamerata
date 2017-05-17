@@ -84,4 +84,8 @@ body{
 	
 	// centerv ertically on mobile
 	padding: $touch-padding $touch-padding 7px $touch-padding;
+	
+	@media #{$tablet}{
+		padding: $touch-padding;
+	}
 }

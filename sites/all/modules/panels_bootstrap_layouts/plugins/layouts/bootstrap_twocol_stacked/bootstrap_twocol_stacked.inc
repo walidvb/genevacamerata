@@ -5,15 +5,15 @@
  */
 // Plugin definition
 $plugin = array(
-  'title' => t('3 column home layout'),
-  'category' => t('light_skeleton'),
+  'title' => t('Two Columns Stacked'),
+  'category' => t('Bootstrap'),
   'icon' => 'bootstrap_twocol_stacked.png',
-  'theme' => 'light_skeleton_home',
+  'theme' => 'bootstrap_twocol_stacked',
   'admin css' => '../panels-bootstrap-layouts-admin.css',
   'regions' => array(
-    'left_wrapper' => t('Left Container'),
+    'top' => t('Top'),
     'left' => t('Left'),
-    'center' => t('Center'),
     'right' => t('Right'),
+    'bottom' => t('Bottom'),
   ),
 );

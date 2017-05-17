@@ -38,7 +38,7 @@
 		border-radius: 3px 0 0 3px;
 		position: sticky;
 		top: calc(#{$header-height-xs} + #{$padding-xs}) ;
-		left: 0;
+		left: 100%;
 		@media #{$tablet}{
 			display: none;
 		}

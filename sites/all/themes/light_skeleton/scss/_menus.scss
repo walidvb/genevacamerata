@@ -28,6 +28,9 @@
 
 .main-menu{
 	padding: 16px 0;
+	@media #{$tablet}{
+		padding: 19px 0;
+	}
 }
 
 .main-menu, .region-main-menu, .main-menu .navbar-list{
@@ -37,7 +40,7 @@
 		flex: 1 0 auto;
 		justify-content: flex-start;
 		li:not(:first-child){
-			margin-left: $margin-xs;
+			margin-left: 2*$padding-large;
 		}
 	}
 }
@@ -54,7 +57,9 @@
 	justify-content: space-around;
 }
 
-
+.main-menu.full-width{
+	padding-right: $padding-container-mobile;
+}
 //=========== LOCALES
 
 .language-switcher-locale-url{
@@ -121,11 +126,15 @@
 
 .main-menu .navbar{
 	display: none;
+	@media #{$tablet}{
+		display: inline-flex;
+	}
 }
 .logo{
 	padding-right: $padding-container-mobile;
 	@media #{$tablet}{
 		margin-left: 4rem;
+		margin-right: 3*$padding-large;
 		max-width: 10rem;
 	}
 }

@@ -25,7 +25,7 @@ a, a:hover{
 	background-color: $background;
 	color: $color;
 	border-radius: $border-radius;
-	padding: 0 1rem;
+	padding: 0 5px;
 	border: none;
 	margin-bottom: 1rem;
 	line-height: 2rem;
@@ -37,8 +37,6 @@ a, a:hover{
 	letter-spacing: $letter-spacing-large;
 	height: auto;
 	width: 100%;
-	min-width: 150px;
-	// white-space: pre-wrap;
 	&.active, &:hover{
 		background-color: $background-hover;
 		color: $color-hover;
@@ -117,9 +115,10 @@ body .owl-theme .owl-dots .owl-dot span{
 .field-name-field-program{
 	text-align: center;
 	border: none;	
-	margin: auto;
+	margin: $padding-xs auto 0;
 	.field-name-field-compositor{
 		font-size: $font-small;
+		text-transform: uppercase;
 	}
 	.field-name-field-pieces{
 		font-weight: $bold;
@@ -127,6 +126,7 @@ body .owl-theme .owl-dots .owl-dot span{
 	.field-name-field-mention-1 {
 		font-size: $font-smallest;
 		text-transform: uppercase;
+		color: $brand-color;
 	}
 }
 
@@ -141,16 +141,19 @@ body .owl-theme .owl-dots .owl-dot span{
 	margin-bottom: 1rem;
 }
 .buy-button{
-	margin-top: 1rem;
 	@include button($color: $brand-color);
 	width: auto;
+	.node-type-concert &{
+		margin-top: 1rem;
+	}
 }
 
-.field-name-field-artists{
+.field-name-field-artists, .field-name-field-director{
 	font-style: italic;	
 	text-transform: uppercase;
 }
 .field-name-field-instrument {
+	font-style: italic;
 	text-transform: lowercase;
 }
 
@@ -173,6 +176,7 @@ body .owl-theme .owl-dots .owl-dot span{
 .prices-pdfs{
 	a{
 		@include button($color: $dark-grey, $color-hover: $white, $background: $light-grey, $background-hover: $dark-grey);
+		min-width: 130px;
 		font-size: $font-smallest;
 		width: auto;
 		line-height: 1.4217;
