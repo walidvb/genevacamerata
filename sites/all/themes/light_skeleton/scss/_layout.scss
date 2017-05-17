@@ -4,7 +4,7 @@ html, body{
 	margin: 0;
 }
 
-body.has-panel-open{
+.has-panel-open, .has-panel-open body{
 	overflow-y: hidden;
 }
 .container{
@@ -44,16 +44,35 @@ body.has-panel-open{
 	}
 }	
 
+.container .main-menu{
+	position:fixed;
+	top: 0;
+	z-index: 500;
+	background: $white;
+}
+body{
+	padding-top: $header-height-xs; 
+}
+@media #{$tablet}{
+	.container .main-menu{
+		position:static;
+	}
+	body{
+		padding-top: 0; 
+	}
+}
 
 .hamburger{
+	$padding-burger: 15px;
 	z-index: 1000;
-	margin-left: 1rem;
+	margin-left: $padding-container-mobile - $padding-burger;
 	.hamburger-box{
 		width: 1.71rem;
 	}
 	.hamburger-inner{
 		&, &:before, &:after{
 			width: 1.71rem;
+			background: $black;
 		}
 		&:before{
 			top: -8px;
@@ -62,4 +81,7 @@ body.has-panel-open{
 			bottom: -8px;
 		}
 	}
+	
+	// centerv ertically on mobile
+	padding: 15px 15px 7px 15px;
 }

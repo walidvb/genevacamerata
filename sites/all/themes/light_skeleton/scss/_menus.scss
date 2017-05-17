@@ -25,6 +25,11 @@
 	@include underlined-link();
 	line-height: 2.5rem;
 }
+
+.main-menu{
+	padding: 16px 0;
+}
+
 .main-menu, .region-main-menu, .main-menu .navbar-list{
 	display: flex;
 	align-items: center;
@@ -111,13 +116,14 @@
 	display: flex;
 }
 
-#navigation-2{
+.main-menu .navbar{
 	display: none;
 }
 .logo{
-	padding-right: 2rem;
+	padding-right: $padding-container-mobile;
 	@media #{$tablet}{
 		margin-left: 4rem;
 		max-width: 10rem;
 	}
 }
+

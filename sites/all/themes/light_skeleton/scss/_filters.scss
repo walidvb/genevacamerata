@@ -36,6 +36,9 @@
 		background-image: url('/sites/all/themes/light_skeleton/resources/arrow_left.png');
 		z-index: 200;
 		border-radius: 3px 0 0 3px;
+		position: sticky;
+		top: calc(#{$header-height-xs} + #{$padding-xs}) ;
+		left: 0;
 		@media #{$tablet}{
 			display: none;
 		}

@@ -36,7 +36,8 @@ a, a:hover{
 	text-align: center;
 	letter-spacing: $letter-spacing-large;
 	height: auto;
-	white-space: pre-wrap;
+	width: 100%;
+	// white-space: pre-wrap;
 	&.active, &:hover{
 		background-color: $black;
 		color: $color-hover;

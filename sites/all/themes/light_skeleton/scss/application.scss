@@ -17,9 +17,11 @@ html, body{
 }
 
 body{
-  @media #{$tablet}{
-  	height: 100vh;
-  	overflow: hidden;
+  &:not(.node-type-webform ){
+    @media #{$tablet}{
+    	height: 100vh;
+    	overflow: hidden;
+    }
   }
   letter-spacing: $letter-spacing-small;
 }

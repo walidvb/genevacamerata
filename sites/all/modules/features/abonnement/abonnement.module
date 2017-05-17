@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the abonnement feature.
+ */
+
+include_once 'abonnement.features.inc';

@@ -50,6 +50,10 @@
 		display: inline-flex;
     flex-flow: column;
 	}
+
+	.buy-button{
+		width: 100%;
+	}
 }
 
 .view-id-artist_from_concert.view-display-id-panel_pane_2{
@@ -60,8 +64,8 @@
 	&.inactive{
 		display: none;
 	}
-	margin-left: -$padding-mobile;
-	margin-right: -$padding-mobile;
+	margin-left: -$padding-container-mobile;
+	margin-right: -$padding-container-mobile;
 	@media #{$tablet}{
 		margin-left: 0;
 		margin-right: 0;
@@ -90,6 +94,16 @@
 		position: absolute;
 		bottom: $padding-xs;
 		left: calc(#{2*$padding-xs} + 5px);	
+	}
+
+	.info, .owl-dots{
+		opacity: 1;
+		transition: all .2s ease-in-out;
+	}
+	.owl-carousel:active, .owl-item:not(.active){
+		.info, .owl-dots{
+			opacity: 0;
+		}
 	}
 }
 

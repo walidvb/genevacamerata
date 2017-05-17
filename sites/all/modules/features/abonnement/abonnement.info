@@ -1,0 +1,12 @@
+name = abonnement
+description = Abonnement webform
+core = 7.x
+package = Features
+version = 7.x-0.1
+dependencies[] = features
+dependencies[] = webform
+__drupal_alter_by_ref[][node][webform] = webform
+features[features_api][] = api:2
+features[node][] = webform
+features[webform][] = billeterie
+project path = sites/all/modules/features

@@ -24,7 +24,7 @@ $font-xlarge: 1.375rem;
 $bold: 600;
 $bolder: 800;
 
-$header-height-xs: 91px;
+$header-height-xs: 85px;
 $header-height: 56px;
 $icon-width: 2rem;
 $icon-height: 2rem;
@@ -48,10 +48,10 @@ $brand-color: #FF424D;
 }
 
 @mixin backdrop(){
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255,255,255,.9);
 	@supports (backdrop-filter: blur()){
-		background-color: rgba(255,255,255,.6);
-		backdrop-filter: blur(5px);
+		background-color: rgba(255,255,255,.7);
+		backdrop-filter: blur(8px);
 	}
 }
 
@@ -81,6 +81,9 @@ $brand-color: #FF424D;
 @mixin full-height-element($outer: '.views-row', $inner: '.carousel-item'){
 	#{$outer}{
 		height: 120.5vw;
+		@media #{$sm}{
+			height: calc(100vh - #{$header-height});
+		}
 		@media #{$md}{
 			height: calc(100vh - #{$header-height});
 			padding: 0 0 2*$padding-xs 0;
@@ -96,14 +99,15 @@ $brand-color: #FF424D;
 	}
 }
 
-@mixin gapped-buttons($gap: 5px, $flex: 0 0 auto,$child-selector: '> *'){
+@mixin gapped-buttons($gap: 5px, $flex: 0 0 calc(50% - 5px),$child-selector: '> *'){
 	justify-content: space-between;
 	display: flex;
-	margin-left: -$gap;
-	margin-right: -$gap;
+	// margin-left: -$gap;
+	// margin-right: -$gap;
 	#{$child-selector}{
-		margin-left: $gap;
-		margin-right: $gap;
+		// margin-left: $gap;
+		// margin-right: $gap;
 		flex: #{$flex};
+		width: 50%
 	}
 }

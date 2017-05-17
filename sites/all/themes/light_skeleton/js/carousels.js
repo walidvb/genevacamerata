@@ -3,8 +3,9 @@ var $ = jQuery;
 	var owlOptions = {
 		items: 1,
 		loop: true,
-		autoplay: false,
+		autoplay: true,
 		autoplayTimeout: 5000,
+		
 	};
 
 	var selectors = [
