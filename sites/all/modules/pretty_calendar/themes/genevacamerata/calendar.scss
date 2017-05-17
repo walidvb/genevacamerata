@@ -60,8 +60,12 @@ $calendar-line: 3.2rem;
 .pretty-calendar-week .pretty-calendar-today .calendar-value:before, .pretty-calendar-week a .calendar-value:before{
   content: '';
   position: absolute;
-  left: 2px;
-  top: -2px;
+  left: 25%;
+  top: -1px;
+  @media (min-width: 767px){
+    left: 2px;
+    top: -2px;
+  }
   width: 25px;
   height: 25px;
   border-radius: 50%;

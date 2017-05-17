@@ -31,10 +31,9 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	transition: alllaur3s ease-in-out;
+	transition: all .3s ease-in-out;
 	&.trigger-right{
 		background-image: url('/sites/all/themes/light_skeleton/resources/arrow_left.png');
-		z-index: 200;
 		border-radius: 3px 0 0 3px;
 		position: sticky;
 		top: calc(#{$header-height-xs} + #{$padding-xs}) ;
@@ -42,12 +41,13 @@
 		@media #{$tablet}{
 			display: none;
 		}
+		z-index: 799;
 	}
 	&.is-active{
 		position: fixed;
 		background-color: transparent!important;
-		right: calc(100% - #{$icon-width});
 		transform: rotateZ(180deg);
+		left: 0;
 	}
 }
 

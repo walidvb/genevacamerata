@@ -91,8 +91,7 @@ $brand-color: #FF424D;
 			height: 60vh;
 		}
 		@media #{$md}{
-			height: calc(100vh - #{$header-height + 2*$padding-xs});
-			padding: 0 0 2*$padding-xs 0;
+			height: calc(100vh - #{$header-height + $padding-xs});
 		}
 	  width: 100%;
 	}
@@ -102,6 +101,9 @@ $brand-color: #FF424D;
     display: inline-block;
 		width: 100%;
 		height: 100%;
+		@media #{$tablet}{
+			height: calc(100% - 0);
+		}
 	}
 }
 
