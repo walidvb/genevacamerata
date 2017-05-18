@@ -1,36 +1,4 @@
-@mixin full-height-section($height: 100vh){
-	height: calc(#{$height} - #{$header-height});
-	overflow: auto;
-}
-.section{
-	padding-bottom: $padding-xs;
-	@media #{$sm}{
-		overflow: auto;
-	}
-	@media #{$md}{
-		@include full-height-section($height: '100vh');
-	}
-}
-.left-container{
-	@media #{$sm}{
-		@include full-height-section();
-		.center-column{
-			margin-top: $margin-xs;
-		}
-	}
-	@media #{$sm}{
-		.left-container{
-			@include full-height-section();
-		}
-	}
-	@media #{$md}{
-		height: auto;
-		overflow: visible;
-		.center-column{
-			margin-top: 0;
-		}
-	}
-}
+
 
 
 .view-display-id-type_in_list_1{
@@ -54,6 +22,7 @@
 		@extend .col-lg-6;
 		display: inline-flex;
     flex-flow: column;
+    justify-content: space-around;
 	}
 
 	.buy-button{
@@ -137,6 +106,8 @@
 .group-buttons{
 	@include gapped-buttons();
 	justify-self: flex-end;
+	flex-grow: 10;
+  align-items: flex-end;
 	@media (min-width: 1200px) and (max-width:1300px){
 		flex-direction: column;
 		> *{

@@ -187,8 +187,9 @@ body .owl-theme .owl-dots .owl-dot span{
 
 .right-col{
 	.field-name-field-recommendation{
-			display: inline-block;	
-		@media #{$tablet}{
+		display: block;	
+    text-align: center;
+		@media #{$md}{
 			display: none;
 		}
 	}
@@ -196,7 +197,7 @@ body .owl-theme .owl-dots .owl-dot span{
 .node{
 	.field-name-field-recommendation{
 		display: none;
-		@media #{$tablet}{
+		@media #{$md}{
 			display: inline-block;	
 		}
 	}

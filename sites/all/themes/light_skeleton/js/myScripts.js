@@ -1,8 +1,14 @@
 (function($){
-	$(document).ready(function(){
-	});
+	Drupal.behaviors.GECA = {
+		attach: function (context, settings) {
+				GECA.filters(context, settings);
+				GECA.carousel(context, settings);
+				GECA.infiniteScroll(context, settings);
+	  }
+	};
+})(jQuery);
 
-
+(function($){
 	$(document).on('click', '[data-panel-target]',function(e){
 		var burger = $(e.currentTarget);
 		var targetSelector = burger.data('panel-target');

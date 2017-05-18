@@ -75,7 +75,6 @@ $brand-color: #FF424D;
 	}
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	z-index: 800;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-start;
@@ -103,6 +102,11 @@ $brand-color: #FF424D;
 		height: 100%;
 		@media #{$tablet}{
 			height: calc(100% - 0);
+		}
+	}
+	@media #{$md}{
+		.admin-menu #{$outer}{
+			height: calc(100vh - #{$header-height + $padding-xs} - 20px);
 		}
 	}
 }

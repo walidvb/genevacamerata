@@ -26,10 +26,10 @@ function _light_skeleton_add_js() {
   $theme_path = path_to_theme();
   $scripts = [
   '/bower_components/owl.carousel/dist/owl.carousel.min.js', 
-  '/js/myScripts.js', 
   '/js/home_filters.js',
   '/js/carousels.js',
-  '/js/infinite_scroll.js'
+  '/js/infinite_scroll.js',
+  '/js/myScripts.js',
   ];
   foreach ($scripts as $key => $script) {
     drupal_add_js($theme_path . $script);

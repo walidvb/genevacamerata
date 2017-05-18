@@ -63,6 +63,39 @@ body{
 	}
 }
 
+.region-sidepanel-left{
+	z-index: 850;
+}
+
+@mixin full-height-section($height: 100vh){
+	height: calc(#{$height} - #{$header-height});
+	overflow: auto;
+}
+.section{
+	padding-bottom: $padding-xs;
+	@media #{$sm}{
+		overflow: auto;
+	}
+	@media #{$md}{
+		@include full-height-section($height: '100vh');
+	}
+}
+.left-container{
+	@media #{$sm}{
+		@include full-height-section();
+		.center-column{
+			margin-top: $margin-xs;
+		}
+	}
+	@media #{$md}{
+		height: auto;
+		overflow: visible;
+		.center-column{
+			margin-top: 0;
+		}
+	}
+}
+
 .hamburger{
 	z-index: 1000;
 	margin-left: calc(#{$padding-container-mobile} - #{$touch-padding});

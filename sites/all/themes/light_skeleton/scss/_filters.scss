@@ -18,6 +18,7 @@
 		font-size: $font-smallest;
 		line-height: 1.8;
 	}
+	z-index: 800;
 }
 
 .trigger{
@@ -41,7 +42,7 @@
 		@media #{$tablet}{
 			display: none;
 		}
-		z-index: 799;
+		z-index: 801;
 	}
 	&.is-active{
 		position: fixed;

@@ -126,13 +126,13 @@
 
 .main-menu .navbar{
 	display: none;
-	@media #{$tablet}{
+	@media #{$md}{
 		display: inline-flex;
 	}
 }
 .logo{
 	padding-right: $padding-container-mobile;
-	@media #{$tablet}{
+	@media #{$md}{
 		margin-left: 4rem;
 		margin-right: 3*$padding-large;
 		max-width: 10rem;
