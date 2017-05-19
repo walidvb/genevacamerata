@@ -40,7 +40,10 @@
 		flex: 1 0 auto;
 		justify-content: flex-start;
 		li:not(:first-child){
-			margin-left: 2*$padding-large;
+			margin-left: $padding-large;
+			@media #{$md}{
+				margin-left: 2*$padding-large;
+			}
 		}
 	}
 }
@@ -126,12 +129,17 @@
 
 .main-menu .navbar{
 	display: none;
-	@media #{$md}{
+	@media #{$sm}{
 		display: inline-flex;
 	}
 }
 .logo{
 	padding-right: $padding-container-mobile;
+	@media #{$sm}{
+		margin-left: 1rem;
+		margin-right: $padding-large;
+		max-width: 10rem;
+	}
 	@media #{$md}{
 		margin-left: 4rem;
 		margin-right: 3*$padding-large;

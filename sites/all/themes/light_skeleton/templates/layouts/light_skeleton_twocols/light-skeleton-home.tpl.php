@@ -1,7 +1,7 @@
 <div id="home-panels" class="row">
   <div class="replace-content">
 
-    <div class="left-container section-container col-xs-12 col-sm-8 col-md-10">
+    <div class="left-container section-container col-xs-12  col-md-10">
       <?php if(!empty($content['left_wrapper'])): ?>
           <?php print $content['left_wrapper']; ?>
       <?php endif; ?>
@@ -23,7 +23,7 @@
     </div>
   </div>
   <?php if(!empty($content['right'])): ?>
-    <div id="filters" class="section right-column col-xs-12 col-sm-4 col-md-2">
+    <div id="filters" class="section right-column col-md-2">
       <?php print $content['right']; ?>
     </div>
   <?php endif; ?>

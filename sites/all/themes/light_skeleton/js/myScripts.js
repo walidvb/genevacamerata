@@ -9,7 +9,7 @@
 })(jQuery);
 
 (function($){
-	$(document).on('click', '[data-panel-target]',function(e){
+	$(document).on('click touch', '[data-panel-target]',function(e){
 		var burger = $(e.currentTarget);
 		var targetSelector = burger.data('panel-target');
 		$('.open.is-active').not(targetSelector).not(burger).removeClass('open is-active');

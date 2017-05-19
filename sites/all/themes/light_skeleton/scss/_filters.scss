@@ -6,7 +6,7 @@
 	&.open{
 		right: 0%;
 	}
-	@media #{$tablet}{
+	@media #{$md}{
 		border-left: solid 1px $black;
 		right: 0;
 		position: static;
@@ -39,7 +39,19 @@
 		position: sticky;
 		top: calc(#{$header-height-xs} + #{$padding-xs}) ;
 		left: 100%;
-		@media #{$tablet}{
+		right: auto;
+		@media #{$sm}{
+			position: fixed;
+			left: auto;
+			right: 0;
+			top: calc(#{$header-height} + #{4*$padding-xs});
+			// do not blur as it's already on top of a panel
+			@supports (backdrop-filter: blur()){
+				background-color: transparent;
+				backdrop-filter: none;
+			}
+		}
+		@media #{$md}{
 			display: none;
 		}
 		z-index: 801;
@@ -49,6 +61,12 @@
 		background-color: transparent!important;
 		transform: rotateZ(180deg);
 		left: 0;
+		@media #{$sm}{
+			// automagical
+			right: calc(320px - 4.1rem);
+			left: auto;
+		}
+		
 	}
 }
 
