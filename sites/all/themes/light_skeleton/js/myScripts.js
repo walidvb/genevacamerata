@@ -9,18 +9,24 @@
 })(jQuery);
 
 (function($){
-	$(document).on('click touch', '[data-panel-target]',function(e){
-		var burger = $(e.currentTarget);
-		var targetSelector = burger.data('panel-target');
-		$('.open.is-active').not(targetSelector).not(burger).removeClass('open is-active');
-		$(targetSelector).add(burger).toggleClass('open is-active');
-		console.log("$('.is-active').length > 0:", $('.is-active').length > 0);
-		$('html').toggleClass("has-panel-open", $('.is-active').length > 0);
-	});
+	$(document).ready(function(){
+		$('[data-panel-target]').on('click touch', function(e){
+			var burger = $(e.currentTarget);
+			var targetSelector = burger.data('panel-target');
+			var allTriggers = $('[data-panel-target="'+targetSelector+'"]');
+			$('[data-panel-target]').not($('[data-panel-target="'+targetSelector+'"]')).removeClass('is-active');
+			allTriggers.toggleClass('is-active');
+			var shouldOpen = burger.hasClass('is-active');
+			$('.open').removeClass('open');
+			$(targetSelector).toggleClass('open', shouldOpen);
+			$('html').toggleClass("has-panel-open", shouldOpen);
+		});
 
-	$(document).on('click', '.krumo-root',function(e){
-		$('body').css({
-			'overflow-y': 'auto',
-		})
+		// allow scrolling when dpm()'ing
+		$(document).on('click', '.krumo-root',function(e){
+			$('body').css({
+				'overflow-y': 'auto',
+			})
+		});
 	});
 })(jQuery);

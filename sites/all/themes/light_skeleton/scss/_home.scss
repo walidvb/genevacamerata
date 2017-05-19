@@ -9,6 +9,11 @@
 	.item-list{
 		display: none;
 	}
+
+	// fix position sticky motherfucking spacing
+	@media #{$mobile}{
+		margin-top: -3rem;
+	}
 }
 .view-concerts .view-content{
 	display: flex;

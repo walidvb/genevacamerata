@@ -30,43 +30,65 @@
 	padding: $touch-padding;
 	@include backdrop();
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 1rem;
 	background-position: center;
-	transition: all .3s ease-in-out;
+	transition: all .15s ease-in-out;
+	@media #{$sm}{
+		transition: all .3s ease-in-out;
+	}
 	&.trigger-right{
 		background-image: url('/sites/all/themes/light_skeleton/resources/arrow_left.png');
 		border-radius: 3px 0 0 3px;
-		position: sticky;
-		top: calc(#{$header-height-xs} + #{$padding-xs}) ;
-		left: 100%;
+		position: fixed;
+		top: 80vh;
 		right: auto;
+		left: 100%;
+		@supports (position:sticky){
+			position: sticky;
+			top: calc(#{$header-height-xs} + #{$padding-xs}) ;
+		}
+		transform: rotateY(0);
 		@media #{$sm}{
 			position: fixed;
 			left: auto;
 			right: 0;
 			top: calc(#{$header-height} + #{4*$padding-xs});
-			// do not blur as it's already on top of a panel
-			@supports (backdrop-filter: blur()){
-				background-color: transparent;
-				backdrop-filter: none;
-			}
 		}
 		@media #{$md}{
 			display: none;
 		}
 		z-index: 801;
+		&.trigger-close{
+			position: fixed;
+			background-color: transparent!important;
+			background-image: url('/sites/all/themes/light_skeleton/resources/arrow_right.png');
+			left: 1rem;
+			top: calc(#{$header-height-xs});
+			// do not blur as it's already on top of a panel
+			@supports (backdrop-filter: blur()){
+				background-color: transparent;
+				backdrop-filter: none;
+			}
+			@media #{$sm}{
+				position: absolute;
+				top: 4rem;
+			}
+			opacity: 0;
+			&.is-active{
+				opacity: 1;
+				display: inline-block;
+			}
+			@media #{$sm}{
+				opacity: 1;
+			}
+		}
 	}
 	&.is-active{
-		position: fixed;
-		background-color: transparent!important;
-		transform: rotateZ(180deg);
-		left: 0;
+		opacity: 0;
 		@media #{$sm}{
-			// automagical
-			right: calc(320px - 4.1rem);
-			left: auto;
+			opacity: 1;
+			right: -100%;
 		}
-		
 	}
 }
 

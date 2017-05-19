@@ -1,9 +1,19 @@
+// http://stackoverflow.com/a/38846051/1312825
+.fixed-fix {
+    position:fixed;
+    top:-1px; 
+    height:1px; 
+    width:100%; 
+    background:white;
+}
+
 // allow types buttons to be on two lines
 .view-types-list .view-content{
 	.button{
 		white-space: pre-wrap;
 	}
 }
+
 
 
 // static page

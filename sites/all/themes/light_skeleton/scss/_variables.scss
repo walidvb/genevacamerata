@@ -75,9 +75,11 @@ $brand-color: #FF424D;
 	}
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	display: flex;
-	flex-flow: column;
-	justify-content: flex-start;
+	@media #{$tablet}{
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+	}
 	transition: all .3s ease-in-out;
 	@include backdrop();
 }
