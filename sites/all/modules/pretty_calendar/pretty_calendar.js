@@ -5,9 +5,10 @@ function calendar_go(dir) {
       $("#calendar-body").html(" ");
       $("#calendar-body").append(data);
       $(".tooltip").tipTip({defaultPosition: "right", maxWidth: "400px", keepAlive:true});
-      $("#calendar-body .calendar-daynames .calendar-value").each(function(){
-        $(this).html($(this).html().substr(0,2) + '<span class="third-letter">' + $(this).html().substr(2,1) + '</span>');
-      });
+      // why the fuck would someone do this??!
+      // $("#calendar-body .calendar-daynames .calendar-value").each(function(){
+      //   $(this).html($(this).html().substr(0,2) + '<span class="third-letter">' + $(this).html().substr(2,1) + '</span>');
+      // });
     });
   })(jQuery);
 }
