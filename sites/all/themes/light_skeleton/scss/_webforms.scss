@@ -1,3 +1,45 @@
+@mixin pricing-table(){
+	table{
+		margin-top: $padding-xs;
+		width: 100%;
+		@media #{$sm}{
+			width: auto;
+		}
+	}
+	th{
+		font-weight: normal;
+		text-transform: uppercase;
+		font-size: $font-smallest;
+	}
+	td:first-child{
+		text-transform: uppercase;
+		text-align: left;
+	}
+	td, th{
+		border-bottom: none;
+		padding: 3px 0;
+		@media #{$sm}{
+			padding: 6px 25px;
+			text-align: center;
+		}
+	}
+	@media #{$mobile}{
+		th{
+			display: none;
+		}
+		td{
+			display: block;
+		}
+	}
+	// table details
+	table + p{
+		margin-top: $padding-xs;
+		font-size: $font-smallest;
+	}
+}
+
+
+
 .webform-component-field-wrapper{
 	border: 1px solid $border-color;
 	padding: 1rem;
@@ -13,5 +55,125 @@
 body{
 	.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary{
 		@include button();
+	}
+}
+
+
+// Abonnement
+
+.panel-1col{
+	@extend .row;
+}
+
+.page-abonnements{
+	.view-concerts{
+		display: none;
+		@media #{$sm}{
+			display: inline-block;
+		}
+		pointer-events: none;
+		.group-buttons{
+			display: none;
+		}
+	}
+	.view-concerts .view-content .views-row{
+		@extend .col-xs-6;
+		@extend .col-sm-4;
+		@extend .col-md-2;
+		&:first-child{
+			@extend .col-md-offset-1;
+		}
+	}
+	.panel-separator{
+		margin-top: $padding-large;
+		clear: both;
+	}
+	// price grid
+	.pane-1{
+		@media #{$sm}{
+			text-align: center;
+		}
+		table, h3{
+			margin: auto;
+		}
+		h3{
+			font-size: $font-xlarge;
+			font-weight: $bolder;
+			margin-bottom: $padding-xs;
+			@media #{$md}{
+				max-width: 60vw
+			}
+		}
+		@include pricing-table();
+		@media #{$mobile}{
+			$headers: (
+			  2: 'Plein Tarif',
+			  3: 'Tarif Réduit',
+			  4: '16-25 ans',
+			  5: '< 16 ans',
+			);
+			td:first-child{
+				font-weight: $bold;
+				margin-top: 10px;
+			}
+			@each $column, $pricing in $headers {
+			  td:nth-child(#{$column}):before {
+			    width: 45%;
+			    display: inline-block;
+			    content: $pricing;
+			  }
+			}
+		}
+	}
+}
+
+// the forms
+
+.webform-client-form > div{
+	@extend .row;
+	.webform-component-field-wrapper:not(.inline-wrapper){
+		@extend .col-xs-12;
+		@extend .col-md-4;
+		border: none;
+	}
+	.inline-wrapper{
+		width: 100%;
+		border: none;
+		padding: 0;
+	}
+	
+	.webform-component-markup{
+		font-size: $font-smallest;
+	}
+	.form-actions{
+		@extend .col-xs-12;
+		@media #{$sm}{
+			input{
+				width: auto;
+				margin: auto;
+				display: block;
+			}
+		}
+	}
+
+	// remove CADEAU in front of gift choices
+	[for="edit-submitted-abonnement-cadeau"]{
+		display: none;
+	}
+	#edit-submitted-abonnement-cadeau{
+		.form-item{
+			display: block;
+		}
+	}
+	// display selected price
+	#edit-submitted-abonnement-tarif{
+		width: auto;
+		font-size: $font-normal;
+	}
+	[for="edit-submitted-facturation-facturation-comme-abonne-1"]{
+		display: inline-block;
+	}
+	select, input[type="text"], input[type="email"]{
+		width: 100%;
 	}
 }

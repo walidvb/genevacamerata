@@ -44,10 +44,21 @@ a, a:hover{
 	}
 }
 
+@mixin mini-button(){
+	@include button($color: $dark-grey, $color-hover: $white, $background: $light-grey, $background-hover: $dark-grey);
+		min-width: 130px;
+		font-size: $font-smallest;
+		width: auto;
+		line-height: 1.4217;
+		margin-bottom: 0;
+}
+
 .button{
 	@include button();
 }
-
+.button-small{
+	@include mini-button();
+}
 //============== owl
 
 body .owl-theme .owl-dots .owl-dot.active span, body .owl-theme .owl-dots .owl-dot:hover span{
@@ -173,15 +184,10 @@ body .owl-theme .owl-dots .owl-dot span{
 	}
 }
 
+
 .prices-pdfs{
 	a{
-		@include button($color: $dark-grey, $color-hover: $white, $background: $light-grey, $background-hover: $dark-grey);
-		min-width: 130px;
-		font-size: $font-smallest;
-		width: auto;
-		line-height: 1.4217;
-		margin-bottom: 0;
-		
+		@include mini-button();
 	}
 }
 
