@@ -56,7 +56,8 @@ body{
 }
 @media #{$tablet}{
 	.container .main-menu{
-		position:static;
+		position:fixed;
+		width: 100%;
 	}
 	body{
 		padding-top: 0; 

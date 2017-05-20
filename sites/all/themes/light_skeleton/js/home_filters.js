@@ -29,7 +29,7 @@ GECA = window.GECA || {};
 			url += options.id ? '?&field_type=' + options.id : '';
 			url += options.date ? '?&field_date=' + options.date : '';
 			var container = $('.replace-content');
-			container.addClass('loading');
+			container.find('.left-container').addClass('loading');
 			$('.is-active, [data-panel-target]').removeClass('is-active open');
 			$.get(url, function(data){
 					var replace = $('#home-panels .replace-content', data);
@@ -38,6 +38,7 @@ GECA = window.GECA || {};
 					container.removeClass('loading');
 					$('a[data-type]').removeClass('active');
 					$('.pretty-calendar-week a').removeClass('active');
+					//TODO: close panel again
 					if(options.id){
 						$('a[data-type="'+options.id+'"]').addClass('active');
 					}

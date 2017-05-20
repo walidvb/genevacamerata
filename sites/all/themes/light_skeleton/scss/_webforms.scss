@@ -89,7 +89,7 @@ body{
 		clear: both;
 	}
 	// price grid
-	.pane-1{
+	.pane-node .field-name-body{
 		@media #{$sm}{
 			text-align: center;
 		}
@@ -125,15 +125,53 @@ body{
 			}
 		}
 	}
-}
 
-// the forms
-
-.webform-client-form > div{
-	@extend .row;
 	.webform-component-field-wrapper:not(.inline-wrapper){
 		@extend .col-xs-12;
 		@extend .col-md-4;
+		border: none;
+	}
+}
+
+// FRIENDS
+.page-les-amis-du-geneva-camerata{
+	.panel-2col .panel-col-first{
+		@extend .col-xs-12;
+		@extend .col-sm-3;
+	}
+	.panel-2col .panel-col-last{
+		@extend .col-xs-12;
+		@extend .col-sm-9;
+	}
+	.webform-component-field-wrapper:not(.inline-wrapper){
+		@extend .col-xs-12;
+		@extend .col-md-6;
+		border: none;
+	}
+	input[type="radio"]{
+		vertical-align: top;
+		transform: translateY(3px);
+	}
+}
+
+// the forms
+.webform-component-optionsmarkup{
+	label{
+		max-width: calc(100% - 25px);
+		margin-bottom: $padding-xs;
+	}
+	p{
+		color: $brand-color;
+		margin-bottom: 0;
+	}
+	ul li:before{
+		content: '-';
+		margin-right: 5px;
+	}
+}
+.webform-client-form > div{
+	@extend .row;
+	.webform-component-field-wrapper:not(.inline-wrapper){
 		border: none;
 	}
 	.inline-wrapper{
@@ -170,7 +208,7 @@ body{
 		width: auto;
 		font-size: $font-normal;
 	}
-	[for="edit-submitted-facturation-facturation-comme-abonne-1"]{
+	input[type="checkbox"] + label, input[type="radio"] + label{
 		display: inline-block;
 	}
 	select, input[type="text"], input[type="email"]{
