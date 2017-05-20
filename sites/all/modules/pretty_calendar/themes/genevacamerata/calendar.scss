@@ -10,72 +10,52 @@ $light-grey: #E3E3E3;
   width: 100%;
 }
 
-$calendar-line: 3.2rem;
 .pretty-calendar-week,
 .calendar-daynames {
   font-size: 12px;
-  height: $calendar-line;
   margin: 0;
   padding: 0px;
   white-space: nowrap;
   width: 100%;
 }
-.pretty-calendar-week .pretty-calendar-weekend,
-.pretty-calendar-week .pretty-calendar-day,
-.calendar-daynames .pretty-calendar-weekend,
-.calendar-daynames .pretty-calendar-day {
-  display: inline;
-  float: left;
-  height: $calendar-line;
-  overflow: visible;
-  text-align: center;
-  width: 14%;
+.calendar-daynames, .pretty-calendar-week {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
-.pretty-calendar-week .pretty-calendar-weekend,
-.calendar-daynames .pretty-calendar-weekend {
-  width: 15%;
+.pretty-calendar-week > .pretty-calendar-day, a.tooltip {
+    border-radius: 50%;
+    text-align: center;
+    flex: 1 0 14%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
-.pretty-calendar-week .calendar-value,
-.calendar-daynames .calendar-value {
-  float: left;
-  height: 20px;
-  padding: 2px 0 0;
-  text-align: center;
-  width: 100%;
-}
-.calendar-daynames .calendar-value .third-letter {
-  display: none;
-}
-
-.pretty-calendar-week a {
-  color: #000;
-  font-weight: bold;
-}
-.pretty-calendar-week a:hover div {
-  color: #fff;
-}
-.pretty-calendar-week .pretty-calendar-today, .pretty-calendar-week a .calendar-value{
-  position: relative;
-}
-.pretty-calendar-week .pretty-calendar-today .calendar-value:before, .pretty-calendar-week a .calendar-value:before{
+a.tooltip:after, .pretty-calendar-today:after{
   content: '';
+  
+  width: 100%;
+  height: 100%;
+  max-width: 25px;
+  max-height: 25px;
   position: absolute;
-  left: 25%;
-  top: -1px;
-  @media (min-width: 767px){
-    left: 2px;
-    top: -2px;
-  }
-  width: 25px;
-  height: 25px;
+  z-index: -1;
   border-radius: 50%;
 }
-.pretty-calendar-week .pretty-calendar-today .calendar-value:before{
+a.tooltip:after{
+  background: $light-grey;
+}
+.pretty-calendar-today:after{
   border: 1px solid $brand-color;
 }
-.pretty-calendar-week a .calendar-value:before{
-  background-color: $light-grey;
-  z-index: -1;
+.pretty-calendar-week > .pretty-calendar-day:before, a.tooltip:before {
+    content:'';
+    float:left;
+    padding-top:100%;
 }
 
 .calendar-daynames {

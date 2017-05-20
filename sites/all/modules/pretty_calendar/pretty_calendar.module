@@ -368,7 +368,7 @@ function pretty_calendar_block_content($month) {
       $cls = '';
       // Define cell classes.
       if ($j > 4) {
-        $cls = 'pretty-calendar-weekend';
+        $cls = 'pretty-calendar-weekend pretty-calendar-day';
       }
       else {
         $cls = 'pretty-calendar-day';
