@@ -33,12 +33,12 @@ body {
   padding: 0 23px;
 }
 
-.full-width {
+.full-width, .node-type-page .page-content .field-name-field-main-image {
   margin-left: -23px;
   margin-right: -23px;
 }
 @media (min-width: 767px) {
-  .full-width {
+  .full-width, .node-type-page .page-content .field-name-field-main-image {
     margin-left: 0;
     margin-right: 0;
   }
@@ -288,12 +288,12 @@ body {
   }
 }
 
-.row, .view-concerts, .panel-1col, .webform-client-form > div {
+.row, .view-concerts, .panel-1col, .webform-client-form > div, .node-type-page .page-content {
   margin-left: -23px;
   margin-right: -23px;
 }
 @media (min-width: 767px) {
-  .row, .view-concerts, .panel-1col, .webform-client-form > div {
+  .row, .view-concerts, .panel-1col, .webform-client-form > div, .node-type-page .page-content {
     margin-left: -15px;
     margin-right: -15px;
   }
@@ -1158,10 +1158,12 @@ body {
 .view-concerts:before,
 .panel-1col:before,
 .webform-client-form > div:before,
+.node-type-page .page-content:before,
 .row:after,
 .view-concerts:after,
 .panel-1col:after,
-.webform-client-form > div:after {
+.webform-client-form > div:after,
+.node-type-page .page-content:after {
   content: " ";
   display: table;
 }
@@ -1172,7 +1174,8 @@ body {
 .row:after,
 .view-concerts:after,
 .panel-1col:after,
-.webform-client-form > div:after {
+.webform-client-form > div:after,
+.node-type-page .page-content:after {
   clear: both;
 }
 
@@ -1878,7 +1881,7 @@ body {
       justify-content: space-around;
 }
 
-.main-menu.full-width {
+.main-menu.full-width, .node-type-page .page-content .main-menu.field-name-field-main-image {
   padding-right: 23px;
 }
 
