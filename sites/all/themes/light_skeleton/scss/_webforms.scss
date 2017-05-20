@@ -135,6 +135,9 @@ body{
 
 // FRIENDS
 .page-les-amis-du-geneva-camerata{
+	.panel-2col{
+		@extend .row;
+	}
 	.panel-2col .panel-col-first{
 		@extend .col-xs-12;
 		@extend .col-sm-3;
@@ -162,6 +165,9 @@ body{
 	}
 	p{
 		color: $brand-color;
+		margin-bottom: 0;
+	}
+	li{
 		margin-bottom: 0;
 	}
 	ul li:before{
