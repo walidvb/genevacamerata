@@ -49,13 +49,16 @@
 	}
 }
 
+.region-sidepanel-left{
+	padding-left: 6.5rem;	
+	@media #{$md}{
+		padding-left: 9.5rem;	
+	}
+}
 #block-system-main-menu{
 	width: 100%;
 }
-#navigation{
-	@media #{$tablet}{
-	}
-}
+
 
 .region-main-menu{
 	justify-content: space-around;
@@ -106,14 +109,26 @@
 }
 
 //============ SOCIAL
+.block-social-media-links{
+	margin-top: 3rem;
+}
 .block-social-media-links .horizontal li, .pane-social-media-link-widget .horizontal li{
-	max-width: 4rem;
+	max-width: 3.5rem;
 	@media #{$tablet}{
 		max-width: 3rem;
 	}
 }
 
+//============ NEWSLETTER
+input[type="submit"].button{
+	@include button($color: $brand-color);
+	width: auto;
+}
+
 //============ CONTACT
+#block-block-1, #block-block-2 label{
+	font-size: $font-small;
+}
 #block-block-1{
 	p{
 		margin-bottom: 0;

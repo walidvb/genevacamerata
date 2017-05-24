@@ -1,5 +1,16 @@
 $brand-color: #FF424D;
 $light-grey: #E3E3E3;
+
+$font-smallest: .75rem; // 10
+$font-small: .875rem; //12
+$font-normal: 1rem; //14
+$font-large: 1.1428rem; // 
+$font-xlarge: 1.375rem;
+
+
+$bold: 600;
+$bolder: 800;
+
 /* calendar styles */
 .block-calendar {
   min-height: 40px;
@@ -8,11 +19,12 @@ $light-grey: #E3E3E3;
 #calendar-body {
   position: relative;
   width: 100%;
+  font-size: $font-smallest;
+  font-weight: $bold;
 }
 
 .pretty-calendar-week,
 .calendar-daynames {
-  font-size: 12px;
   margin: 0;
   padding: 0px;
   white-space: nowrap;
@@ -35,9 +47,8 @@ $light-grey: #E3E3E3;
     justify-content: center;
     position: relative;
 }
-a.tooltip:after, .pretty-calendar-today:after{
+a.tooltip:after, .pretty-calendar-today:before{
   content: '';
-  
   width: 100%;
   height: 100%;
   max-width: 25px;
@@ -45,14 +56,17 @@ a.tooltip:after, .pretty-calendar-today:after{
   position: absolute;
   z-index: -1;
   border-radius: 50%;
+  top: calc(50% - 12px);
+  left: calc(50% - 13px);
 }
 a.tooltip:after{
   background: $light-grey;
 }
-.pretty-calendar-today:after{
+.pretty-calendar-today:before{
   border: 1px solid $brand-color;
+  z-index: 200;
 }
-.pretty-calendar-week > .pretty-calendar-day:before, a.tooltip:before {
+.pretty-calendar-week > .pretty-calendar-day:after, a.tooltip:before {
     content:'';
     float:left;
     padding-top:100%;

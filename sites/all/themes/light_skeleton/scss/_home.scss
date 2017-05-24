@@ -4,7 +4,7 @@
 .view-display-id-type_in_list_1{
 	float: left;
 }
-.front-page{
+.page-concerts{
 	.view-concerts{
 		@extend .row;
 		.item-list{
@@ -29,6 +29,7 @@
 			display: inline-flex;
 	    flex-flow: column;
 	    justify-content: space-around;
+	    margin-bottom: 2rem;
 		}
 
 		.buy-button{
@@ -58,7 +59,7 @@
 		width: 75%;
 		min-height: 8rem;
 		border-radius: $border-radius;
-		padding: .5*$padding-xs;
+		padding: .5*$padding-xs $padding-xs;
 	}
 	.title{
 		text-transform: uppercase;
@@ -71,7 +72,7 @@
 	.owl-dots{
 		position: absolute;
 		bottom: $padding-xs;
-		left: calc(#{2*$padding-xs} + 5px);	
+		left: calc(#{2.5*$padding-xs} + 5px);	
 		@media #{$tablet}{
 			bottom: $padding-xs;
 		}
@@ -82,7 +83,7 @@
 
 	.info, .owl-dots{
 		opacity: 1;
-		transition: all .2s ease-in-out;
+		transition: all .4s ease-in-out;
 	}
 	.owl-carousel:active, .owl-item:not(.active){
 		.info, .owl-dots{
@@ -133,7 +134,7 @@
 	.field-name-field-date {
 		font-weight: $bold;
 		font-size: $font-small;
-		margin-bottom: .5rem;
+		margin-bottom: 1rem;
 	}
 	.field-name-title h2{
 		font-weight: $bold;
@@ -143,7 +144,7 @@
 		margin-bottom: 0;
 	}
 	.field-name-field-artists{
-		margin-bottom: .1rem;
+		margin-bottom: 1rem;
 	}
 	.node-artist{
 		margin-bottom: .3rem;

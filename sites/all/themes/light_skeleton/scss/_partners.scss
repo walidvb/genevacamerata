@@ -1,0 +1,45 @@
+.page-partners{
+  .panel-2col{
+    width: 100%;
+  }
+  .panel-col-first{
+    @extend .col-xs-12;
+    @extend .col-sm-4;
+  }
+  .panel-col-last{
+    @extend .col-xs-12;
+    @extend .col-sm-8;
+  }
+  .view-content{
+
+  }
+  .partner-group{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  h3{
+    font-size: $font-small;
+    border-bottom: 1px solid $black;
+    text-transform: uppercase;
+    padding-bottom: $padding-xs;
+  }
+  .partner{
+    text-align: center;
+    flex: 0 0 16.666%;
+    line-height: 100px;
+    max-height: 100px;
+    &:not(:first-child){
+      padding-left: 10px;
+    }
+    &:not(:nth-child(5n)){
+      padding-right: 10px;
+    }
+    img{
+      vertical-align: middle;
+      max-height: 80px;
+      width: auto;
+      display: inline-block;
+    }
+  }
+}

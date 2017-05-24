@@ -128,7 +128,7 @@ body .owl-theme .owl-dots .owl-dot span{
 	border: none;	
 	margin: $padding-xs auto 0;
 	.field-name-field-compositor{
-		font-size: $font-small;
+		font-size: $font-smallest;
 		text-transform: uppercase;
 	}
 	.field-name-field-pieces{
@@ -154,6 +154,7 @@ body .owl-theme .owl-dots .owl-dot span{
 .buy-button{
 	@include button($color: $brand-color);
 	width: auto;
+	min-width: 150px;
 	.node-type-concert &{
 		margin-top: 1rem;
 	}
@@ -175,12 +176,18 @@ body .owl-theme .owl-dots .owl-dot span{
 
 
 .field-name-field-recommendation{
+	margin-top: 3rem;
 	.node{
 		margin: auto;
 	}
 	h2{
 		font-size: $font-smallest;
 		text-transform: uppercase;
+	}
+	.field-label{
+		font-size: $font-smallest;
+		font-weight: normal;
+
 	}
 }
 

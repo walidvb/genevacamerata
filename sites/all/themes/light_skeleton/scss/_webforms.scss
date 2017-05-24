@@ -186,6 +186,7 @@ body{
 
 // the forms
 .webform-component-optionsmarkup{
+	font-size: $font-small;
 	label{
 		max-width: calc(100% - 25px);
 		margin-bottom: $padding-xs;

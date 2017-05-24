@@ -6,8 +6,8 @@ GECA = window.GECA || {};
 			items: 1,
 			loop: true,
 			autoplay: true,
-			autoplayTimeout: 5000,
-			
+			autoplayTimeout: 7500,
+	    autoplayHoverPause:true
 		};
 
 		var selectors = [

@@ -7,11 +7,12 @@
 #calendar-body {
   position: relative;
   width: 100%;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 .pretty-calendar-week,
 .calendar-daynames {
-  font-size: 12px;
   margin: 0;
   padding: 0px;
   white-space: nowrap;
@@ -37,7 +38,7 @@
   position: relative;
 }
 
-a.tooltip:after, .pretty-calendar-today:after {
+a.tooltip:after, .pretty-calendar-today:before {
   content: '';
   width: 100%;
   height: 100%;
@@ -46,17 +47,20 @@ a.tooltip:after, .pretty-calendar-today:after {
   position: absolute;
   z-index: -1;
   border-radius: 50%;
+  top: calc(50% - 12px);
+  left: calc(50% - 13px);
 }
 
 a.tooltip:after {
   background: #e3e3e3;
 }
 
-.pretty-calendar-today:after {
+.pretty-calendar-today:before {
   border: 1px solid #ff424d;
+  z-index: 200;
 }
 
-.pretty-calendar-week > .pretty-calendar-day:before, a.tooltip:before {
+.pretty-calendar-week > .pretty-calendar-day:after, a.tooltip:before {
   content: '';
   float: left;
   padding-top: 100%;

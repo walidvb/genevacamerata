@@ -27,7 +27,7 @@ html, body{
 }
 
 .region-sidepanel-left{
-	min-width: 290px;
+	min-width: 500px;
 	padding-top: $padding-large;
 	padding-bottom: $padding-large;
 	@media #{$tablet}{
@@ -73,7 +73,7 @@ body{
 	overflow: auto;
 }
 .section{
-	padding-bottom: $padding-xs;
+	padding-bottom: 2*$padding-large;
 	@media #{$sm}{
 		overflow: auto;
 	}
