@@ -4,6 +4,7 @@
 				GECA.filters(context, settings);
 				GECA.carousel(context, settings);
 				GECA.infiniteScroll(context, settings);
+				GECA.setupBookingForm(context, settings);
 	  }
 	};
 })(jQuery);

@@ -50,7 +50,10 @@
 }
 
 .region-sidepanel-left{
-	padding-left: 6.5rem;	
+	padding-left: 5rem;	
+	@media #{$sm}{
+		padding-left: 6.5rem;	
+	}
 	@media #{$md}{
 		padding-left: 9.5rem;	
 	}
@@ -150,7 +153,7 @@ input[type="submit"].button{
 	}
 }
 .logo{
-	padding-right: $padding-container-mobile;
+	padding-right: 2*$padding-container-mobile;
 	margin-left: 1rem;
 	@media #{$sm}{
 		margin-right: $padding-large;

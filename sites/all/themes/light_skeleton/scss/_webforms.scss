@@ -58,8 +58,94 @@ body{
 	}
 }
 
+// RESERVATION
 
-// Abonnement
+// hide as this is set via JS
+.webform-component--concert	{
+	display: none;
+}
+
+.page-reserver{
+	.field-name-title-field{
+		font-size: $font-large;
+		font-weight: $bold;
+	}
+	.field-name-field-date{
+		font-weight: normal;
+	}
+	@media #{$sm}{
+		.field-name-field-venue .field-item:before{
+			content: '-';
+			float: left;
+			margin: 0 .5rem;
+		}
+		.pane-node{
+			display: flex;
+			flex-flow: wrap;
+		}
+		.field-name-field-type{
+			flex: 0 0 100%;
+		}
+		.field-name-title-field{
+			flex: 0 1 100%;
+			@media #{$md}{
+				flex: 0 1 30%;
+			}
+		}
+	}
+	.webform-component-field-wrapper{
+		@extend .col-xs-12;
+	}
+}
+
+.webform-component--details{
+	@media #{$sm}{
+		display: flex;
+		flex-flow: row wrap;
+		margin-left: -5px;
+		margin-right: -5px;
+		.webform-component {
+			flex: 0 0 50%;
+			padding: 0 5px;
+		}
+	}
+}
+
+.webform-component--billets{
+	display: inline-flex;
+	flex-wrap: wrap;
+	.webform-component-number{
+		label{
+			font-size: $font-smallest;
+			margin-bottom: 0;
+		}
+		.field-prefix{
+			font-size: $font-small;
+		}
+		padding: 0 5px;
+		text-align: center;
+		flex: 0 0 25%;
+		margin-bottom: $padding-xs;
+		select{
+			max-width: 50px;
+			display: block;
+			margin: auto;
+			margin-top: 5px;
+		}
+	}
+	width: 100%;
+	@media #{$md}{
+		width: 50%;
+	}
+}
+.webform-component--billets--infos{
+	flex-basis: 100%;
+	padding: 1rem;
+	    display: inline-block;
+    vertical-align: top;
+}
+
+// ABONNEMENT
 .page-abonnements{
 	h1{
 		font-size: $font-large;
@@ -153,9 +239,15 @@ body{
 	}
 }
 
-// FRIENDS
-	
+
+
 .page-les-amis-du-geneva-camerata{
+	// FRIENDS
+	.webform-component-field-wrapper:not(.inline-wrapper){
+		@extend .col-xs-12;
+		@extend .col-md-6;
+		border: none;
+	}
 	.panel-2col{
 		@extend .row;
 	}
@@ -173,11 +265,7 @@ body{
 			@include full-height-section();
 		}
 	}
-	.webform-component-field-wrapper:not(.inline-wrapper){
-		@extend .col-xs-12;
-		@extend .col-md-6;
-		border: none;
-	}
+	
 	input[type="radio"]{
 		vertical-align: top;
 		transform: translateY(3px);

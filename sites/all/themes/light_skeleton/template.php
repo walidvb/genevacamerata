@@ -29,6 +29,7 @@ function _light_skeleton_add_js() {
   '/js/home_filters.js',
   '/js/carousels.js',
   '/js/infinite_scroll.js',
+  '/js/booking-page.js',
   '/js/myScripts.js',
   ];
   foreach ($scripts as $key => $script) {

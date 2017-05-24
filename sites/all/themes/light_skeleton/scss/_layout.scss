@@ -27,10 +27,10 @@ html, body{
 }
 
 .region-sidepanel-left{
-	min-width: 500px;
 	padding-top: $padding-large;
 	padding-bottom: $padding-large;
 	@media #{$tablet}{
+		min-width: 500px;
 	}
 	left: -100%;
 	&.open{
