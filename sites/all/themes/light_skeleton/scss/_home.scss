@@ -4,34 +4,36 @@
 .view-display-id-type_in_list_1{
 	float: left;
 }
-.view-concerts{
-	@extend .row;
-	.item-list{
-		display: none;
-	}
+.front-page{
+	.view-concerts{
+		@extend .row;
+		.item-list{
+			display: none;
+		}
 
-	// fix position sticky motherfucking spacing
-	@media #{$mobile}{
-		margin-top: -3rem;
+		// fix position sticky motherfucking spacing
+		@media #{$mobile}{
+			margin-top: -3rem;
+		}
 	}
-}
-.view-concerts .view-content{
-	display: flex;
-	flex-flow: column;
-	@media #{$tablet}{
-		flex-flow: row wrap;
-	}
-	.views-row{
-		@extend .col-sm-6;
-		@extend .col-md-12;
-		@extend .col-lg-6;
-		display: inline-flex;
-    flex-flow: column;
-    justify-content: space-around;
-	}
+	.view-concerts .view-content{
+		display: flex;
+		flex-flow: column;
+		@media #{$tablet}{
+			flex-flow: row wrap;
+		}
+		.views-row{
+			@extend .col-sm-6;
+			@extend .col-md-12;
+			@extend .col-lg-6;
+			display: inline-flex;
+	    flex-flow: column;
+	    justify-content: space-around;
+		}
 
-	.buy-button{
-		width: 100%;
+		.buy-button{
+			width: 100%;
+		}
 	}
 }
 

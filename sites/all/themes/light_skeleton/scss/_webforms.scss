@@ -60,29 +60,45 @@ body{
 
 
 // Abonnement
-
-.panel-1col{
-	@extend .row;
-}
-
 .page-abonnements{
+	h1{
+		font-size: $font-large;
+		font-weight: $bolder;
+		text-align: center;
+	}
 	.view-concerts{
-		display: none;
-		@media #{$sm}{
-			display: inline-block;
+		@extend .col-sm-10;
+		@extend .col-sm-offset-1;
+		@extend .col-md-8;
+		@extend .col-md-offset-2;
+		@media #{$mobile}{
+			.view-content{
+				justify-content: space-between;
+				margin-left: -5px;
+				margin-right: -5px;
+			}
+			.field:not(.field-name-field-main-image){
+				display: none;
+			}
 		}
-		pointer-events: none;
+		.views-row{
+			pointer-events: none;
+			padding-left: 5px!important;
+			padding-right: 5px!important;
+			display: flex;
+			flex-flow: column;
+		}
+		.field-name-field-date{
+			display: flex;
+			flex-grow: 10;
+			align-items: flex-end;
+		}
 		.group-buttons{
 			display: none;
 		}
 	}
-	.view-concerts .view-content .views-row{
-		@extend .col-xs-6;
-		@extend .col-sm-4;
-		@extend .col-md-2;
-		&:first-child{
-			@extend .col-md-offset-1;
-		}
+	.view-content{
+		display: flex;
 	}
 	.panel-separator{
 		margin-top: $padding-large;
@@ -97,9 +113,13 @@ body{
 			margin: auto;
 		}
 		h3{
-			font-size: $font-xlarge;
+			text-align: center;
 			font-weight: $bolder;
 			margin-bottom: $padding-xs;
+			font-size: $font-small;
+			@media #{$sm}{
+				font-size: $font-xlarge;
+			}
 			@media #{$md}{
 				max-width: 60vw
 			}
@@ -134,6 +154,7 @@ body{
 }
 
 // FRIENDS
+	
 .page-les-amis-du-geneva-camerata{
 	.panel-2col{
 		@extend .row;
@@ -141,10 +162,16 @@ body{
 	.panel-2col .panel-col-first{
 		@extend .col-xs-12;
 		@extend .col-sm-3;
+		@media #{$sm}{
+			@include full-height-section();
+		}
 	}
 	.panel-2col .panel-col-last{
 		@extend .col-xs-12;
 		@extend .col-sm-9;
+		@media #{$sm}{
+			@include full-height-section();
+		}
 	}
 	.webform-component-field-wrapper:not(.inline-wrapper){
 		@extend .col-xs-12;
@@ -213,6 +240,7 @@ body{
 	#edit-submitted-abonnement-tarif{
 		width: auto;
 		font-size: $font-normal;
+		padding: 0;
 	}
 	input[type="checkbox"] + label, input[type="radio"] + label{
 		display: inline-block;

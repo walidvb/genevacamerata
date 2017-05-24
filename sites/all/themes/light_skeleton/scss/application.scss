@@ -10,6 +10,7 @@
 @import "filters";
 @import "webforms";
 @import "static_pages";
+@import "partners";
 @import "hacks";
 
 
@@ -51,6 +52,9 @@ body{
     color: $brand-color;
 }
 
+.debug-helpers{
+  display: none;
+}
 .logged-in .debug-helpers{
   position: fixed;
   bottom: 0;
@@ -62,4 +66,13 @@ body{
   .size{
     text-align: center
   }
+}
+
+::selection{
+  color: $brand-color;
+  background-color: transparent;
+}
+::-moz-selection{
+  color: $brand-color;
+  background-color: transparent;
 }
