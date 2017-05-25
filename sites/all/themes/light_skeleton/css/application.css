@@ -299,24 +299,24 @@ body {
   }
 }
 
-.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .page-partners .panel-col-first, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .page-concerts .view-concerts .view-content .views-row, .view-geca .views-row, .col-md-6, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .page-partners .panel-col-last, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div .form-actions, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last, .col-sm-12, .col-md-12, .page-concerts .view-concerts .view-content .views-row, .col-lg-12 {
+.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .page-partners .panel-col-first, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .page-concerts .view-concerts .view-content .views-row, .view-geca .views-row, .col-md-6, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .page-partners .panel-col-last, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last, .col-sm-12, .col-md-12, .page-concerts .view-concerts .view-content .views-row, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 23px;
   padding-right: 23px;
 }
 @media (min-width: 767px) {
-  .col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .page-partners .panel-col-first, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .page-concerts .view-concerts .view-content .views-row, .view-geca .views-row, .col-md-6, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .page-partners .panel-col-last, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div .form-actions, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last, .col-sm-12, .col-md-12, .page-concerts .view-concerts .view-content .views-row, .col-lg-12 {
+  .col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .page-partners .panel-col-first, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .page-concerts .view-concerts .view-content .views-row, .view-geca .views-row, .col-md-6, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .page-partners .panel-col-last, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last, .col-sm-12, .col-md-12, .page-concerts .view-concerts .view-content .views-row, .col-lg-12 {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-.col, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div .form-actions, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last {
+.col, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last {
   float: left;
 }
 
-.col-xs-12, .page-reserver .webform-component-field-wrapper, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div .form-actions, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last {
+.col-xs-12, .page-reserver .webform-component-field-wrapper, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last {
   width: 100%;
 }
 
@@ -1197,6 +1197,7 @@ body {
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1205,8 +1206,7 @@ a, a:hover, a:active {
 }
 
 #admin-menu {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 @media (max-width: 767px) {
   #admin-menu {
@@ -1266,8 +1266,7 @@ ul {
 
 body fieldset {
   background: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .field-collection-container {
@@ -1287,8 +1286,7 @@ body fieldset {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 label, legend {
@@ -1308,13 +1306,8 @@ strong {
 }
 
 body .vertical-tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
   margin: 0;
   border: none;
   background-color: none;
@@ -1329,24 +1322,15 @@ body .vertical-tabs {
   padding: 0;
 }
 .vertical-tabs ul.vertical-tabs-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-between;
   border-top: none;
   justify-content: space-between;
   display: flex;
 }
 .vertical-tabs ul.vertical-tabs-list li {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(50% - 5px);
-          flex: 0 0 calc(50% - 5px);
+  flex: 0 0 calc(50% - 5px);
   width: 50%;
 }
 .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button {
@@ -1395,8 +1379,7 @@ a, a:hover {
 }
 .menu a:hover, .menu a.active {
   color: #333333;
-  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
-          box-shadow: inset 0 -1px 0px #ff424d;
+  box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .button, .field-name-node-link a {
@@ -1419,8 +1402,7 @@ a, a:hover {
 .button.active, .field-name-node-link a.active, .button:hover, .field-name-node-link a:hover {
   background-color: #333333;
   color: #ff424d;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .button-small {
@@ -1448,8 +1430,7 @@ a, a:hover {
 .button-small.active, .button-small:hover {
   background-color: #777777;
   color: white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 body .owl-theme .owl-dots .owl-dot.active span, body .owl-theme .owl-dots .owl-dot:hover span {
@@ -1559,8 +1540,7 @@ body .owl-theme .owl-dots .owl-dot span {
 .buy-button.active, .buy-button:hover {
   background-color: #333333;
   color: #ff424d;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .node-type-concert .buy-button {
   min-width: 150px;
@@ -1572,7 +1552,7 @@ body .owl-theme .owl-dots .owl-dot span {
   text-transform: uppercase;
 }
 
-.field-name-field-instrument {
+.field-name-field-instrument, .views-field-field-instrument {
   font-style: italic;
   text-transform: lowercase;
 }
@@ -1621,8 +1601,7 @@ body .owl-theme .owl-dots .owl-dot span {
 .prices-pdfs a.active, .prices-pdfs a:hover {
   background-color: #777777;
   color: white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .right-col .field-name-field-recommendation {
@@ -1683,7 +1662,6 @@ html, body {
   padding-bottom: 30px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.9);
   padding-bottom: 15px;
@@ -1698,23 +1676,15 @@ html, body {
 }
 @media (min-width: 767px) {
   .region-sidepanel-left, .region-sidepanel-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-flow: column;
+    justify-content: flex-start;
   }
 }
-@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
+@supports (backdrop-filter: blur()) {
   .region-sidepanel-left, .region-sidepanel-right {
     background-color: rgba(255, 255, 255, 0.7);
-    -webkit-backdrop-filter: blur(8px);
-            backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
   }
 }
 
@@ -1832,23 +1802,13 @@ body {
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
 }
 
 .side-left .navbar-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
 }
 
 .navbar-link {
@@ -1859,8 +1819,7 @@ body {
 }
 .navbar-link:hover, .navbar-link.active {
   color: #333333;
-  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
-          box-shadow: inset 0 -1px 0px #ff424d;
+  box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .main-menu {
@@ -1873,20 +1832,12 @@ body {
 }
 
 .main-menu, .region-main-menu, .main-menu .navbar-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .main-menu .navbar, .region-main-menu .navbar, .main-menu .navbar-list .navbar {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex: 1 0 auto;
+  justify-content: flex-start;
 }
 .main-menu .navbar li:not(:first-child), .region-main-menu .navbar li:not(:first-child), .main-menu .navbar-list .navbar li:not(:first-child) {
   margin-left: 1.5rem;
@@ -1916,8 +1867,7 @@ body {
 }
 
 .region-main-menu {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .main-menu.full-width, .node-type-page .page-content .main-menu.field-name-field-main-image {
@@ -1927,8 +1877,6 @@ body {
 .language-switcher-locale-url {
   display: none !important;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .language-switcher-locale-url li {
@@ -1953,13 +1901,11 @@ body {
   position: relative;
 }
 .main-menu .language-switcher-locale-url:hover li:not(.active) {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 .main-menu .language-switcher-locale-url li:not(.active) {
   position: absolute;
   z-index: 0;
-  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
@@ -1997,8 +1943,7 @@ input[type="submit"].button {
 input[type="submit"].button.active, input[type="submit"].button:hover {
   background-color: #333333;
   color: #ff424d;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 #block-block-1, #block-block-2 label {
@@ -2014,8 +1959,6 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
 }
 
 .js #menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -2024,8 +1967,6 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
 }
 @media (min-width: 767px) {
   .main-menu .navbar {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
   }
 }
@@ -2061,32 +2002,18 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   }
 }
 .page-concerts .view-concerts .view-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
 }
 @media (min-width: 767px) {
   .page-concerts .view-concerts .view-content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
   }
 }
 .page-concerts .view-concerts .view-content .views-row {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-flow: column;
+  justify-content: space-around;
   margin-bottom: 2rem;
 }
 .page-concerts .view-concerts .view-content .buy-button {
@@ -2198,7 +2125,6 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
 }
 .view-id-news .info, .view-id-news .owl-dots {
   opacity: 1;
-  -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 .view-id-news .owl-carousel:active .info, .view-id-news .owl-carousel:active .owl-dots, .view-id-news .owl-item:not(.active) .info, .view-id-news .owl-item:not(.active) .owl-dots {
@@ -2219,32 +2145,19 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
 }
 
 .group-buttons {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: space-between;
   display: flex;
   justify-self: flex-end;
-  -webkit-box-flex: 10;
-      -ms-flex-positive: 10;
-          flex-grow: 10;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-grow: 10;
+  align-items: flex-end;
 }
 .group-buttons > * {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(50% - 5px);
-          flex: 0 0 calc(50% - 5px);
+  flex: 0 0 calc(50% - 5px);
   width: 50%;
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .group-buttons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .group-buttons > * {
     min-width: 100%;
@@ -2290,7 +2203,6 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   padding-bottom: 30px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
@@ -2308,23 +2220,15 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
 }
 @media (min-width: 767px) {
   #filters {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-flow: column;
+    justify-content: flex-start;
   }
 }
-@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
+@supports (backdrop-filter: blur()) {
   #filters {
     background-color: rgba(255, 255, 255, 0.7);
-    -webkit-backdrop-filter: blur(8px);
-            backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
   }
 }
 #filters.open {
@@ -2359,19 +2263,16 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   background-repeat: no-repeat;
   background-size: 1rem;
   background-position: center;
-  -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
-@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
+@supports (backdrop-filter: blur()) {
   .trigger {
     background-color: rgba(255, 255, 255, 0.7);
-    -webkit-backdrop-filter: blur(8px);
-            backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
   }
 }
 @media (min-width: 767px) {
   .trigger {
-    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
   }
 }
@@ -2382,13 +2283,11 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   top: 80vh;
   right: auto;
   left: 100%;
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
+  transform: rotateY(0);
   z-index: 801;
 }
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .trigger.trigger-right {
-    position: -webkit-sticky;
     position: sticky;
     top: calc(85px + 15px);
   }
@@ -2414,11 +2313,10 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   top: calc(85px);
   opacity: 0;
 }
-@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
+@supports (backdrop-filter: blur()) {
   .trigger.trigger-right.trigger-close {
     background-color: transparent;
-    -webkit-backdrop-filter: none;
-            backdrop-filter: none;
+    backdrop-filter: none;
   }
 }
 @media (min-width: 767px) {
@@ -2497,8 +2395,7 @@ body .button.button-primary, body .field-name-node-link a.button-primary, .field
 body .button.button-primary.active, body .field-name-node-link a.button-primary.active, .field-name-node-link body a.button-primary.active, body .button.button-primary:hover, body .field-name-node-link a.button-primary:hover, .field-name-node-link body a.button-primary:hover, body button.button-primary.active, body button.button-primary:hover, body input[type="submit"].button-primary.active, body input[type="submit"].button-primary:hover, body input[type="reset"].button-primary.active, body input[type="reset"].button-primary:hover, body input[type="button"].button-primary.active, body input[type="button"].button-primary:hover {
   background-color: #333333;
   color: #ff424d;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .webform-component--concert {
@@ -2518,66 +2415,64 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
     float: left;
     margin: 0 .5rem;
   }
-  .page-reserver .pane-node {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  .page-reserver .pane-node .pane-content {
     display: flex;
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
+    flex-flow: wrap;
   }
   .page-reserver .field-name-field-type {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
   }
   .page-reserver .field-name-title-field {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+    flex: 0 1 100%;
   }
 }
 @media (min-width: 767px) and (min-width: 1120px) {
   .page-reserver .field-name-title-field {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 30%;
-            flex: 0 1 30%;
+    flex: 0 1 30%;
   }
+}
+
+.page-reserver .webform-component--infos {
+  width: 50%;
+  flex-basis: 100%;
+  padding: 1rem 0 0 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.page-reserver .webform-component--infos p {
+  margin-bottom: 0;
+}
+.page-reserver .form-actions {
+  width: 200px;
+  display: inline-block;
 }
 
 @media (min-width: 767px) {
   .webform-component--details {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     margin-left: -5px;
     margin-right: -5px;
   }
   .webform-component--details .webform-component {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    flex: 0 0 50%;
     padding: 0 5px;
   }
 }
 
 .webform-component--billets {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
+  flex-wrap: wrap;
+}
+@media (min-width: 1120px) {
+  .webform-component--billets {
+    max-width: 50%;
+  }
 }
 .webform-component--billets .webform-component-number {
   padding: 0 5px;
   text-align: center;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
+  flex: 0 0 25%;
   margin-bottom: 15px;
 }
 .webform-component--billets .webform-component-number label {
@@ -2591,20 +2486,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   max-width: 50px;
   display: block;
   margin: auto;
-  margin-top: 5px;
-}
-@media (min-width: 1120px) {
-  .webform-component--billets {
-    width: 50%;
-  }
-}
-
-.webform-component--billets--infos {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  padding: 1rem;
-  display: inline-block;
-  vertical-align: top;
+  margin-top: .65rem;
 }
 
 .page-abonnements h1 {
@@ -2614,9 +2496,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 }
 @media (max-width: 767px) {
   .page-abonnements .view-concerts .view-content {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     margin-left: -5px;
     margin-right: -5px;
   }
@@ -2628,31 +2508,18 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   pointer-events: none;
   padding-left: 5px !important;
   padding-right: 5px !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
 }
 .page-abonnements .view-concerts .field-name-field-date {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 10;
-      -ms-flex-positive: 10;
-          flex-grow: 10;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-grow: 10;
+  align-items: flex-end;
 }
 .page-abonnements .view-concerts .group-buttons {
   display: none;
 }
 .page-abonnements .view-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .page-abonnements .panel-separator {
@@ -2770,8 +2637,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 }
 .page-les-amis-du-geneva-camerata input[type="radio"] {
   vertical-align: top;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  transform: translateY(3px);
 }
 
 .webform-component-optionsmarkup {
@@ -2805,7 +2671,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   font-size: 0.75rem;
 }
 @media (min-width: 767px) {
-  .webform-client-form > div .form-actions input {
+  .webform-client-form > div body:not(.page-reserver) .form-actions input {
     width: auto;
     margin: auto;
     display: block;
@@ -2844,14 +2710,9 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   width: 100%;
 }
 .page-partners .partner-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .page-partners h3 {
   font-size: 0.875rem;
@@ -2861,9 +2722,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 }
 .page-partners .partner {
   text-align: center;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 16.666%;
-          flex: 0 0 16.666%;
+  flex: 0 0 16.666%;
   line-height: 100px;
   max-height: 100px;
 }
@@ -2888,7 +2747,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   background: white;
 }
 
-.view-types-list .view-content .button, .view-types-list .view-content .field-name-node-link a, .field-name-node-link .view-types-list .view-content a {
+#filters .button, #filters .field-name-node-link a, .field-name-node-link #filters a {
   white-space: pre-wrap;
 }
 
@@ -2939,6 +2798,25 @@ body {
   }
 }
 
+.artist-row {
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 767px) {
+  .artist-row:nth-child(2n+1) {
+    clear: left;
+  }
+}
+@media (min-width: 767px) {
+  .artist-row:nth-child(4n+1) {
+    clear: left;
+  }
+}
+@media (min-width: 1120px) {
+  .artist-row:nth-child(6n+1) {
+    clear: left;
+  }
+}
+
 .brand-color {
   color: #ff424d;
 }
@@ -2954,17 +2832,11 @@ body {
   padding: 5px;
   background: white;
   color: #111111;
-  -webkit-box-shadow: inset 0px 0px 1px #111111;
-          box-shadow: inset 0px 0px 1px #111111;
+  box-shadow: inset 0px 0px 1px #111111;
   display: inline-block;
 }
 .logged-in .debug-helpers .size {
   text-align: center;
-}
-
-::-moz-selection {
-  color: #ff424d;
-  background-color: transparent;
 }
 
 ::selection {
@@ -2977,4 +2849,4 @@ body {
   background-color: transparent;
 }
 
-/*# sourceMappingURL=to.css.map */
+/*# sourceMappingURL=application.css.map */

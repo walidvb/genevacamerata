@@ -1,5 +1,26 @@
 <?php
 
+
+
+function check_if_can_book($contexts){
+  // condition for the reservation:
+  $node = $contexts['argument_node_title_1']->data;
+  $now = time();
+  $date = strtotime($node->field_date['und'][0]['value']);
+  $types = $node->field_type['und'];
+  $type_match = false;
+  foreach($types as $type){
+      // check that it is either family or wild
+      $type_match = $type['tid'] == 1 || $type['tid'] == 4;
+  }
+
+  if($date < $now){
+      return false;
+  };
+
+  return $type_match;
+}
+
 /**
  * Adding CSS Files
  */
@@ -369,8 +390,9 @@ function light_skeleton_preprocess_field(&$vars) { //Replace your theme name MYT
     $text = t('book');
     global $language;
     $locale = $language->language;
-    $alias = drupal_get_path_alias("/node/9", $locale);
-    $url = "$alias?id=$nid";
+    $alias = drupal_get_path_alias("node/$nid", $locale);
+    $subpath = t('reserver');
+    $url = url($alias) . "/" . $subpath;
     $vars['items'] = array(
       0 => array(
         '#markup' => "<a href='$url' class='button'>$text</a>"

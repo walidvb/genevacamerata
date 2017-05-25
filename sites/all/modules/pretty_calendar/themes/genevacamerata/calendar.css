@@ -23,18 +23,29 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .pretty-calendar-week > .pretty-calendar-day, a.tooltip {
   border-radius: 50%;
   text-align: center;
-  flex: 1 0 14%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 14%;
+          flex: 1 0 14%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
@@ -125,13 +136,15 @@ a.tooltip:after {
 .pretty-calendar-month a .calendar-next {
   background: transparent url("/sites/all/themes/light_skeleton/resources/arrow_left.png") no-repeat 0;
   background-size: contain;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .pretty-calendar-month a:hover .calendar-next {
   background: transparent url("/sites/all/themes/light_skeleton/resources/arrow_left.png") no-repeat 0;
   background-size: contain;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 /* calendar loader styles */
@@ -151,4 +164,4 @@ a.tooltip:after {
   width: 48px;
 }
 
-/*# sourceMappingURL=calendar.css.map */
+/*# sourceMappingURL=to.css.map */

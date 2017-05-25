@@ -79,7 +79,7 @@ body{
 			float: left;
 			margin: 0 .5rem;
 		}
-		.pane-node{
+		.pane-node .pane-content{
 			display: flex;
 			flex-flow: wrap;
 		}
@@ -95,6 +95,22 @@ body{
 	}
 	.webform-component-field-wrapper{
 		@extend .col-xs-12;
+	}
+
+	.webform-component--infos{
+		width: 50%;
+		flex-basis: 100%;
+		padding: 1rem 0 0 0;
+    display: inline-block;
+	  vertical-align: top;
+	  p{
+	  	margin-bottom: 0;
+	  }
+	}
+
+	.form-actions{
+		width: 200px;
+		display: inline-block;
 	}
 }
 
@@ -114,6 +130,9 @@ body{
 .webform-component--billets{
 	display: inline-flex;
 	flex-wrap: wrap;
+	@media #{$md}{
+		max-width: 50%;
+	}
 	.webform-component-number{
 		label{
 			font-size: $font-smallest;
@@ -130,19 +149,9 @@ body{
 			max-width: 50px;
 			display: block;
 			margin: auto;
-			margin-top: 5px;
+			margin-top: .65rem;
 		}
 	}
-	width: 100%;
-	@media #{$md}{
-		width: 50%;
-	}
-}
-.webform-component--billets--infos{
-	flex-basis: 100%;
-	padding: 1rem;
-	    display: inline-block;
-    vertical-align: top;
 }
 
 // ABONNEMENT
@@ -305,7 +314,7 @@ body{
 	.webform-component-markup{
 		font-size: $font-smallest;
 	}
-	.form-actions{
+	body:not(.page-reserver) .form-actions{
 		@extend .col-xs-12;
 		@media #{$sm}{
 			input{
