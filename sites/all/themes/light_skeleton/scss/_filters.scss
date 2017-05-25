@@ -3,7 +3,7 @@
 	text-align: center;
 	height: calc(100vh - #{$header-height});
 	right: -100%;
-	&.open{
+	[data-panel="filters"] &{
 		right: 0%;
 	}
 	@media #{$md}{
@@ -77,8 +77,10 @@
 				top: 4rem;
 			}
 			opacity: 0;
-			&.is-active{
+			pointer-events: none;
+			[data-panel="filters"] &{
 				opacity: 1;
+				pointer-events: auto;
 				display: inline-block;
 			}
 			@media #{$sm}{
@@ -86,10 +88,12 @@
 			}
 		}
 	}
-	&.is-active{
+	[data-panel="filters"] &{
 		opacity: 0;
+		pointer-events: none;
 		@media #{$sm}{
 			opacity: 1;
+			pointer-events: auto;
 			right: -100%;
 		}
 	}

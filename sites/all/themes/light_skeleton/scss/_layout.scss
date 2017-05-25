@@ -33,14 +33,14 @@ html, body{
 		min-width: 500px;
 	}
 	left: -100%;
-	&.open{
+	[data-panel="region-sidepanel-left"] &{
 		left: 0;
 	}
 }	
 
 .region-sidepanel-right{
 	right: -100%;
-	&.open{
+	[data-panel="filters"] &{
 		right: 0;
 	}
 }	
@@ -121,5 +121,20 @@ body{
 	
 	@media #{$tablet}{
 		padding: $touch-padding;
+	}
+}
+[data-panel="region-sidepanel-left"] .hamburger-inner{
+  transition-delay: .12s;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transform: rotate(45deg);
+	&:before{
+		top: 0;
+		opacity: 0;
+		transition: top 75ms ease,opacity 75ms ease .12s
+	}
+	&:after{
+		bottom: 0;
+		transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+		transform: rotate(-90deg);
 	}
 }
