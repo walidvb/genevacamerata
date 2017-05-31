@@ -412,8 +412,6 @@ function light_skeleton_preprocess_field(&$vars) { //Replace your theme name MYT
 }
 
 function light_skeleton_preprocess_node(&$vars) {
-  _add_number_to_type($vars);
-
   $vars['view_mode'] = $vars['elements']['#view_mode'];
   // Provide a distinct $teaser boolean.
   $vars['teaser'] = $vars['view_mode'] == 'teaser';
