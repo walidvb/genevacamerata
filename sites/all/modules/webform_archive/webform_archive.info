@@ -1,0 +1,13 @@
+name = Webform Archive
+description = Creates the functionality to archive webform submissions.
+core = 7.x
+package = Webform
+config = admin/config/content/webform/archive
+dependencies[] = webform
+
+; Information added by Drupal.org packaging script on 2017-04-13
+version = "7.x-1.1+2-dev"
+core = "7.x"
+project = "webform_archive"
+datestamp = "1492084489"
+

@@ -1,10 +1,10 @@
-
-
-
 .view-display-id-type_in_list_1{
 	float: left;
 }
 .page-concerts{
+	.left-column.section{
+		padding-bottom: 0px;
+	}
 	.view-concerts{
 		@extend .row;
 		.item-list{

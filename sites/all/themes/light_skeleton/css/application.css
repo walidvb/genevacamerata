@@ -1527,7 +1527,11 @@ body .owl-theme .owl-dots .owl-dot span {
   color: #ff424d;
 }
 
-.field-name-field-type {
+.group-type-and-number .field {
+  display: inline-block;
+}
+
+.field-name-field-type, .field-name-field-concert-number {
   text-transform: uppercase;
   color: #ff424d;
   font-size: 0.875rem;
@@ -1536,6 +1540,10 @@ body .owl-theme .owl-dots .owl-dot span {
 
 .field-name-field-type {
   margin-bottom: 1rem;
+}
+
+.field-name-field-concert-number {
+  padding-left: 0.3rem;
 }
 
 .buy-button {
@@ -1770,12 +1778,14 @@ body {
 @media (min-width: 767px) {
   .section {
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 @media (min-width: 1120px) {
   .section {
     height: calc(100vh - 101px);
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -1783,6 +1793,7 @@ body {
   .left-container {
     height: calc(100vh - 101px);
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .left-container .center-column {
     margin-top: 15px;
@@ -2076,6 +2087,9 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   float: left;
 }
 
+.page-concerts .left-column.section {
+  padding-bottom: 0px;
+}
 .page-concerts .view-concerts .item-list {
   display: none;
 }
@@ -2795,12 +2809,14 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first {
     height: calc(100vh - 101px);
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 @media (min-width: 767px) {
   .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last {
     height: calc(100vh - 101px);
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 .page-les-amis-du-geneva-camerata input[type="radio"] {
@@ -2924,6 +2940,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 }
 
 #filters .button, #filters .field-name-node-link a, .field-name-node-link #filters a {
+  display: inline-table;
   white-space: pre-wrap;
 }
 
@@ -2983,11 +3000,17 @@ body {
   }
 }
 @media (min-width: 767px) {
+  .artist-row:nth-child(2n+1) {
+    clear: none;
+  }
   .artist-row:nth-child(4n+1) {
     clear: left;
   }
 }
 @media (min-width: 1120px) {
+  .artist-row:nth-child(4n+1) {
+    clear: none;
+  }
   .artist-row:nth-child(6n+1) {
     clear: left;
   }

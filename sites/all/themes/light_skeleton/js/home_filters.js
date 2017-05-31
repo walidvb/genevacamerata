@@ -39,6 +39,7 @@ GECA = window.GECA || {};
 					$('a[data-type]').removeClass('active');
 					$('.pretty-calendar-week a').removeClass('active');
 					//TODO: close panel again
+					$('html').removeClass('has-panel-open').attr('data-panel', '');
 					if(options.id){
 						$('a[data-type="'+options.id+'"]').addClass('active');
 					}

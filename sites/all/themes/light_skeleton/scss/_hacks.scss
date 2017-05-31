@@ -10,6 +10,7 @@
 // allow types buttons to be on two lines
 #filters{
 	.button{
+		display: inline-table;
 		white-space: pre-wrap;
 	}
 }

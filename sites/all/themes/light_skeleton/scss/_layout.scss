@@ -71,11 +71,13 @@ body{
 @mixin full-height-section($height: 100vh){
 	height: calc(#{$height} - #{$header-height});
 	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 }
 .section{
 	padding-bottom: 2*$padding-large;
 	@media #{$sm}{
 		overflow: auto;
+		-webkit-overflow-scrolling: touch;
 	}
 	@media #{$md}{
 		@include full-height-section($height: '100vh');

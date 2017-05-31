@@ -140,8 +140,10 @@ body .owl-theme .owl-dots .owl-dot span{
 		color: $brand-color;
 	}
 }
-
-.field-name-field-type{
+.group-type-and-number .field {
+    display: inline-block;
+}
+.field-name-field-type, .field-name-field-concert-number{
 	text-transform: uppercase;
 	color: $brand-color;
 	font-size: $font-small;
@@ -150,6 +152,9 @@ body .owl-theme .owl-dots .owl-dot span{
 
 .field-name-field-type{
 	margin-bottom: 1rem;
+}
+.field-name-field-concert-number{
+	padding-left: .3rem
 }
 .buy-button{
 	@include button($color: $brand-color);

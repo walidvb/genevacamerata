@@ -1,0 +1,78 @@
+<?php
+/**
+ * @file
+ * Schema for the webform_archive module.
+ *
+ * Defines three tables :
+ *  1. archive_webforms.
+ *  2. archive_webform_submissions (Clone of webform_submission table).
+ *  3. archive_webform_submitted_data (Clone of webform_submitted_data table).
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function webform_archive_schema() {
+  // Create a directory for archived reports.
+  $path = 'public://webform_archive_reports';
+  if (!file_prepare_directory($path, FILE_CREATE_DIRECTORY)) {
+    $message = st('Unable to create webform archive directory, %path.Check the
+      permissions on your files directory.', array('%path' => file_uri_target($path)));
+    drupal_set_message($message, 'error');
+  }
+
+  $schema = array();
+
+  // Archive webform table to store the last archive timestamp.
+  $schema['archive_webform'] = array(
+    'description' => 'Holds general information about archive webform',
+    'fields' => array(
+      'nid' => array(
+        'description' => 'The node identifier of an archive webform.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'archived' => array(
+        'description' => 'Timestamp of when the form was last archived.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+  );
+
+  // Archive webform submissions table. [Clone of webform_submission table]
+  $webform_submission_schema = drupal_get_schema('webform_submissions');
+  unset($webform_submission_schema['module']);
+  unset($webform_submission_schema['name']);
+  $schema['archive_webform_submissions'] = $webform_submission_schema;
+
+  // Archive webform submitted data. [Clone of webform_submitted_data table].
+  $webform_submitted_data_schema = drupal_get_schema('webform_submitted_data');
+  unset($webform_submitted_data_schema['module']);
+  unset($webform_submitted_data_schema['name']);
+  $schema['archive_webform_submitted_data'] = $webform_submitted_data_schema;
+  return $schema;
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function webform_archive_uninstall() {
+  // Drop archive_webform table.
+  if (db_table_exists('archive_webform')) {
+    db_drop_table('archive_webform');
+  }
+  // Drop archive_webform_submissions table.
+  if (db_table_exists('archive_webform_submissions')) {
+    db_drop_table('archive_webform_submissions');
+  }
+  // Drop archive_webform_submitted_data table.
+  if (db_table_exists('archive_webform_submitted_data')) {
+    db_drop_table('archive_webform_submitted_data');
+  }
+  file_unmanaged_delete_recursive('public://webform_archive_reports');
+}
