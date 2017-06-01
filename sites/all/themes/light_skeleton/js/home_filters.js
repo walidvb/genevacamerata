@@ -2,15 +2,16 @@ GECA = window.GECA || {};
 (function($){
 	GECA.filters = function(context, settings){
 		// dates
-		$('.pretty-calendar-week a').on('click', context, function(e){
+		$('.pretty-calendar-week a', context).on('click', function(e){
 			e.preventDefault();
-			var $this = $(e.currentTarget);
-			var href = $this.attr('href');
-			var date = /calendar\/(.+)/.exec(href)[1].replace(/\//g, '-');
-			loadWithFilters({
-				date: date,
-				clicked: $this,
-			});
+			// do not load dates
+			// var $this = $(e.currentTarget);
+			// var href = $this.attr('href');
+			// var date = /calendar\/(.+)/.exec(href)[1].replace(/\//g, '-');
+			// loadWithFilters({
+			// 	date: date,
+			// 	clicked: $this,
+			// });
 		});
 
 		// types

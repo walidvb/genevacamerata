@@ -66,6 +66,9 @@ body{
 }
 
 .page-reserver{
+	.group-type-and-number{
+		flex: 0 0 100%;
+	}
 	.field-name-title-field{
 		font-size: $font-large;
 		font-weight: $bold;
