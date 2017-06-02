@@ -462,9 +462,31 @@ function light_skeleton_preprocess_node(&$vars) {
   $vars['theme_hook_suggestions'][] = 'node__' . $node->nid;
 }
 
+function light_skeleton_menu_link__menu_geca($vars){
+  $element = $vars['element'];
+  $fid = $element['#original_link']['options']['content']['image'];
+  $file = file_load($fid);
+  $uri = $file->uri;
+  $url = file_create_url($uri);
+  $styled_url = image_style_url('left_panel_large', $uri);
+  $title = $element['#title'];
+  $img = theme_image(array(
+    'path' => $styled_url,
+    'alt' => $title,
+    'attributes' => array()
+  ));
+  $html = $img . "<h3>$title</h3>";
+  $l = l($html, $element['#href'], 
+    array('html' => true, 
+      'attributes' => array(
+        'title' => $title
+      )
+    ) 
+  );
+  return "<li class='col-xs-12 col-sm-4'>$l</li>";
+}
 
 function light_skeleton_menu_link(array $vars) {
-
   $element = $vars['element'];
   $sub_menu = '';
 

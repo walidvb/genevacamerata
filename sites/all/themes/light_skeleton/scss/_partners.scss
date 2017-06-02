@@ -5,13 +5,16 @@
   .panel-col-first{
     @extend .col-xs-12;
     @extend .col-sm-4;
+    @extend .section;
   }
   .panel-col-last{
     @extend .col-xs-12;
     @extend .col-sm-8;
+    @extend .section;
   }
-  .view-content{
 
+  .partner-group-container{
+    margin-bottom: 3*$padding-xs;
   }
   .partner-group{
     display: flex;

@@ -1,5 +1,29 @@
+.page-geca .panel-1col{
+	@extend .col-xs-12;
+	ul{
+		@extend .row;
+	}
+	li{
+		margin-bottom: 3rem;
+	}
+	h3{
+		margin-top: 1.5rem;
+		font-size: $font-small;
+		text-align: center;
+		font-weight: $bold;
+		text-transform: uppercase;
+	}
+	#menu{
+		display: block;
+	}
+}
 
 .node-type-page .page-content{
+	h2{
+		color: $brand-color;
+		font-size: inherit;
+		margin-bottom: 0;
+	}
 	@extend .row;
 	.field-name-field-main-image{
 		@extend .full-width;
@@ -18,4 +42,20 @@
 		font-weight: $bold;
 	}
 	margin-bottom: $padding-large;
+}
+
+
+@media #{$sm}{
+	.field-name-body{
+		// page comité
+		.page-node-116 &, .page-node-115 &{
+			column-count: 2;	
+		}
+		@media #{$md}{
+			// page musiciens
+			.page-node-115 &{
+				column-count: 4;
+			}
+		}
+	}
 }
