@@ -52,10 +52,10 @@
 .region-sidepanel-left{
 	padding-left: 5rem;	
 	@media #{$sm}{
-		padding-left: 6.5rem;	
+		padding-left: 3.5rem;	
 	}
 	@media #{$md}{
-		padding-left: 9.5rem;	
+		padding-left: 8rem;	
 	}
 }
 #block-system-main-menu{
@@ -65,15 +65,22 @@
 
 .region-main-menu{
 	justify-content: space-around;
+	.region-main-menu{
+		flex-grow: 1;
+	}
 }
 
-.main-menu.full-width{
+#main-menu-top{
 	padding-right: $padding-container-mobile;
+	margin-left: -$padding-container-mobile;
 }
 //=========== LOCALES
 
 .language-switcher-locale-url{
 	display: none!important;
+	.logged-in &{
+		display: flex!important;
+	}
 	text-transform: uppercase;
 	display: flex;
 	li{ 
@@ -95,10 +102,12 @@
 	}
 	.main-menu &{
 		position: relative;
+		margin-left: 3rem;
 		li.active{
 			background: $white;
 			z-index: 100;
 			position: relative;
+			margin-left: 0;
 		}
 		&:hover li:not(.active){
 			transform: translateX(-100%);	

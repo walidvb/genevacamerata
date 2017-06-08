@@ -96,6 +96,7 @@ function light_skeleton_preprocess_page(&$vars) {
 
   $vars['containner_class'] = $container_class;
   $vars['content_class'] = $content_class;
+
 }
 
 /**
@@ -411,12 +412,17 @@ function light_skeleton_preprocess_field(&$vars) { //Replace your theme name MYT
   }
 }
 
+// function light_skeleton_ds_pre_render_alter(&$entity){
+//   dpm($entity);
+// }
+
 function light_skeleton_preprocess_node(&$vars) {
   $vars['view_mode'] = $vars['elements']['#view_mode'];
   // Provide a distinct $teaser boolean.
   $vars['teaser'] = $vars['view_mode'] == 'teaser';
   $vars['node'] = $vars['elements']['#node'];
   $node = $vars['node'];
+
 
   $vars['date'] = format_date($node->created);
   $vars['name'] = theme('username', array('account' => $node));
@@ -438,11 +444,13 @@ function light_skeleton_preprocess_node(&$vars) {
   // Make the field vars available with the appropriate language.
   field_attach_preprocess('node', $node, $vars['content'], $vars);
 
-
   // Gather node classes.
   $vars['classes_array'][] = drupal_html_class('node-' . $node->type);
   if ($vars['promote']) {
     $vars['classes_array'][] = 'node-promoted';
+  }
+  if(count($node->translations->data) < 2){
+   $vars['classes_array'][] = 'translation-missing'; 
   }
   if ($vars['sticky']) {
     $vars['classes_array'][] = 'node-sticky';
@@ -460,6 +468,23 @@ function light_skeleton_preprocess_node(&$vars) {
   // Clean up name so there are no underscores.
   $vars['theme_hook_suggestions'][] = 'node__' . $node->type;
   $vars['theme_hook_suggestions'][] = 'node__' . $node->nid;
+
+
+  if($vars['page'] && $node->type == 'concert'){
+
+    $menu_item = menu_get_item('/fr');
+    dpm($menu_item);
+    // menu_set_item(NULL, $menu_item);
+    // $trail = array();
+    // $trail[] = array(
+    //   'title' => t('Home'),
+    //   'href' => '/fr',
+    //   'link_path' => '/fr',
+    //   'localized_options' => array(),
+    //   'type' => 0,
+    // );
+    // menu_set_active_trail($trail);
+  }
 }
 
 function light_skeleton_menu_link__menu_geca($vars){
@@ -495,10 +520,11 @@ function light_skeleton_menu_link(array $vars) {
 
   $navbar_link = ('navbar-link');
   $element['#localized_options']['attributes']['class'][] = $navbar_link;
-
   $a_class = ('a-class');
   $element['#localized_options']['attributes']['class'][] = $a_class;
 
+  // add mid to the links
+  $element['#attributes']['data-mid'] = $element['#original_link']['mlid'];
 
   if ($element['#below']) {
     $sub_menu = drupal_render($element['#below']);

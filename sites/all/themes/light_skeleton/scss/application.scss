@@ -87,20 +87,37 @@ body{
     color: $brand-color;
 }
 
+
+img:before{
+  content: '';
+  width: 100%;
+  padding-bottom: 100%;
+  background: linear-gradient(50deg, lighten($brand-color, 10%) 0%, $brand-color 51%, lighten($brand-color, 10%));
+  display: block;
+}
 .debug-helpers{
   display: none;
 }
-.logged-in .debug-helpers{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  padding: 5px;
-  background: white;
-  color: #111111;
-  box-shadow: inset 0px 0px 1px #111111;
-  display: inline-block;
-  .size{
-    text-align: center
+.logged-in{
+  .translation-missing{
+    background: transparentize($brand-color, .9);
+    &:before{
+      content: 'Translation Missing';
+      color: $brand-color;
+    }
+  }
+  .debug-helpers{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    background: white;
+    color: #111111;
+    box-shadow: inset 0px 0px 1px #111111;
+    display: inline-block;
+    .size{
+      text-align: center
+    }
   }
 }
 

@@ -8,8 +8,8 @@ $font-large: 1.1428rem; //
 $font-xlarge: 1.375rem;
 
 
-$bold: 600;
-$bolder: 800;
+$bold: 400;
+$bolder: 700;
 
 /* calendar styles */
 .block-calendar {
@@ -46,6 +46,9 @@ $bolder: 800;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+a.tooltip{
+  font-weight: $bolder;
 }
 a.tooltip:after, .pretty-calendar-today:before{
   content: '';

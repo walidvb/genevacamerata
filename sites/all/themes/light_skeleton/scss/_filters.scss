@@ -30,7 +30,7 @@
 	top: 3rem;
 	width: $icon-width;
 	height: $icon-height;
-	padding: $touch-padding;
+	padding: 1.5*$touch-padding;
 	@include backdrop();
 	background-repeat: no-repeat;
 	background-size: 1rem;
@@ -66,7 +66,7 @@
 			background-color: transparent!important;
 			background-image: url('/sites/all/themes/light_skeleton/resources/arrow_right.png');
 			left: 1rem;
-			top: calc(#{$header-height-xs});
+			top: calc(#{$header-height-xs} - .5rem);
 			// do not blur as it's already on top of a panel
 			@supports (backdrop-filter: blur()){
 				background-color: transparent;

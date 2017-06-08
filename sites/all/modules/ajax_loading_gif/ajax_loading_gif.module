@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * @file
+ * This module allows developer to upload new image in place of default loader.
+ */
+
+// Constant used in module.
+const AJAX_LOADING_GIF_MIN_WIDTH = 10;
+const AJAX_LOADING_GIF_MIN_HEIGHT = 10;
+const AJAX_LOADING_GIF_MAX_WIDTH = 20;
+const AJAX_LOADING_GIF_MAX_HEIGHT = 20;
+
+/**
+ * Implements hook_help().
+ */
+function ajax_loading_gif_help($path, $arg) {
+  $output = '';
+  switch ($path) {
+    case 'admin/help#ajax_loading_gif':
+      $output .= '<p>' . t("Ajax loading gif module helps site administrator to change the default ajax loading icon to a custom one.") . '</p>';
+      $output .= '<p>' . t("By allowing him to upload a new gif image via admin settings.") . '</p>';
+  }
+  return $output;
+}
+
+/**
+ * Implements hook_page_build().
+ */
+function ajax_loading_gif_page_build(&$page) {
+  $ajax_loader_icon = variable_get('ajax_loading_gif_image', '');
+  if (isset($ajax_loader_icon->fid)) {
+    $path = file_create_url($ajax_loader_icon->uri);
+    $js_settings = array('ajax_loading_gif' => array('ajax_loading_gif_path' => $path));
+    $page['content']['#attached']['js'][] = array(
+      'data' => $js_settings,
+      'type' => 'setting',
+    );
+    $page['content']['#attached']['js'][] = drupal_get_path('module', 'ajax_loading_gif') . '/js/ajax_loading_gif.js';
+    $page['content']['#attached']['css'][] = drupal_get_path('module', 'ajax_loading_gif') . '/css/ajax_loading_gif.css';
+  }
+}
+
+/**
+ * Implements hook_permission().
+ */
+function ajax_loading_gif_permission() {
+  return array(
+    'administer loader image api' => array(
+      'title' => t('Administer Loading Image API'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu().
+ */
+function ajax_loading_gif_menu() {
+  $items['admin/ajax_loading_gif_config'] = array(
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ajax_loading_gif_config_form'),
+    'access arguments' => array('administer loader image api'),
+    'type' => MENU_LOCAL_ACTION,
+    'file' => 'ajax_loading_gif.admin.inc',
+  );
+  return $items;
+}

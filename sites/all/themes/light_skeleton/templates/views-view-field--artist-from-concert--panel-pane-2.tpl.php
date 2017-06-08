@@ -24,7 +24,7 @@
 ?>
 <?php if($output): ?>
 	<div class="views-row">
-		<div class="carousel-item" style="background-image:url(<?php print $output; ?>)">
+		<div class="carousel-item" style="background-image: url(<?php print $output; ?>), linear-gradient(50deg, #ff757d 0%, #ff424d 51%, #ff757d 75%);">
 		</div>
 	</div>
 <?php endif; ?>

@@ -25,8 +25,8 @@ $font-normal: 1rem; //14
 $font-large: 1.1428rem; // 
 $font-xlarge: 1.375rem;
 
-$bold: 600;
-$bolder: 800;
+$bold: 400;
+$bolder: 700;
 
 $header-height-xs: 85px;
 $header-height: 101px;
@@ -77,24 +77,27 @@ $loader-url: "/sites/all/themes/light_skeleton/resources/loader.gif";
 	}
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	@media #{$tablet}{
-		display: flex;
-		flex-flow: column;
-		justify-content: flex-start;
-	}
 	transition: all .3s ease-in-out;
 	@include backdrop();
 }
 
-@mixin full-height-element($outer: '.views-row', $inner: '.carousel-item'){
+@mixin full-height-element($outer: '.views-row', $inner: '.carousel-item', $stacked: false){
 	#{$outer}{
 		height: 120.5vw;
-		@media #{$tablet}{
-			// height: calc(100vh - #{$header-height});
-			height: 60vh;
+
+		@if $stacked{
+			@media #{$sm}{
+				// height: calc(100vh - #{$header-height});
+				height: 60vh;
+			}
+			@media #{$md}{
+				height: calc(100vh - #{$header-height + $padding-xs});
+			}
 		}
-		@media #{$md}{
-			height: calc(100vh - #{$header-height + $padding-xs});
+		@else{
+			@media #{$sm}{
+				height: calc(100vh - #{$header-height + $padding-xs});
+			}
 		}
 	  width: 100%;
 	}
@@ -107,6 +110,7 @@ $loader-url: "/sites/all/themes/light_skeleton/resources/loader.gif";
 		@media #{$tablet}{
 			height: calc(100% - 0);
 		}
+		background-image: linear-gradient(50deg, lighten($brand-color, 10%) 0%, $brand-color 51%, lighten($brand-color, 10%) 75%);
 	}
 	@media #{$md}{
 		.admin-menu #{$outer}{

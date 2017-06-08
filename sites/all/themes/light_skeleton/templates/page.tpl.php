@@ -7,15 +7,14 @@
 </nav>
 
 <?php if($page['sidepanel_right']): ?>
-  <div id="filters" class="sidepanel side-right">
-    <div data-panel-target=".region-sidepanel-right" class="trigger trigger-right"></div>
+  <div class="sidepanel side-right">
     <?php print render($page['sidepanel_right']) ?>
   </div>
 <?php endif; ?>
 <!-- Wrapper / Start -->
 <div class="container" id="wrapper">
   <?php if (($page['main_menu'])): ?>
-    <div id="main-menu-top" class="full-width main-menu">
+    <div id="main-menu-top" class="main-menu">
       <button class="hamburger hamburger--squeeze" type="button" data-panel-target=".region-sidepanel-left">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>

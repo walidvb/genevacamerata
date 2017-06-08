@@ -11,7 +11,10 @@
 
 (function($){
 	$(document).ready(function(){
-		$('[data-panel-target]').on('click touch', function(e){
+		console.log("attaching new:");
+		$(document).on('click touchstart', '[data-panel-target]', function(e){
+			e.preventDefault();
+			console.log("fucking touched:");
 			var burger = $(e.currentTarget);
 			var targetSelector = burger.data('panel-target').substring(1);
 			var currentPanel = $('html').attr('data-panel');
@@ -22,12 +25,11 @@
 				$('html').attr('data-panel', targetSelector).addClass("has-panel-open");	
 			}
 		});
-
-		// allow scrolling when dpm()'ing
-		$(document).on('click', '.krumo-root',function(e){
-			$('body').css({
-				'overflow-y': 'auto',
-			})
-		});
+	});
+	// allow scrolling when dpm()'ing
+	$(document).on('click', '.krumo-root',function(e){
+		$('body').css({
+			'overflow-y': 'auto',
+		})
 	});
 })(jQuery);

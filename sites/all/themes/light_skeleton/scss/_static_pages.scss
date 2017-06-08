@@ -1,3 +1,7 @@
+.group-left, .group-right{
+	@extend .section;
+}
+
 .page-geca .panel-1col{
 	@extend .col-xs-12;
 	ul{

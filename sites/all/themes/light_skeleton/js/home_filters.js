@@ -32,6 +32,7 @@ GECA = window.GECA || {};
 			var container = $('.replace-content');
 			container.find('.left-container').addClass('loading');
 			$('.is-active, [data-panel-target]').removeClass('is-active open');
+			$('.section, .section-container').animate({scrollTop: 0});
 			$.get(url, function(data){
 					var replace = $('#home-panels .replace-content', data);
 					container.replaceWith(replace);

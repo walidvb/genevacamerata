@@ -104,11 +104,11 @@ body{
 		width: 50%;
 		flex-basis: 100%;
 		padding: 1rem 0 0 0;
-    display: inline-block;
-	  vertical-align: top;
-	  p{
-	  	margin-bottom: 0;
-	  }
+		display: inline-block;
+		vertical-align: top;
+		p{
+			margin-bottom: 0;
+		}
 	}
 
 	.form-actions{
@@ -235,35 +235,13 @@ body{
 		}
 		@include pricing-table();
 		@media #{$mobile}{
-			$headers: (
-			  2: 'Plein Tarif',
-			  3: 'Tarif Réduit',
-			  4: '16-25 ans',
-			  5: '< 16 ans',
-			);
-			$headers_en: (
-			  2: 'Full Price',
-			  3: 'Reduced Fare',
-			  4: '16-26 years old',
-			  5: 'under 16',
-			);
 			td:first-child{
 				font-weight: $bold;
 				margin-top: 10px;
 			}
 			td:before{
-		    width: 45%;
-		    display: inline-block;	
-			}
-			@each $column, $pricing in $headers {
-			  .fr-only & td:nth-child(#{$column}):before {
-			    content: $pricing;
-			  }
-			}
-			@each $column, $pricing in $headers_en {
-			  .en-only & td:nth-child(#{$column}):before {
-			    content: $pricing;
-			  }
+				width: 45%;
+				display: inline-block;
 			}
 		}
 	}
@@ -271,12 +249,38 @@ body{
 	.webform-component-field-wrapper:not(.inline-wrapper){
 		@extend .col-xs-12;
 		@extend .col-md-4;
-		@extend .col-md-offset-4;
 		border: none;
 	}
 	
 }
+.logged-in .webform-component-field-wrapper:not(.inline-wrapper){
+	@extend .col-md-offset-4;
+}
 
+@media #{$mobile}{
+	$headers: (
+		2: 'Plein Tarif',
+		3: 'Tarif Réduit',
+		4: '16-25 ans',
+		5: '< 16 ans',
+		);
+	$headers_en: (
+		2: 'Full Price',
+		3: 'Reduced Fare',
+		4: '16-26 years old',
+		5: 'under 16',
+		);
+	@each $column, $pricing in $headers {
+		.i18n-fr.page-abonnements td:nth-child(#{$column}):before {
+			content: $pricing;
+		}
+	}
+	@each $column, $pricing in $headers_en {
+		.i18n-en.page-abonnements td:nth-child(#{$column}):before {
+			content: $pricing;
+		}
+	}
+}
 
 
 .page-les-amis-du-geneva-camerata{

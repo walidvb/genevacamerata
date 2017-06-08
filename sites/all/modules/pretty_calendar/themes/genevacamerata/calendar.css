@@ -8,7 +8,7 @@
   position: relative;
   width: 100%;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .pretty-calendar-week,
@@ -47,6 +47,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+}
+
+a.tooltip {
+  font-weight: 700;
 }
 
 a.tooltip:after, .pretty-calendar-today:before {
@@ -163,3 +167,5 @@ a.tooltip:after {
   margin-top: -40px;
   width: 48px;
 }
+
+/*# sourceMappingURL=to.css.map */

@@ -1,12 +1,15 @@
 .container{
   width: 100%;
   padding: 0 $padding-container-mobile;
+  @media #{$tablet}{
+    padding: 0 $padding-container-sm;
+  }
 }
 
 .full-width{
   margin-left: -$padding-container-mobile;
   margin-right: -$padding-container-mobile;
-  @media #{$tablet}{
+  @media #{$md}{
     margin-left: 0;
     margin-right: 0;
   }

@@ -23,8 +23,39 @@
 	}
 }
 
+.page-node-115{
+	@media #{$md}{
+		h2:nth-of-type(3), h2:nth-of-type(7), h2:nth-of-type(12) {
+		    -webkit-column-break-before: always;
+		}
+	}
+}
+
 // make prices appear not a field
 #edit-submitted-abonnement-tarif{
 	outline: none;
 	border: none;
+}
+
+// put type and concert number inline
+.field-name-field-type, .field-name-field-concert-number{ 
+	&, div {
+		display: inline;
+	}
+}
+
+// make LES CONCERTS menu item active
+[data-mid="219"], [data-mid="583"] .navbar-link{
+	.node-type-concert &, .page-reserver &{
+		color: $black;
+		box-shadow: inset 0 -1px 0px $brand-color;
+	}
+}
+
+@media #{$mobile}{
+	.has-panel-open{
+		.replace-content{
+			pointer-events: none,
+		}
+	}
 }

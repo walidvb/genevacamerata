@@ -1,0 +1,12 @@
+name = Ajax loading gif
+description = "Using this module you can customize the Ajax loader icon."
+package = Other
+configure = admin/ajax_loading_gif_config
+core = 7.x
+
+; Information added by Drupal.org packaging script on 2017-03-03
+version = "7.x-1.0"
+core = "7.x"
+project = "ajax_loading_gif"
+datestamp = "1488535385"
+

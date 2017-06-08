@@ -29,14 +29,35 @@
 			display: inline-flex;
 	    flex-flow: column;
 	    justify-content: space-around;
-	    // only first 2 elements should have 0
-	    margin-top: 2rem;
-	    &:first-child, &:nth-child(2){
-	    	margin-top: 0;
-	    }
+	    @media #{$sm}{
+		    // only first 2 elements should have 0
+		    margin-top: 2rem;
+		    &:first-child, &:nth-child(2){
+		    	margin-top: 0;
+		    }
+		  }
+		  @media #{$sm}{
+		    // only first 2 elements should have 0
+		    margin-top: 2rem;
+		    &:first-child, &:nth-child(2){
+		    	margin-top: 0;
+		    }
+		  }
+	    @media #{$lg}{
+		    // only first 2 elements should have 0
+		    margin-top: 2rem;
+		    &:first-child, &:nth-child(2){
+		    	margin-top: 0;
+		    }
+		  }
 		}
 		.button, .buy-button{
-			margin-bottom: 0;
+			@media #{$md}{
+				margin-bottom: 1rem;
+			}
+			@media #{$lg}{
+				margin-bottom: 0;
+			}
 		}
 		.buy-button{
 			width: 100%;
@@ -44,15 +65,12 @@
 	}
 }
 
-.view-id-artist_from_concert.view-display-id-panel_pane_2{
-	@include full-height-element($outer: '.views-row', $inner: '.carousel-item');
-}
 
 .view-id-news{
 	&.inactive{
 		display: none;
 	}
-	@include full-height-element($outer: '.views-row', $inner: '.news');
+	@include full-height-element($outer: '.views-row', $inner: '.news', $stacked: true);
 	.news{
 		position: relative;
 	}
@@ -128,7 +146,7 @@
 			min-width: 100%;
 		}
 		.button{
-			margin-bottom: 0;
+			margin-bottom: 1rem;
 		}
 	}
 }

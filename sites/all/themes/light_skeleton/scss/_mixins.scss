@@ -1,0 +1,49 @@
+// LAYOUT
+@mixin full-height-section($height: 100vh){
+	height: calc(#{$height} - #{$header-height});
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+// THEME
+
+@mixin underlined-link(){
+	color: $black;
+	&:hover, &.active{
+		color: $black;
+		box-shadow: inset 0 -1px 0px $brand-color;
+	}
+}
+
+@mixin button($color: $black, $color-hover: $brand-color, $background: $light-grey, $background-hover: $black){
+	background-color: $background;
+	color: $color;
+	border-radius: $border-radius;
+	padding: 0 5px;
+	border: none;
+	margin-bottom: 1rem;
+	line-height: 2rem;
+	text-transform: uppercase;
+	font-size: $font-small;
+	font-weight: $bold;
+	display: inline-block;
+	text-align: center;
+	letter-spacing: $letter-spacing-large;
+	height: auto;
+	width: 100%;
+	&.active, &:hover{
+		background-color: $background-hover;
+		color: $color-hover;
+		box-shadow: none;
+	}
+}
+
+@mixin mini-button(){
+	@include button($color: $dark-grey, $color-hover: $white, $background: $light-grey, $background-hover: $dark-grey);
+		min-width: 130px;
+		font-size: $font-smallest;
+		width: auto;
+		line-height: 1.4217;
+		margin-bottom: 0;
+}

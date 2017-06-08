@@ -68,13 +68,8 @@ body{
 	z-index: 850;
 }
 
-@mixin full-height-section($height: 100vh){
-	height: calc(#{$height} - #{$header-height});
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-}
 .section{
-	padding-bottom: 2*$padding-large;
+	padding-bottom: $padding-xs;
 	@media #{$sm}{
 		overflow: auto;
 		-webkit-overflow-scrolling: touch;

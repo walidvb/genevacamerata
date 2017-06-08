@@ -33,7 +33,7 @@
 ?>
 <style>
 	<?php
-		print "#$cssID{ background-image: url($img); }";
+		print "#$cssID{ background-image:  url($img), linear-gradient(50deg, #ff757d 0%, #ff424d 51%, #ff757d 75%); }";
 	?>
 	
 </style>

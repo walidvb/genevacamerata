@@ -40,6 +40,10 @@ body .owl-theme .owl-dots .owl-dot span{
 
 //============== custom
 
+.view-id-artist_from_concert.view-display-id-panel_pane_2{
+	@include full-height-element($outer: '.views-row', $inner: '.carousel-item');
+}
+
 .node-concert{
 	position: relative;
 	width: 100%;
@@ -102,7 +106,15 @@ body .owl-theme .owl-dots .owl-dot span{
 	}
 }
 .group-type-and-number .field {
-    display: inline-block;
+    display: inline;
+    .i18n-en &.field-name-field-concert-number .field-item:before{
+    	content: "n°";
+    	display: inline;
+    }
+    .i18n-fr &.field-name-field-concert-number .field-item:before{
+    	content: "#";
+    	display: inline;
+    }
 }
 .field-name-field-type, .field-name-field-concert-number{
 	text-transform: uppercase;
@@ -111,19 +123,28 @@ body .owl-theme .owl-dots .owl-dot span{
 	letter-spacing: $letter-spacing-large;
 }
 
-.field-name-field-type{
+.group-type-and-number{
 	margin-bottom: 1rem;
 }
 .field-name-field-concert-number{
 	padding-left: .3rem
 }
-.buy-button{
+
+// 
+.buy-link{
+	display: inline-block;
+}
+
+.field-name-field-tickets .button{
+	color: $brand-color;
+}
+.field-name-field-tickets .buy-button{
 	@include button($color: $brand-color);
 	width: auto;
-	.node-type-concert &{
-		min-width: 150px;
-		margin-top: 1rem;
-	}
+}
+.node-type-concert .button, .node-type-concert .buy-button{
+	min-width: 150px;
+	margin-top: 1rem;
 }
 
 .field-name-field-artists, .field-name-field-director{
@@ -185,4 +206,19 @@ body .owl-theme .owl-dots .owl-dot span{
 // ARTISTS
 .vertical-tabs-list{
 	font-style: italic;
+}
+
+.node-type-artist{
+	.page-content{
+		@extend .row;
+	}
+	.field-name-field-main-image{
+		@extend .full-width;
+	}
+	.field-name-field-title h1{
+		margin-bottom: 0;
+	}
+	.field-name-field-instrument{
+		margin-bottom: $padding-xs;
+	}
 }
