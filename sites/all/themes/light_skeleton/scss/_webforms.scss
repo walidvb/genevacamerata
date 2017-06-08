@@ -165,9 +165,6 @@ body{
 	text-align: center;
 	input[type="submit"]{
 		width: auto;
-		&:last-child{
-			margin-left: 1rem;
-		}
 	}
 }
 
@@ -244,6 +241,7 @@ body{
 			td:before{
 				width: 45%;
 				display: inline-block;
+				margin-bottom: .5rem;
 			}
 		}
 
@@ -289,14 +287,15 @@ body{
 			}
 			padding: 0;
 			@media #{$tablet}{
-				flex: 0 1 33.333%;
-				padding: 0 $padding-container-sm;
+				flex: 0 1 33.333333%;
+				padding: 0 8px;
 				border-top: none!important;
 				
 				&:nth-child(4n){
 					margin-top: 2rem;
 				}
 			}
+
 			// remove the added tr which is empty
 			&:last-child{
 				display: none;
@@ -312,8 +311,6 @@ body{
 			}
 			&:last-child{
 				flex: 0 1 100%;
-			}
-			&:nth-child(2n + 1){			
 			}
 			border-bottom: none;
 			padding: 5px 0px;

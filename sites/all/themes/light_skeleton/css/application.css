@@ -1916,6 +1916,10 @@ body {
   }
 }
 
+.region-main-menu {
+  width: 100%;
+}
+
 .main-menu, .region-main-menu, .main-menu .navbar-list {
   display: flex;
   align-items: center;
@@ -2246,8 +2250,6 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
 .group-buttons {
   justify-content: space-between;
   display: flex;
-  justify-self: flex-end;
-  flex-grow: 10;
   align-items: flex-end;
 }
 .group-buttons > * {
@@ -2270,6 +2272,9 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   font-weight: 400;
   font-size: 0.875rem;
   margin-bottom: 1rem;
+  align-items: flex-end;
+  display: flex;
+  flex-grow: 10;
 }
 .view-concerts .field-name-title h2 {
   font-weight: 400;
@@ -2726,9 +2731,6 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .webform-component-matrix input[type="submit"] {
   width: auto;
 }
-.webform-component-matrix input[type="submit"]:last-child {
-  margin-left: 1rem;
-}
 
 .page-abonnements h1 {
   font-size: 1.1428rem;
@@ -2839,6 +2841,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   .page-abonnements .pane-node .field-name-body td:before {
     width: 45%;
     display: inline-block;
+    margin-bottom: .5rem;
   }
 }
 .page-abonnements .form-actions {
@@ -2899,8 +2902,8 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 }
 @media (min-width: 767px) {
   .page-abonnements #edit-abonnes-0-table tr {
-    flex: 0 1 33.333%;
-    padding: 0 15px;
+    flex: 0 1 33.333333%;
+    padding: 0 8px;
     border-top: none !important;
   }
   .page-abonnements #edit-abonnes-0-table tr:nth-child(4n) {

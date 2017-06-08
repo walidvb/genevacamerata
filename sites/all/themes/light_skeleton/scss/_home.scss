@@ -137,8 +137,6 @@
 }
 .group-buttons{
 	@include gapped-buttons();
-	justify-self: flex-end;
-	flex-grow: 10;
   align-items: flex-end;
 	@media (min-width: 1200px) and (max-width:1300px){
 		flex-direction: column;
@@ -159,6 +157,9 @@
 		font-weight: $bold;
 		font-size: $font-small;
 		margin-bottom: 1rem;
+		align-items: flex-end;
+		display: flex;
+		flex-grow: 10;
 	}
 	.field-name-title h2{
 		font-weight: $bold;
