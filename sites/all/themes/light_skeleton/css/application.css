@@ -271,35 +271,35 @@ body {
   }
 }
 
-.row, .node-type-artist .page-content, .page-concerts .view-concerts, .page-les-amis-du-geneva-camerata .panel-2col, .webform-client-form > div, .page-geca .panel-1col ul, .node-type-page .page-content {
+.row, .node-type-artist .page-content, .page-concerts .view-concerts, .page-les-amis-du-geneva-camerata .panel-2col, .webform-client-form > div, .page-menu .panel-1col ul, .node-type-page .page-content, .page-partners .panel-2col, .page-media .view-content {
   margin-left: -23px;
   margin-right: -23px;
 }
 @media (min-width: 767px) {
-  .row, .node-type-artist .page-content, .page-concerts .view-concerts, .page-les-amis-du-geneva-camerata .panel-2col, .webform-client-form > div, .page-geca .panel-1col ul, .node-type-page .page-content {
+  .row, .node-type-artist .page-content, .page-concerts .view-concerts, .page-les-amis-du-geneva-camerata .panel-2col, .webform-client-form > div, .page-menu .panel-1col ul, .node-type-page .page-content, .page-partners .panel-2col, .page-media .view-content {
     margin-left: -15px;
     margin-right: -15px;
   }
 }
 
-.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .page-partners .panel-col-first, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .page-concerts .view-concerts .view-content .views-row, .view-geca .views-row, .col-md-6, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .page-partners .panel-col-last, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-geca .panel-1col, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last, .col-sm-12, .col-md-12, .page-concerts .view-concerts .view-content .views-row, .col-lg-12 {
+.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .page-media .views-row, .col-lg-2, .col-xs-3, .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-media .views-row, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .page-partners .panel-col-first, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .page-media .views-row, .col-sm-6, .page-concerts .view-concerts .view-content .views-row, .view-geca .views-row, .col-md-6, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .page-partners .panel-col-last, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .webform-component--info, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-menu .panel-1col, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last, .col-sm-12, .col-md-12, .page-concerts .view-concerts .view-content .views-row, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 23px;
   padding-right: 23px;
 }
 @media (min-width: 767px) {
-  .col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .page-partners .panel-col-first, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .page-concerts .view-concerts .view-content .views-row, .view-geca .views-row, .col-md-6, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .page-partners .panel-col-last, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-geca .panel-1col, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last, .col-sm-12, .col-md-12, .page-concerts .view-concerts .view-content .views-row, .col-lg-12 {
+  .col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .page-media .views-row, .col-lg-2, .col-xs-3, .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-media .views-row, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .page-partners .panel-col-first, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .page-media .views-row, .col-sm-6, .page-concerts .view-concerts .view-content .views-row, .view-geca .views-row, .col-md-6, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .views-row, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .page-partners .panel-col-last, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .webform-component--info, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-menu .panel-1col, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last, .col-sm-12, .col-md-12, .page-concerts .view-concerts .view-content .views-row, .col-lg-12 {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-.col, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-geca .panel-1col, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last {
+.col, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .page-media .views-row, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .webform-component--info, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-menu .panel-1col, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last {
   float: left;
 }
 
-.col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-geca .panel-1col, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last {
+.col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .webform-component--info, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-menu .panel-1col, .view-geca .views-row, .page-partners .panel-col-first, .page-partners .panel-col-last {
   width: 100%;
 }
 
@@ -323,7 +323,7 @@ body {
   width: 58.33333333%;
 }
 
-.col-xs-6 {
+.col-xs-6, .page-media .views-row {
   width: 50%;
 }
 
@@ -504,7 +504,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .col, .col-sm-1, .col-sm-2, .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .col-sm-4, .page-partners .panel-col-first, .col-sm-5, .col-sm-6, .page-concerts .view-concerts .view-content .views-row, .view-geca .views-row, .col-sm-7, .col-sm-8, .page-partners .panel-col-last, .col-sm-9, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .col-sm-10, .page-abonnements .view-concerts, .col-sm-11, .col-sm-12 {
+  .col, .col-sm-1, .col-sm-2, .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-media .views-row, .col-sm-4, .page-partners .panel-col-first, .col-sm-5, .col-sm-6, .page-concerts .view-concerts .view-content .views-row, .view-geca .views-row, .col-sm-7, .col-sm-8, .page-partners .panel-col-last, .col-sm-9, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-last, .col-sm-10, .page-abonnements .view-concerts, .col-sm-11, .col-sm-12 {
     float: left;
   }
 
@@ -544,7 +544,7 @@ body {
     width: 33.33333333%;
   }
 
-  .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first {
+  .col-sm-3, .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first, .page-media .views-row {
     width: 25%;
   }
 
@@ -713,7 +713,7 @@ body {
   }
 }
 @media (min-width: 1120px) {
-  .col, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-md-5, .col-md-6, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .col-md-7, .col-md-8, .page-abonnements .view-concerts, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .page-concerts .view-concerts .view-content .views-row {
+  .col, .col-md-1, .col-md-2, .page-media .views-row, .col-md-3, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-md-5, .col-md-6, .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper), .col-md-7, .col-md-8, .page-abonnements .view-concerts, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .page-concerts .view-concerts .view-content .views-row {
     float: left;
   }
 
@@ -757,7 +757,7 @@ body {
     width: 25%;
   }
 
-  .col-md-2 {
+  .col-md-2, .page-media .views-row {
     width: 16.66666667%;
   }
 
@@ -901,7 +901,7 @@ body {
     margin-left: 41.66666667%;
   }
 
-  .col-md-offset-4, .logged-in .webform-component-field-wrapper:not(.inline-wrapper), .webform-component--info {
+  .col-md-offset-4 {
     margin-left: 33.33333333%;
   }
 
@@ -1142,15 +1142,19 @@ body {
 .page-concerts .view-concerts:before,
 .page-les-amis-du-geneva-camerata .panel-2col:before,
 .webform-client-form > div:before,
-.page-geca .panel-1col ul:before,
+.page-menu .panel-1col ul:before,
 .node-type-page .page-content:before,
+.page-partners .panel-2col:before,
+.page-media .view-content:before,
 .row:after,
 .node-type-artist .page-content:after,
 .page-concerts .view-concerts:after,
 .page-les-amis-du-geneva-camerata .panel-2col:after,
 .webform-client-form > div:after,
-.page-geca .panel-1col ul:after,
-.node-type-page .page-content:after {
+.page-menu .panel-1col ul:after,
+.node-type-page .page-content:after,
+.page-partners .panel-2col:after,
+.page-media .view-content:after {
   content: " ";
   display: table;
 }
@@ -1163,8 +1167,10 @@ body {
 .page-concerts .view-concerts:after,
 .page-les-amis-du-geneva-camerata .panel-2col:after,
 .webform-client-form > div:after,
-.page-geca .panel-1col ul:after,
-.node-type-page .page-content:after {
+.page-menu .panel-1col ul:after,
+.node-type-page .page-content:after,
+.page-partners .panel-2col:after,
+.page-media .view-content:after {
   clear: both;
 }
 
@@ -1186,7 +1192,6 @@ body {
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1195,7 +1200,8 @@ a, a:hover, a:active {
 }
 
 #admin-menu {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 @media (max-width: 767px) {
   #admin-menu {
@@ -1255,7 +1261,8 @@ ul {
 
 body fieldset {
   background: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .field-collection-container {
@@ -1275,7 +1282,8 @@ body fieldset {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 label, legend {
@@ -1307,7 +1315,8 @@ input[type="submit"] {
 input[type="submit"].active, input[type="submit"]:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
@@ -1319,8 +1328,13 @@ strong {
 }
 
 body .vertical-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   margin: 0;
   border: none;
   background-color: none;
@@ -1335,15 +1349,24 @@ body .vertical-tabs {
   padding: 0;
 }
 .vertical-tabs ul.vertical-tabs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-top: none;
   justify-content: space-between;
   display: flex;
 }
 .vertical-tabs ul.vertical-tabs-list li {
-  flex: 0 0 calc(50% - 5px);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 5px);
+          flex: 0 0 calc(50% - 5px);
   width: 50%;
 }
 .vertical-tabs ul.vertical-tabs-list li.vertical-tab-button {
@@ -1392,7 +1415,8 @@ a, a:hover {
 }
 .menu a:hover, .menu a.active {
   color: #333333;
-  box-shadow: inset 0 -1px 0px #ff424d;
+  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
+          box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .button, .field-name-node-link a {
@@ -1415,7 +1439,8 @@ a, a:hover {
 .button.active, .field-name-node-link a.active, .button:hover, .field-name-node-link a:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button-small {
@@ -1443,7 +1468,8 @@ a, a:hover {
 .button-small.active, .button-small:hover {
   background-color: #777777;
   color: white;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 body .owl-theme .owl-dots .owl-dot.active span, body .owl-theme .owl-dots .owl-dot:hover span {
@@ -1536,28 +1562,30 @@ body .owl-theme .owl-dots .owl-dot span {
   border: none;
   margin: 15px auto 0;
 }
-.field-name-field-program .field-name-field-compositor {
+.field-name-field-program .field-name-field-compositor, .field-name-field-program .field-name-field-mention-1, .field-name-field-program .field-name-field-mention-2 {
   font-size: 0.75rem;
+}
+.field-name-field-program .field-name-field-compositor {
   text-transform: uppercase;
+  font-style: italic;
 }
 .field-name-field-program .field-name-field-pieces {
   font-weight: 400;
 }
-.field-name-field-program .field-name-field-mention-1 {
-  font-size: 0.75rem;
-  text-transform: uppercase;
+.field-name-field-program .field-name-field-mention-2 {
   color: #ff424d;
+  text-transform: uppercase;
 }
 
 .group-type-and-number .field {
   display: inline;
 }
 .i18n-en .group-type-and-number .field.field-name-field-concert-number .field-item:before {
-  content: "n°";
+  content: "#";
   display: inline;
 }
 .i18n-fr .group-type-and-number .field.field-name-field-concert-number .field-item:before {
-  content: "#";
+  content: "n°";
   display: inline;
 }
 
@@ -1605,7 +1633,8 @@ body .owl-theme .owl-dots .owl-dot span {
 .field-name-field-tickets .buy-button.active, .field-name-field-tickets .buy-button:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .node-type-concert .button, .node-type-concert .field-name-node-link a, .field-name-node-link .node-type-concert a, .node-type-concert .buy-button {
@@ -1667,7 +1696,8 @@ body .owl-theme .owl-dots .owl-dot span {
 .prices-pdfs a.active, .prices-pdfs a:hover {
   background-color: #777777;
   color: white;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .right-col .field-name-field-recommendation {
@@ -1735,6 +1765,7 @@ html, body {
   padding-bottom: 30px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.9);
   padding-bottom: 15px;
@@ -1742,15 +1773,16 @@ html, body {
 @media (max-width: 767px) {
   .region-sidepanel-left, .region-sidepanel-right {
     height: 100vh;
-    height: calc(100vh - 85px);
+    height: calc(100vh - 89px);
     width: calc(100vw);
-    top: 85px;
+    top: 89px;
   }
 }
-@supports (backdrop-filter: blur()) {
+@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
   .region-sidepanel-left, .region-sidepanel-right {
     background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
   }
 }
 
@@ -1783,7 +1815,7 @@ html, body {
 }
 
 body {
-  padding-top: 85px;
+  padding-top: 89px;
 }
 
 @media (min-width: 767px) {
@@ -1862,19 +1894,27 @@ body {
 }
 
 [data-panel="region-sidepanel-left"] .hamburger-inner {
-  transition-delay: .12s;
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: rotate(45deg);
+  -webkit-transition-delay: .12s;
+          transition-delay: .12s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 [data-panel="region-sidepanel-left"] .hamburger-inner:before {
   top: 0;
   opacity: 0;
+  -webkit-transition: top 75ms ease, opacity 75ms ease 0.12s;
   transition: top 75ms ease, opacity 75ms ease 0.12s;
 }
 [data-panel="region-sidepanel-left"] .hamburger-inner:after {
   bottom: 0;
+  -webkit-transition: bottom 75ms ease, -webkit-transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  transition: bottom 75ms ease, -webkit-transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
   transition: bottom 75ms ease, transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
-  transform: rotate(-90deg);
+  transition: bottom 75ms ease, transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s, -webkit-transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .navbar-list .navbar-item {
@@ -1887,13 +1927,23 @@ body {
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .side-left .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .navbar-link {
@@ -1904,7 +1954,8 @@ body {
 }
 .navbar-link:hover, .navbar-link.active {
   color: #333333;
-  box-shadow: inset 0 -1px 0px #ff424d;
+  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
+          box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .main-menu {
@@ -1921,12 +1972,20 @@ body {
 }
 
 .main-menu, .region-main-menu, .main-menu .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main-menu .navbar, .region-main-menu .navbar, .main-menu .navbar-list .navbar {
-  flex: 1 0 auto;
-  justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .main-menu .navbar li:not(:first-child), .region-main-menu .navbar li:not(:first-child), .main-menu .navbar-list .navbar li:not(:first-child) {
   margin-left: 1.5rem;
@@ -1942,12 +2001,12 @@ body {
 }
 @media (min-width: 767px) {
   .region-sidepanel-left {
-    padding-left: 3.5rem;
+    padding-left: 4.5rem;
   }
 }
 @media (min-width: 1120px) {
   .region-sidepanel-left {
-    padding-left: 8rem;
+    padding-left: 7.5rem;
   }
 }
 
@@ -1956,10 +2015,13 @@ body {
 }
 
 .region-main-menu {
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .region-main-menu .region-main-menu {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 #main-menu-top {
@@ -1970,9 +2032,13 @@ body {
 .language-switcher-locale-url {
   display: none !important;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .logged-in .language-switcher-locale-url {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
 }
 .language-switcher-locale-url li {
@@ -1999,11 +2065,13 @@ body {
   margin-left: 0;
 }
 .main-menu .language-switcher-locale-url:hover li:not(.active) {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 .main-menu .language-switcher-locale-url li:not(.active) {
   position: absolute;
   z-index: 0;
+  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
@@ -2041,7 +2109,8 @@ input[type="submit"].button {
 input[type="submit"].button.active, input[type="submit"].button:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #block-block-1, #block-block-2 label {
@@ -2057,6 +2126,8 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
 }
 
 .js #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -2065,6 +2136,8 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
 }
 @media (min-width: 767px) {
   .main-menu .navbar {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
   }
 }
@@ -2103,18 +2176,32 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   }
 }
 .page-concerts .view-concerts .view-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 @media (min-width: 767px) {
   .page-concerts .view-concerts .view-content {
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }
 .page-concerts .view-concerts .view-content .views-row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-flow: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media (min-width: 767px) {
   .page-concerts .view-concerts .view-content .views-row {
@@ -2228,6 +2315,7 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
 }
 .view-id-news .info, .view-id-news .owl-dots {
   opacity: 1;
+  -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 .view-id-news .owl-carousel:active .info, .view-id-news .owl-carousel:active .owl-dots, .view-id-news .owl-item:not(.active) .info, .view-id-news .owl-item:not(.active) .owl-dots {
@@ -2248,17 +2336,28 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
 }
 
 .group-buttons {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .group-buttons > * {
-  flex: 0 0 calc(50% - 5px);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 5px);
+          flex: 0 0 calc(50% - 5px);
   width: 50%;
 }
 @media (min-width: 1200px) and (max-width: 1300px) {
   .group-buttons {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .group-buttons > * {
     min-width: 100%;
@@ -2272,9 +2371,15 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   font-weight: 400;
   font-size: 0.875rem;
   margin-bottom: 1rem;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 10;
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
 }
 .view-concerts .field-name-title h2 {
   font-weight: 400;
@@ -2307,6 +2412,7 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   padding-bottom: 30px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
@@ -2317,15 +2423,16 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
 @media (max-width: 767px) {
   #filters {
     height: 100vh;
-    height: calc(100vh - 85px);
+    height: calc(100vh - 89px);
     width: calc(100vw);
-    top: 85px;
+    top: 89px;
   }
 }
-@supports (backdrop-filter: blur()) {
+@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
   #filters {
     background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
   }
 }
 [data-panel="filters"] #filters {
@@ -2360,16 +2467,19 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   background-repeat: no-repeat;
   background-size: 1rem;
   background-position: center;
+  -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
-@supports (backdrop-filter: blur()) {
+@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
   .trigger {
     background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
   }
 }
 @media (min-width: 767px) {
   .trigger {
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
   }
 }
@@ -2380,13 +2490,15 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   top: 80vh;
   right: auto;
   left: 100%;
-  transform: rotateY(0);
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
   z-index: 801;
 }
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .trigger.trigger-right {
+    position: -webkit-sticky;
     position: sticky;
-    top: calc(85px + 15px);
+    top: calc(89px + 15px);
   }
 }
 @media (min-width: 767px) {
@@ -2407,14 +2519,15 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   background-color: transparent !important;
   background-image: url("/sites/all/themes/light_skeleton/resources/arrow_right.png");
   left: 1rem;
-  top: calc(85px - .5rem);
+  top: calc(89px - .5rem);
   opacity: 0;
   pointer-events: none;
 }
-@supports (backdrop-filter: blur()) {
+@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())) {
   .trigger.trigger-right.trigger-close {
     background-color: transparent;
-    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
 }
 @media (min-width: 767px) {
@@ -2628,7 +2741,8 @@ body .button.button-primary, body .field-name-node-link a.button-primary, .field
 body .button.button-primary.active, body .field-name-node-link a.button-primary.active, .field-name-node-link body a.button-primary.active, body .button.button-primary:hover, body .field-name-node-link a.button-primary:hover, .field-name-node-link body a.button-primary:hover, body button.button-primary.active, body button.button-primary:hover, body input[type="submit"].button-primary.active, body input[type="submit"].button-primary:hover, body input[type="reset"].button-primary.active, body input[type="reset"].button-primary:hover, body input[type="button"].button-primary.active, body input[type="button"].button-primary:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .webform-component--concert {
@@ -2636,7 +2750,9 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 }
 
 .page-reserver .group-type-and-number {
-  flex: 0 0 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
 }
 .page-reserver .field-name-title-field {
   font-size: 1.1428rem;
@@ -2652,25 +2768,35 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
     margin: 0 .5rem;
   }
   .page-reserver .pane-node .pane-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
   }
   .page-reserver .field-name-field-type {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
   .page-reserver .field-name-title-field {
-    flex: 0 1 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 }
 @media (min-width: 767px) and (min-width: 1120px) {
   .page-reserver .field-name-title-field {
-    flex: 0 1 30%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
   }
 }
 
 .page-reserver .webform-component--infos {
   width: 50%;
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   padding: 1rem 0 0 0;
   display: inline-block;
   vertical-align: top;
@@ -2685,20 +2811,30 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 
 @media (min-width: 767px) {
   .webform-component--details {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     margin-left: -5px;
     margin-right: -5px;
   }
   .webform-component--details .webform-component {
-    flex: 0 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
     padding: 0 5px;
   }
 }
 
 .webform-component--billets {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (min-width: 1120px) {
   .webform-component--billets {
@@ -2708,7 +2844,9 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .webform-component--billets .webform-component-number {
   padding: 0 5px;
   text-align: center;
-  flex: 0 0 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
   margin-bottom: 15px;
 }
 .webform-component--billets .webform-component-number label {
@@ -2739,7 +2877,9 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 }
 @media (max-width: 767px) {
   .page-abonnements .view-concerts .view-content {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-left: -5px;
     margin-right: -5px;
   }
@@ -2751,18 +2891,31 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   pointer-events: none;
   padding-left: 5px !important;
   padding-right: 5px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 .page-abonnements .view-concerts .field-name-field-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 10;
-  align-items: flex-end;
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .page-abonnements .view-concerts .group-buttons {
   display: none;
 }
 .page-abonnements .view-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .page-abonnements .panel-separator {
@@ -2870,7 +3023,13 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .page-abonnements .form-actions input.active, .page-abonnements .form-actions input:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.page-abonnements .webform-component--facturation- {
+  float: none !important;
+  margin: auto;
+  clear: both;
 }
 .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info {
   border: none;
@@ -2885,49 +3044,66 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   display: none;
 }
 .page-abonnements #edit-abonnes-0-table tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 .page-abonnements #edit-abonnes-0-table tr {
   padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.page-abonnements #edit-abonnes-0-table tr:not(:first-child) {
-  border-top: 1px solid #ff424d;
-  margin-top: 1.5rem;
-  padding-top: 1rem;
+@media (max-width: 767px) {
+  .page-abonnements #edit-abonnes-0-table tr:not(:first-child) {
+    border-top: 1px solid #ff424d;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
 }
 @media (min-width: 767px) {
   .page-abonnements #edit-abonnes-0-table tr {
-    flex: 0 1 33.333333%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33.333333%;
+            flex: 0 1 33.333333%;
     padding: 0 8px;
     border-top: none !important;
-  }
-  .page-abonnements #edit-abonnes-0-table tr:nth-child(4n) {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 .page-abonnements #edit-abonnes-0-table tr:last-child {
   display: none;
 }
 .page-abonnements #edit-abonnes-0-table td {
-  flex: 0 1 calc(50% - 10px);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(50% - 10px);
+          flex: 0 1 calc(50% - 10px);
   border-bottom: none;
   padding: 5px 0px;
 }
-@media (min-width: 767px) {
-  .page-abonnements #edit-abonnes-0-table td {
-    flex: 0 1 100%;
-  }
-}
-.page-abonnements #edit-abonnes-0-table td:last-child {
-  flex: 0 1 100%;
+.page-abonnements #edit-abonnes-0-table td:nth-last-child(2) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
 }
 .page-abonnements #edit-abonnes-0-table td:before {
   font-size: 0.875rem;
+  margin-bottom: .5rem;
+  display: block;
 }
 .page-abonnements.i18n-en #webform-client-form-125 td:nth-child(1):before {
   content: "Category*";
@@ -2948,7 +3124,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   content: "Renew*";
 }
 .page-abonnements.i18n-en #webform-client-form-125 td:nth-child(7):before {
-  content: "Remarks*";
+  content: "Remarks";
 }
 .page-abonnements.i18n-fr #webform-client-form-125 td:nth-child(1):before {
   content: "Categorie*";
@@ -2969,11 +3145,12 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   content: "Renouvellement*";
 }
 .page-abonnements.i18n-fr #webform-client-form-125 td:nth-child(7):before {
-  content: "Remarques*";
+  content: "Remarques";
 }
 .page-abonnements .webform-component--info {
   text-align: center;
   clear: both;
+  width: 100% !important;
 }
 @media (min-width: 767px) {
   .page-abonnements .webform-component--info p {
@@ -3018,6 +3195,9 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .page-les-amis-du-geneva-camerata .webform-component-field-wrapper:not(.inline-wrapper) {
   border: none;
 }
+.page-les-amis-du-geneva-camerata .panel-2col {
+  width: 100%;
+}
 @media (min-width: 767px) {
   .page-les-amis-du-geneva-camerata .panel-2col .panel-col-first {
     height: calc(100vh - 101px);
@@ -3034,7 +3214,8 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 }
 .page-les-amis-du-geneva-camerata input[type="radio"] {
   vertical-align: top;
-  transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 
 .webform-component-optionsmarkup {
@@ -3092,17 +3273,17 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   width: 100%;
 }
 
-.page-geca .panel-1col li {
+.page-menu .panel-1col li {
   margin-bottom: 3rem;
 }
-.page-geca .panel-1col h3 {
+.page-menu .panel-1col h3 {
   margin-top: 1.5rem;
   font-size: 0.875rem;
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
 }
-.page-geca .panel-1col #menu {
+.page-menu .panel-1col #menu {
   display: block;
 }
 
@@ -3125,12 +3306,14 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 
 @media (min-width: 767px) {
   .page-node-116 .field-name-body, .page-node-115 .field-name-body {
-    column-count: 2;
+    -webkit-column-count: 2;
+            column-count: 2;
   }
 }
 @media (min-width: 767px) and (min-width: 1120px) {
   .page-node-115 .field-name-body {
-    column-count: 4;
+    -webkit-column-count: 4;
+            column-count: 4;
   }
 }
 
@@ -3140,10 +3323,48 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .page-partners .partner-group-container {
   margin-bottom: 45px;
 }
+@media (max-width: 767px) {
+  .page-partners .partner-group-container {
+    padding: 0;
+  }
+}
 .page-partners .partner-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -30px;
+}
+.page-partners .partner-group > div {
+  padding: 0 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+@media (min-width: 767px) {
+  .page-partners .partner-group > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+  }
+}
+@media (min-width: 1120px) {
+  .page-partners .partner-group > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+  }
+}
+@media (min-width: 1400px) {
+  .page-partners .partner-group > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
 }
 .page-partners h3 {
   font-size: 0.875rem;
@@ -3153,21 +3374,60 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 }
 .page-partners .partner {
   text-align: center;
-  flex: 0 0 16.666%;
   line-height: 100px;
   max-height: 100px;
-}
-.page-partners .partner:not(:first-child) {
-  padding-left: 10px;
-}
-.page-partners .partner:not(:nth-child(5n)) {
-  padding-right: 10px;
 }
 .page-partners .partner img {
   vertical-align: middle;
   max-height: 80px;
   width: auto;
   display: inline-block;
+}
+
+.page-media h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.page-media.page-media-articles .views-field-field-thumbnail img, .page-media.page-media-press-releases .views-field-field-thumbnail img {
+  border: 1px solid #e3e3e3;
+}
+.page-media .views-field-title {
+  text-transform: uppercase;
+  margin-top: .5rem;
+}
+.page-media .views-row {
+  line-height: 1.2;
+  font-size: 0.875rem;
+  margin-bottom: 3rem;
+}
+.page-media .view-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.page-media .views-row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.page-media .views-field-title {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .fixed-fix {
@@ -3180,7 +3440,11 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 
 #filters .button, #filters .field-name-node-link a, .field-name-node-link #filters a {
   display: inline-table;
-  white-space: pre-wrap;
+  white-space: normal;
+}
+
+html:not([data-panel="filters"]) #tiptip_holder {
+  display: none !important;
 }
 
 @media (max-width: 767px) {
@@ -3206,12 +3470,30 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 
 .node-type-concert [data-mid="219"], .page-reserver [data-mid="219"], .node-type-concert [data-mid="583"] .navbar-link, .page-reserver [data-mid="583"] .navbar-link {
   color: #333333;
-  box-shadow: inset 0 -1px 0px #ff424d;
+  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
+          box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 @media (max-width: 767px) {
   .has-panel-open .replace-content {
     pointer-events: none;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .view-concerts .views-row {
+    display: block !important;
+  }
+
+  .page-abonnements #edit-abonnes-0-table td {
+    display: block !important;
+  }
+
+  .webform-component--billets .webform-component-number select {
+    max-width: 100px !important;
+  }
+
+  #filters .view-header .button, #filters .view-header .field-name-node-link a, .field-name-node-link #filters .view-header a {
+    white-space: normal;
   }
 }
 .ajax-progress .throbber {
@@ -3313,11 +3595,17 @@ img:before {
   padding: 5px;
   background: white;
   color: #111111;
-  box-shadow: inset 0px 0px 1px #111111;
+  -webkit-box-shadow: inset 0px 0px 1px #111111;
+          box-shadow: inset 0px 0px 1px #111111;
   display: inline-block;
 }
 .logged-in .debug-helpers .size {
   text-align: center;
+}
+
+::-moz-selection {
+  color: #ff424d;
+  background-color: transparent;
 }
 
 ::selection {
@@ -3329,5 +3617,3 @@ img:before {
   color: #ff424d;
   background-color: transparent;
 }
-
-/*# sourceMappingURL=application.css.map */

@@ -92,27 +92,29 @@ body .owl-theme .owl-dots .owl-dot span{
 	text-align: center;
 	border: none;	
 	margin: $padding-xs auto 0;
-	.field-name-field-compositor{
+	.field-name-field-compositor, .field-name-field-mention-1, .field-name-field-mention-2{
 		font-size: $font-smallest;
+	}
+	.field-name-field-compositor{
 		text-transform: uppercase;
+		font-style: italic;
 	}
 	.field-name-field-pieces{
 		font-weight: $bold;
 	}
-	.field-name-field-mention-1 {
-		font-size: $font-smallest;
-		text-transform: uppercase;
+	.field-name-field-mention-2{
 		color: $brand-color;
+		text-transform: uppercase;
 	}
 }
 .group-type-and-number .field {
     display: inline;
     .i18n-en &.field-name-field-concert-number .field-item:before{
-    	content: "n°";
+    	content: "#";
     	display: inline;
     }
     .i18n-fr &.field-name-field-concert-number .field-item:before{
-    	content: "#";
+    	content: "n°";
     	display: inline;
     }
 }

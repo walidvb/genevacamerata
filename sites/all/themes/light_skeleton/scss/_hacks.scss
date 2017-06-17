@@ -11,11 +11,13 @@
 #filters{
 	.button{
 		display: inline-table;
-		white-space: pre-wrap;
+		white-space: normal;
 	}
 }
 
-
+html:not([data-panel="filters"]) #tiptip_holder{
+	display: none!important;
+}
 // static page
 .panel-col-first, .panel-col-last{
 	@media #{$mobile}{
@@ -58,4 +60,17 @@
 			pointer-events: none,
 		}
 	}
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+  .view-concerts .views-row{display: block!important;}
+  .page-abonnements #edit-abonnes-0-table td{display: block!important}
+  .webform-component--billets .webform-component-number select{max-width: 100px!important;}
+	#filters{
+		.view-header .button{
+			white-space: normal;
+		}
+	}
+
 }

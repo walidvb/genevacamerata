@@ -1,8 +1,21 @@
 GECA = window.GECA || {};
 (function($){
+	// $(document).on('click', '.pretty-calendar-week a',function(e){
+	// 	console.log("clicked");
+	// 	e.preventDefault();
+	// 	// do not load dates
+	// 	// var $this = $(e.currentTarget);
+	// 	// var href = $this.attr('href');
+	// 	// var date = /calendar\/(.+)/.exec(href)[1].replace(/\//g, '-');
+	// 	// loadWithFilters({
+	// 	// 	date: date,
+	// 	// 	clicked: $this,
+	// 	// });
+	// });
 	GECA.filters = function(context, settings){
 		// dates
 		$('.pretty-calendar-week a', context).on('click', function(e){
+			console.log("context:", context);
 			e.preventDefault();
 			// do not load dates
 			// var $this = $(e.currentTarget);

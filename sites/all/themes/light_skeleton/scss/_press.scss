@@ -1,0 +1,40 @@
+.page-media{
+	h1{
+		font-size: $font-normal;
+		text-transform: uppercase;
+	}
+	&.page-media-articles, &.page-media-press-releases{
+		.views-field-field-thumbnail img{
+			border: 1px solid $light-grey;
+		}
+	}
+	.views-field-title{
+		text-transform: uppercase;
+		margin-top: .5rem;
+	}
+	.views-row{
+		line-height: 1.2;
+		font-size: $font-small;
+		@extend .col-xs-6;
+		@extend .col-sm-3;
+		@extend .col-md-2;
+		margin-bottom: 3rem;
+	}
+
+
+
+	.view-content{
+		display: flex;
+		flex-flow: row wrap;
+		@extend .row;
+	}
+	.views-row{
+		display: inline-flex;
+    flex-flow: column;
+  }
+	.views-field-title{
+		flex-grow: 10;
+    align-items: flex-end;
+    display: inline-flex;
+	}
+}

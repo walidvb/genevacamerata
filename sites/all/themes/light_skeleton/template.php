@@ -1,6 +1,13 @@
 <?php
 
-
+// https://www.drupal.org/node/1619498
+// readd the title variable to the views template
+function light_skeleton_preprocess_views_view(&$vars) {
+	if($vars['name'] == 'press'){
+	  $view = $vars['view'];
+	  $vars['title'] = '<h1>' . filter_xss_admin($view->get_title()) . '</h1>';
+	}
+}
 
 function check_if_can_book($contexts){
   // condition for the reservation:
@@ -487,19 +494,38 @@ function light_skeleton_preprocess_node(&$vars) {
   }
 }
 
+function light_skeleton_menu_link__menu_media($vars){
+  return _menu_link_with_image($vars);
+}
 function light_skeleton_menu_link__menu_geca($vars){
+ return _menu_link_with_image($vars);
+}
+
+function _menu_link_with_image($vars){
   $element = $vars['element'];
-  $fid = $element['#original_link']['options']['content']['image'];
-  $file = file_load($fid);
-  $uri = $file->uri;
-  $url = file_create_url($uri);
-  $styled_url = image_style_url('left_panel_large', $uri);
+  $img = '';
   $title = $element['#title'];
-  $img = theme_image(array(
-    'path' => $styled_url,
-    'alt' => $title,
-    'attributes' => array()
-  ));
+  if(null !== $element['#original_link']['options']['content']){
+    $fid = $element['#original_link']['options']['content']['image'];
+    $file = file_load($fid);
+    if($file){
+      $uri = $file->uri;
+      $url = file_create_url($uri);
+      $styled_url = image_style_url('left_panel_large', $uri);
+      $img = theme_image(array(
+        'path' => $styled_url,
+        'alt' => $title,
+        'attributes' => array()
+      ));
+    }
+    else{
+       $img = theme_image(array(
+        'path' => "/sites/all/themes/light_skeleton/resources/missing.png",
+        'alt' => $title,
+        'attributes' => array()
+      ));
+    }
+  }
   $html = $img . "<h3>$title</h3>";
   $l = l($html, $element['#href'], 
     array('html' => true, 

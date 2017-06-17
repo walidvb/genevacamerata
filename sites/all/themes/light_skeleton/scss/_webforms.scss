@@ -256,6 +256,12 @@ body{
 		}
 	}
 
+	.webform-component--facturation-{
+		float: none!important;
+		margin: auto;
+		// needed otherwise element goes on top of other
+		clear: both;
+	}
 	.webform-component-field-wrapper:not(.inline-wrapper),.webform-component--info{
 		@extend .col-xs-12;
 		@extend .col-md-4;
@@ -280,20 +286,19 @@ body{
 			flex-flow: row wrap;
 		}
 		tr{
-			&:not(:first-child){
-				border-top: 1px solid $brand-color;
-				margin-top: 1.5rem;
-				padding-top: 1rem;
+			@media #{$mobile}{
+				&:not(:first-child){
+					border-top: 1px solid $brand-color;
+					margin-top: 1.5rem;
+					padding-top: 1rem;
+				}
 			}
 			padding: 0;
 			@media #{$tablet}{
 				flex: 0 1 33.333333%;
 				padding: 0 8px;
 				border-top: none!important;
-				
-				&:nth-child(4n){
-					margin-top: 2rem;
-				}
+				margin-bottom: 2rem;
 			}
 
 			// remove the added tr which is empty
@@ -307,29 +312,29 @@ body{
 		td{
 			flex: 0 1 calc(50% - 10px);
 			@media #{$tablet}{
-				flex: 0 1 100%;
+				// flex: 0 1 100%;
 			}
-			&:last-child{
+			&:nth-last-child(2){
 				flex: 0 1 100%;
 			}
 			border-bottom: none;
 			padding: 5px 0px;
-			&:first-child{
-			}
 			&:before{
 				font-size: $font-small;
+		    margin-bottom: .5rem;
+    		display: block;
 			}
 		}
 	}
 	$headers: (
-		'.i18n-en': ('Category', 'Rate', 'First Name', 'Last Name', 'Email', 'Renew', 'Remarks'),
-		'.i18n-fr': ('Categorie', 'Tarif', 'Prénom', 'Nom', 'Email', 'Renouvellement', 'Remarques')
+		'.i18n-en': ('Category*', 'Rate*', 'First Name*', 'Last Name*', 'Email*', 'Renew*', 'Remarks'),
+		'.i18n-fr': ('Categorie*', 'Tarif*', 'Prénom*', 'Nom*', 'Email*', 'Renouvellement*', 'Remarques')
 	);
 	@each $lang, $columns in $headers {
 		&#{$lang} #webform-client-form-125{
 			@for $i from 1 through length($columns){
 				td:nth-child(#{$i}):before{
-					content: '#{nth($columns, $i)}*';
+					content: '#{nth($columns, $i)}';
 				}
 			}
 		}
@@ -337,6 +342,7 @@ body{
 	.webform-component--info{
 		text-align: center;
 		clear: both;
+		width: 100%!important;
 		@media #{$tablet}{
 			p{
 				margin-left: -5rem;
@@ -345,8 +351,8 @@ body{
 		}
 	}
 }
-.logged-in .webform-component-field-wrapper:not(.inline-wrapper), .webform-component--info{
-	@extend .col-md-offset-4;
+.webform-component--info{
+	@extend .col-xs-12;
 }
 
 @media #{$mobile}{
@@ -384,6 +390,7 @@ body{
 	}
 	.panel-2col{
 		@extend .row;
+		width: 100%;
 	}
 	.panel-2col .panel-col-first{
 		@extend .col-xs-12;

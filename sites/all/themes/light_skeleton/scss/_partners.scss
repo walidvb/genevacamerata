@@ -1,6 +1,7 @@
 .page-partners{
   .panel-2col{
     width: 100%;
+    @extend .row;
   }
   .panel-col-first{
     @extend .col-xs-12;
@@ -15,11 +16,28 @@
 
   .partner-group-container{
     margin-bottom: 3*$padding-xs;
+    @media #{$mobile}{
+      padding: 0;
+    }
   }
   .partner-group{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin: 0 -30px;
+    > div{
+      padding: 0 30px;
+      flex: 0 0 50%;
+      @media #{$tablet}{
+        flex: 0 0 20%;
+      }
+      @media #{$md}{
+        flex: 0 0 33.33333%;
+      }
+      @media #{$lg}{
+        flex: 0 0 25%;
+      }
+    }
   }
   h3{
     font-size: $font-small;
@@ -29,15 +47,8 @@
   }
   .partner{
     text-align: center;
-    flex: 0 0 16.666%;
     line-height: 100px;
     max-height: 100px;
-    &:not(:first-child){
-      padding-left: 10px;
-    }
-    &:not(:nth-child(5n)){
-      padding-right: 10px;
-    }
     img{
       vertical-align: middle;
       max-height: 80px;
