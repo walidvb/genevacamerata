@@ -85,6 +85,7 @@ function calendar_go(dir) {
           tiptip_holder.css({"margin-left": marg_left + "px", "margin-top": marg_top + "px"}).attr("class","tip" + t_class);
         }
         function active_tiptip(){
+          console.log("test:", request);
           if (request != null) { request.abort(); }
           opts.enter.call(this);
           if (par_elem.attr('rel') != "" && par_elem.attr('rel') != undefined) {
@@ -102,7 +103,7 @@ function calendar_go(dir) {
   }
   Drupal.behaviors.initRussianBeautyCalendar = {
     attach : function() {
-      $(".tooltip").tipTip({defaultPosition: "right", maxWidth: "400px", keepAlive:true});
+      $(".tooltip").tipTip({defaultPosition: "right", maxWidth: "400px", keepAlive:false});
       // WTF would someone do this, refer to hereabove
       // $("#calendar-body .calendar-daynames .calendar-value").each(function(){
       //   $(this).html($(this).html().substr(0,2) + '<span class="third-letter">' + $(this).html().substr(2,1) + '</span>');

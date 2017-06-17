@@ -49,6 +49,10 @@
   position: relative;
 }
 
+.pretty-calendar-day {
+  z-index: 1;
+}
+
 a.tooltip {
   font-weight: 700;
 }
@@ -60,10 +64,11 @@ a.tooltip:after, .pretty-calendar-today:before {
   max-width: 25px;
   max-height: 25px;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   border-radius: 50%;
   top: calc(50% - 12px);
   left: calc(50% - 13px);
+  pointer-events: none;
 }
 
 a.tooltip:after {
@@ -167,5 +172,3 @@ a.tooltip:after {
   margin-top: -40px;
   width: 48px;
 }
-
-/*# sourceMappingURL=to.css.map */

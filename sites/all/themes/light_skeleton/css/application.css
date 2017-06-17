@@ -3443,10 +3443,6 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   white-space: normal;
 }
 
-html:not([data-panel="filters"]) #tiptip_holder {
-  display: none !important;
-}
-
 @media (max-width: 767px) {
   .panel-col-first, .panel-col-last {
     width: 100%;
