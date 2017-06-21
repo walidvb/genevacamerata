@@ -26,7 +26,7 @@
 	$img = $fields['field_image']->content;
 	$nid = $fields['nid']->content;
 	$url = $fields['field_url'] ? $fields['field_url']->content : null;
-	$title = $fields['title']->content;
+	$title = $fields['title_field']->content;
 	$body = $fields['body']->content;
 
 	$cssID = "news-$nid";
