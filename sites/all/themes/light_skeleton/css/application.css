@@ -3105,6 +3105,9 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   margin-bottom: .5rem;
   display: block;
 }
+.page-abonnements #edit-abonnes-0-table td:empty:before {
+  display: none !important;
+}
 .page-abonnements.i18n-en #webform-client-form-125 td:nth-child(1):before {
   content: "Category*";
 }

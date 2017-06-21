@@ -25,13 +25,20 @@ html:not([data-panel="filters"]) #tiptip_holder{
 	}
 }
 
-.page-node-115{
-	@media #{$md}{
+@media #{$md}{
+	.page-node-115{
 		h2:nth-of-type(3), h2:nth-of-type(7), h2:nth-of-type(12) {
 		    -webkit-column-break-before: always;
 		}
 	}
+
+	.page-node-116{
+		h2:nth-of-type(2) {
+		    -webkit-column-break-before: always;
+		}
+	}
 }
+
 
 // make prices appear not a field
 #edit-submitted-abonnement-tarif{

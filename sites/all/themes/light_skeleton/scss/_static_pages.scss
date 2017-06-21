@@ -51,9 +51,11 @@
 
 @media #{$sm}{
 	.field-name-body{
+
 		// page comité
 		.page-node-116 &, .page-node-115 &{
 			column-count: 2;	
+			line-height: 1.42;
 		}
 		@media #{$md}{
 			// page musiciens

@@ -324,6 +324,9 @@ body{
 		    margin-bottom: .5rem;
     		display: block;
 			}
+			&:empty:before{
+				display: none!important;
+			}
 		}
 	}
 	$headers: (
