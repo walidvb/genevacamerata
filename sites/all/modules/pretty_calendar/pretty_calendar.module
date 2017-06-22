@@ -455,6 +455,7 @@ function pretty_calendar_links_loader($year, $month, $day) {
   $counter = 0;
   $list = array();
   foreach ($result as $row) {
+    print_r($row);
     $list['items'][] = l($row->title, 'node/' . $row->nid);
     $counter++;
     if ($counter >= $tooltip_count) {

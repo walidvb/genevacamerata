@@ -2160,10 +2160,6 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   }
 }
 
-.view-display-id-type_in_list_1 {
-  float: left;
-}
-
 .page-concerts .left-column.section, .page-concerts .left-column.group-left, .page-concerts .left-column.group-right, .page-concerts .page-partners .left-column.panel-col-first, .page-partners .page-concerts .left-column.panel-col-first, .page-concerts .page-partners .left-column.panel-col-last, .page-partners .page-concerts .left-column.panel-col-last {
   padding-bottom: 0px;
 }
@@ -2794,19 +2790,34 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 }
 
 .page-reserver .webform-component--infos {
-  width: 50%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  padding: 1rem 0 0 0;
+  padding: 0 23px;
   display: inline-block;
   vertical-align: top;
+}
+@media (min-width: 767px) {
+  .page-reserver .webform-component--infos {
+    width: 50%;
+    padding: 1rem 0 0 0;
+  }
 }
 .page-reserver .webform-component--infos p {
   margin-bottom: 0;
 }
 .page-reserver .form-actions {
-  width: 200px;
   display: inline-block;
+}
+@media (max-width: 767px) {
+  .page-reserver .form-actions {
+    width: 100%;
+    padding: 0 23px;
+  }
+}
+@media (min-width: 767px) {
+  .page-reserver .form-actions {
+    width: 200px;
+  }
 }
 
 @media (min-width: 767px) {
@@ -2844,14 +2855,19 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .webform-component--billets .webform-component-number {
   padding: 0 5px;
   text-align: center;
+  margin-bottom: 15px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
-  margin-bottom: 15px;
 }
 .webform-component--billets .webform-component-number label {
   font-size: 0.75rem;
   margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .webform-component--billets .webform-component-number label {
+    height: 2.5rem;
+  }
 }
 .webform-component--billets .webform-component-number .field-prefix {
   font-size: 0.875rem;
@@ -3311,6 +3327,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   .page-node-116 .field-name-body, .page-node-115 .field-name-body {
     -webkit-column-count: 2;
             column-count: 2;
+    line-height: 1.42;
   }
 }
 @media (min-width: 767px) and (min-width: 1120px) {
@@ -3456,8 +3473,11 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   .page-node-115 h2:nth-of-type(3), .page-node-115 h2:nth-of-type(7), .page-node-115 h2:nth-of-type(12) {
     -webkit-column-break-before: always;
   }
-}
 
+  .page-node-116 h2:nth-of-type(2) {
+    -webkit-column-break-before: always;
+  }
+}
 #edit-submitted-abonnement-tarif {
   outline: none;
   border: none;

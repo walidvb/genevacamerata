@@ -101,9 +101,14 @@ body{
 	}
 
 	.webform-component--infos{
-		width: 50%;
 		flex-basis: 100%;
-		padding: 1rem 0 0 0;
+	  padding: 0 $padding-container-mobile;
+
+		// HACK
+		@media #{$tablet}{
+			width: 50%;
+			padding: 1rem 0 0 0;
+		}
 		display: inline-block;
 		vertical-align: top;
 		p{
@@ -112,7 +117,13 @@ body{
 	}
 
 	.form-actions{
-		width: 200px;
+		@media #{$mobile}{
+			width: 100%;
+			padding: 0 $padding-container-mobile;
+		}
+		@media #{$tablet}{
+			width: 200px;
+		}
 		display: inline-block;
 	}
 }
@@ -140,14 +151,18 @@ body{
 		label{
 			font-size: $font-smallest;
 			margin-bottom: 0;
+			// HACK
+			@media #{$mobile}{
+				height: 2.5rem;
+			}
 		}
 		.field-prefix{
 			font-size: $font-small;
 		}
 		padding: 0 5px;
 		text-align: center;
-		flex: 0 0 25%;
 		margin-bottom: $padding-xs;
+		flex: 0 0 25%;
 		select{
 			max-width: 50px;
 			display: block;
