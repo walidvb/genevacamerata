@@ -91,7 +91,7 @@ function calendar_go(dir) {
           opts.enter.call(this);
           if (par_elem.attr('rel') != "" && par_elem.attr('rel') != undefined) {
             tiptip_content.html("<div class='tooltip_loader'><div></div></div>");
-            request = $.get(Drupal.settings.basePath + "calendar_links/" + par_elem.attr('rel'), function(data){ tiptip_content.html(" "); tiptip_content.append(data); place_tiptip(); });
+            request = $.get(Drupal.settings.basePath + Drupal.settings.pathPrefix + "calendar_links/" + par_elem.attr('rel'), function(data){ tiptip_content.html(" "); tiptip_content.append(data); place_tiptip(); });
           } else { tiptip_content.html(org_title); }
           tiptip_holder.hide().removeAttr("class").css("margin","0");
           place_tiptip();
@@ -104,7 +104,7 @@ function calendar_go(dir) {
   }
   Drupal.behaviors.initRussianBeautyCalendar = {
     attach : function() {
-      $(".tooltip").tipTip({defaultPosition: "right", maxWidth: "400px", keepAlive:false});
+      $(".tooltip").tipTip({defaultPosition: "right", maxWidth: "400px", keepAlive:true});
       // WTF would someone do this, refer to hereabove
       // $("#calendar-body .calendar-daynames .calendar-value").each(function(){
       //   $(this).html($(this).html().substr(0,2) + '<span class="third-letter">' + $(this).html().substr(2,1) + '</span>');

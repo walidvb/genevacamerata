@@ -455,7 +455,6 @@ function pretty_calendar_links_loader($year, $month, $day) {
   $counter = 0;
   $list = array();
   foreach ($result as $row) {
-    print_r($row);
     $list['items'][] = l($row->title, 'node/' . $row->nid);
     $counter++;
     if ($counter >= $tooltip_count) {
@@ -539,6 +538,7 @@ function pretty_calendar_select_nodes($date = 0, $links_only = FALSE) {
       $select->where('DATE(' . $field_name . '_value) = :date', array(':date' => date('Y.m.d', $date)));
     }
   }
+
   // Check types.
   if ($node_types[0] != '') {
     if (variable_get('pretty_calendar_node_invert', FALSE)) {
