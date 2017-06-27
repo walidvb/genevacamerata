@@ -1,7 +1,8 @@
 function calendar_go(dir) {
   (function ($) {
+    var lang = $('meta')
     $("#calendar-body").html("<div class='calendar_loader'><div></div></div>" + $("#calendar-body").html());
-    $.get(Drupal.settings.basePath + "calendar_get/" + $(".calendar-" + dir).parent().attr("rel"), function(data){
+    $.get(Drupal.settings.basePath + Drupal.settings.pathPrefix + "calendar_get/" + $(".calendar-" + dir).parent().attr("rel"), function(data){
       $("#calendar-body").html(" ");
       $("#calendar-body").append(data);
       $(".tooltip").tipTip({defaultPosition: "right", maxWidth: "400px", keepAlive:true});
