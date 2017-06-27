@@ -92,7 +92,7 @@ body .owl-theme .owl-dots .owl-dot span{
 	text-align: center;
 	border: none;	
 	margin: $padding-xs auto 0;
-	.field-name-field-compositor, .field-name-field-mention-1, .field-name-field-mention-2{
+	.field-name-field-compositor, .field-name-field-mention-1, .field-name-field-mention-2, .field-name-field-mention-3{
 		font-size: $font-smallest;
 	}
 	.field-name-field-compositor{
@@ -102,7 +102,7 @@ body .owl-theme .owl-dots .owl-dot span{
 	.field-name-field-pieces{
 		font-weight: $bold;
 	}
-	.field-name-field-mention-2{
+	.field-name-field-mention-2, .field-name-field-mention-3{
 		color: $brand-color;
 		text-transform: uppercase;
 	}
