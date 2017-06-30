@@ -726,10 +726,10 @@ function _webform_matrix_component_select_option_from_text($options) {
             } else {
                 $key = $value = $line;
             }
-            $option_array[$key] = $value;
+            $option_array[$key] = t($value);
         }
     }
-    $option_array = (count($option_array) == 0) ? array(0 => 'None') : $option_array;
+    $option_array = (count($option_array) == 0) ? array(0 => t('None')) : $option_array;
     return $option_array;
 }
 

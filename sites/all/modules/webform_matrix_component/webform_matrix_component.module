@@ -217,12 +217,12 @@ function webform_matrix_component_form_alter(&$form, &$form_state, $form_id) {
                     $elevalue['default_value'] = isset($elevalue['default_value'])?$elevalue['default_value']:"";
                     $element[$prow][$i] = array(
                       '#type' => 'textfield',
-                      '#title' => check_plain($title),
+                      '#title' => t(check_plain($title)),
                       '#size' => !empty($elevalue['size']) ? $elevalue['size'] : 15,
                       '#maxlength' => !empty($elevalue['maxlength']) ? $elevalue['maxlength'] : 50,
                       '#default_value' => isset($editvalue[$prow][$i]) ? $editvalue[$prow][$i] : $elevalue['default_value'],
                       '#required' => $required,
-                      '#title_display' => $title_display,
+                      '#title_display' => t($title_display),
                       '#validated' => TRUE,
                       '#webform_validated' => FALSE,
                     );
@@ -244,7 +244,7 @@ function webform_matrix_component_form_alter(&$form, &$form_state, $form_id) {
                       case 'list':
                         $element[$prow][$i] = array(
                             '#type' => 'select',
-                            '#title' => check_plain($title),
+                            '#title' => t(check_plain($title)),
                             '#options' => $option_array,
                             '#required' => $required,
                             '#title_display' => $title_display,
@@ -259,10 +259,10 @@ function webform_matrix_component_form_alter(&$form, &$form_state, $form_id) {
 
                       case 'radio':
                         $element[$prow][$i] = array(
-                            '#title' => check_plain($title),
+                            '#title' => t(check_plain($title)),
                             '#options' => $option_array,
                             '#required' => $required,
-                            '#title_display' => $title_display,
+                            '#title_display' => t($title_display),
                         );
                         if ($is_multiple) {
                           $element[$prow][$i]['#type'] = 'checkboxes';
@@ -284,8 +284,8 @@ function webform_matrix_component_form_alter(&$form, &$form_state, $form_id) {
                     $datepicker = isset($elevalue['datepicker']) ? $elevalue['datepicker'] : FALSE;
                     $element[$prow][$i] = array(
                         '#type' => 'date',
-                        '#title' => check_plain($title),
-                        '#title_display' => $title_display,
+                        '#title' => t(check_plain($title)),
+                        '#title_display' => t($title_display),
                         '#required' => $required,
                         '#start_date' => !empty($elevalue['startdate']) ? $elevalue['startdate'] : '-2 years',
                         '#end_date' => !empty($elevalue['enddate']) ? $elevalue['enddate'] : '+2 years',
@@ -308,11 +308,11 @@ function webform_matrix_component_form_alter(&$form, &$form_state, $form_id) {
                     foreach($elevalue['label_name'] as $delta => $label_element) {
                       $element[$prow][$i][$delta] = array(
                         '#type' => 'item',
-                        '#title' => check_plain($title),
+                        '#title' => t(check_plain($title)),
                         '#markup' => webform_filter_xss($label_element),
                         '#attributes' => array('class' => array('form-item')),
                         '#default_value' => $editvalue[$prow][$i],
-                        '#title_display' => $title_display,
+                        '#title_display' => t($title_display),
                       );
                       $element[$prow][$i]['#webform_matrix_component_labels'] = TRUE;
                     }
@@ -336,13 +336,13 @@ function webform_matrix_component_form_alter(&$form, &$form_state, $form_id) {
                 case 'textarea':
                     $element[$prow][$i] = array(
                        '#type' => 'textarea',
-                       '#title' => check_plain($title),
+                       '#title' => t(check_plain($title)),
                        '#rows' => !empty($elevalue['rows']) ? $elevalue['rows'] : 1,
                        '#cols' => !empty($elevalue['cols']) ? $elevalue['cols'] : 15,
   		       '#resizable' => TRUE,
                        '#title_display' => $title_display,
                        '#default_value' => isset($editvalue[$prow][$i]) ? $editvalue[$prow][$i] : "",
-                       '#title' => check_plain($title),
+                       '#title' => t(check_plain($title)),
                        '#required' => $required,
                        '#validated' => TRUE,
                        '#webform_validated' => FALSE,
