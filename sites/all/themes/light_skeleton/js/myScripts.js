@@ -5,13 +5,15 @@
 				GECA.carousel(context, settings);
 				GECA.infiniteScroll(context, settings);
 				GECA.setupBookingForm(context, settings);
+
 	  }
 	};
 })(jQuery);
 
 (function($){
 	$(document).ready(function(){
-		console.log("attaching new:");
+		var browser = /webkit|safari/i.test(navigator.userAgent) ? 'webkit' : 'mozilla';
+		$('html').addClass(browser);
 		$(document).on('click touchstart', '[data-panel-target]', function(e){
 			e.preventDefault();
 			console.log("fucking touched:");

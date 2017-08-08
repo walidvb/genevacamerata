@@ -15,9 +15,6 @@
 	}
 }
 
-html:not([data-panel="filters"]) #tiptip_holder{
-	// display: none!important;
-}
 // static page
 .panel-col-first, .panel-col-last{
 	@media #{$mobile}{
@@ -26,15 +23,29 @@ html:not([data-panel="filters"]) #tiptip_holder{
 }
 
 @media #{$md}{
+	// Musicians
 	.page-node-115{
 		h2:nth-of-type(3), h2:nth-of-type(7), h2:nth-of-type(12) {
 		    -webkit-column-break-before: always;
+		}
+		.mozilla &{
+			p:last-child{
+				padding-bottom: 60px;
+			}
+			h2:nth-of-type(10){
+				padding-top: 2px;
+			}
 		}
 	}
 
 	.page-node-116{
 		h2:nth-of-type(2) {
 		    -webkit-column-break-before: always;
+		}
+		.mozilla &{
+			p:nth-of-type(1){
+				padding-bottom: 50px;
+			}
 		}
 	}
 }

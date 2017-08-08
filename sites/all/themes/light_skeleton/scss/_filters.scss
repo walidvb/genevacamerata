@@ -43,12 +43,16 @@
 		background-image: url('/sites/all/themes/light_skeleton/resources/arrow_left.png');
 		border-radius: 3px 0 0 3px;
 		position: fixed;
-		top: 80vh;
-		right: auto;
-		left: 100%;
+
 		@supports (position:sticky){
+			left: 100%;
+			right: 0;
 			position: sticky;
-			top: calc(#{$header-height-xs} + #{$padding-xs}) ;
+			top: calc(#{$header-height-xs} + #{$padding-xs});
+			transform: translateY(1rem);
+			&.trigger-close{
+				transform: none;
+			}
 		}
 		transform: rotateY(0);
 		@media #{$sm}{
@@ -56,6 +60,7 @@
 			left: auto;
 			right: 0;
 			top: calc(#{$header-height} + #{4*$padding-xs});
+			transform: none;
 		}
 		@media #{$md}{
 			display: none;

@@ -52,12 +52,12 @@
 a.tooltip .calendar-value {
   font-weight: 700;
   padding-bottom: .5rem;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid #ff424d;
 }
 
 .pretty-calendar-today .calendar-value {
   padding-bottom: .5rem;
-  border-bottom: 1px solid #ff424d !important;
+  border-bottom: 1px solid #e3e3e3 !important;
 }
 
 .pretty-calendar-week > .pretty-calendar-day:before, a.tooltip:before {

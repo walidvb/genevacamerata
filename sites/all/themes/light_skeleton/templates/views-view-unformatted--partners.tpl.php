@@ -8,7 +8,7 @@
  */
  // wrap partners in groups of partners
 ?>
-<div class="partner-group-container col-xs-12 col-sm-12 col-md-6">
+<div class="partner-group-container col-xs-12 col-sm-12 col-md-12">
 	<?php if (!empty($title)): ?>
 	  <h3><?php print $title; ?></h3>
 	<?php endif; ?>

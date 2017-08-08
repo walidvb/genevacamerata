@@ -2,6 +2,24 @@
 	@extend .section;
 }
 
+.ds-2col-fluid{
+	@extend .col-sm-12;
+	@media #{$md}{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	@media #{$xs}{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.page-content{
+	.page-artists &, .page-menu &, .page-partners &{
+		@extend .row;
+	}
+}
+
 .page-menu .panel-1col{
 	@extend .col-xs-12;
 	ul{

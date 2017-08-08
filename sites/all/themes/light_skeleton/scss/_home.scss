@@ -10,7 +10,9 @@
 
 		// fix position sticky motherfucking spacing
 		@media #{$mobile}{
-			margin-top: -3rem;
+			@supports (position:sticky){
+				margin-top: -3rem;
+			}
 		}
 	}
 	.view-concerts .view-content{
@@ -135,6 +137,7 @@
 .group-buttons{
 	@include gapped-buttons();
   align-items: flex-end;
+  margin-top: 1rem;
 	@media (min-width: 1200px) and (max-width:1300px){
 		flex-direction: column;
 		> *{
@@ -153,7 +156,6 @@
 	.field-name-field-date {
 		font-weight: $bold;
 		font-size: $font-small;
-		margin-bottom: 1rem;
 		align-items: flex-end;
 		display: flex;
 		flex-grow: 10;

@@ -80,14 +80,12 @@
 //=========== LOCALES
 
 .language-switcher-locale-url{
-	display: none!important;
-	.logged-in &{
-		display: flex!important;
-	}
+	display: flex!important;
 	text-transform: uppercase;
 	display: flex;
 	li{ 
 		display: inline-block;
+		margin-left: 0!important;
 		a{
 			padding: $padding-xs .5*$padding-xs;
 		}

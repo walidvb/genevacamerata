@@ -1,7 +1,16 @@
 a, a:hover{
 	color: $black;
 }
+p a{
+	color: $brand-color;
+	&:hover{
+		color: inherit;
+	}
+}
 
+p{
+	hyphens: auto;
+}
 .node-content a{
 	text-decoration: none;
 	color: $brand-color;
@@ -156,6 +165,9 @@ body .owl-theme .owl-dots .owl-dot span{
 .field-name-field-instrument, .views-field-field-instrument {
 	font-style: italic;
 	text-transform: lowercase;
+}
+.field-name-field-location{
+	font-size: $font-smallest;
 }
 
 .field-collection-item-field-program{
