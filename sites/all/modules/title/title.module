@@ -289,18 +289,21 @@ function title_field_replacement_toggle($entity_type, $bundle, $legacy_field) {
 
   $field_name = $info['field']['field_name'];
   $instance = field_info_instance($entity_type, $field_name, $bundle);
-
   if (empty($instance)) {
     $options = variable_get('title_' . $entity_type, array());
     $field = field_info_field($field_name);
+    print_r(field_info_field($field_name));
     if (empty($field)) {
-      field_create_field($info['field']);
+      //field_create_field($info['field']);
     }
+    print_r('2');
     $info['instance']['entity_type'] = $entity_type;
     $info['instance']['bundle'] = $bundle;
     $info['instance']['settings']['hide_label']['page'] = isset($options['hide_label']['page']) ? $options['hide_label']['page'] : FALSE;
     $info['instance']['settings']['hide_label']['entity'] = isset($options['hide_label']['entity']) ? $options['hide_label']['entity'] : FALSE;
-    field_create_instance($info['instance']);
+    print_r('3');
+    // field_create_instance($info['instance']);
+    print_r('4');
     return TRUE;
   }
   else {

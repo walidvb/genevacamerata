@@ -582,6 +582,7 @@ function _webform_matrix_component_get_remove_row_submit($form, &$form_state) {
  */
 function _webform_matrix_component_get_remove_row($form, &$form_state) {
   $parents = $form_state['triggering_element']['#parents'];
+  print_r($parents);
   array_pop($parents);
   return drupal_array_get_nested_value($form, $parents);
 }

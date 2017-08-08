@@ -46,3 +46,10 @@ function gc_custom_ctools_plugin_directory($module, $plugin) {
     return "plugins/$plugin";
   }
 }
+
+
+function gc_custom_form_alter(&$form, &$form_state, $form_id) {
+  if (strpos($form_id, 'webform_client_form_') === 0) {
+    $form['#attached']['js'] = array(drupal_get_path('module', 'gc_custom') . '/gc_custom.js');
+  }
+}
