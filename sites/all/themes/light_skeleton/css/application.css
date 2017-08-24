@@ -3603,9 +3603,9 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   font-size: 0 !important;
 }
 .i18n-fr [data-type="5"]:after {
-  content: "Prestige Concerts";
+  content: "Concerts Prestige";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-fr [data-type="4"] {
   display: none;
@@ -3614,7 +3614,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .i18n-fr [data-type="4"]:after {
   content: "Concerts Sauvages";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-fr [data-type="1"] {
   display: none;
@@ -3623,7 +3623,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .i18n-fr [data-type="1"]:after {
   content: "Concerts en Famille";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-fr [data-type="31"] {
   display: none;
@@ -3632,7 +3632,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .i18n-fr [data-type="31"]:after {
   content: "Les Musiques du Coeur";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-fr [data-type="61"] {
   display: none;
@@ -3641,7 +3641,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .i18n-fr [data-type="61"]:after {
   content: "Rencontres Magiques";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-fr [data-type="6"] {
   display: none;
@@ -3650,7 +3650,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .i18n-fr [data-type="6"]:after {
   content: "GECA en Tournée";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-fr [data-type="49"] {
   display: none;
@@ -3659,7 +3659,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .i18n-fr [data-type="49"]:after {
   content: "GECA en tournée - Nouvel Album";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 
 .i18n-en [data-type="5"] {
@@ -3667,9 +3667,9 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   font-size: 0 !important;
 }
 .i18n-en [data-type="5"]:after {
-  content: "Concerts Prestige";
+  content: "Prestige Concerts";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-en [data-type="4"] {
   display: none;
@@ -3678,7 +3678,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .i18n-en [data-type="4"]:after {
   content: "Crazy Concerts";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-en [data-type="1"] {
   display: none;
@@ -3687,7 +3687,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .i18n-en [data-type="1"]:after {
   content: "Family Concerts";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-en [data-type="31"] {
   display: none;
@@ -3696,7 +3696,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .i18n-en [data-type="31"]:after {
   content: "Music of the Heart";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-en [data-type="61"] {
   display: none;
@@ -3705,7 +3705,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .i18n-en [data-type="61"]:after {
   content: "Magical Encounters";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-en [data-type="6"] {
   display: none;
@@ -3714,16 +3714,16 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .i18n-en [data-type="6"]:after {
   content: "GECA on Tour";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 .i18n-en [data-type="49"] {
   display: none;
   font-size: 0 !important;
 }
 .i18n-en [data-type="49"]:after {
-  content: "GECA en tournée - New Album";
+  content: "GECA on Tour - New Album";
   font-size: 0.75rem;
-  margin-left: -30px;
+  margin-left: -20px;
 }
 
 .ajax-progress .throbber {
