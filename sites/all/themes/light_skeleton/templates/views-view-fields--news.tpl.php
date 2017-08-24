@@ -35,7 +35,6 @@
 	<?php
 		print "#$cssID{ background-image:  url($img), linear-gradient(50deg, #ff757d 0%, #ff424d 51%, #ff757d 75%); }";
 	?>
-	
 </style>
 <a class="news" id="<?php print $cssID ?>" href="<?php print $url ?>">
 

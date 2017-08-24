@@ -1196,6 +1196,7 @@ body {
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1204,7 +1205,8 @@ a, a:hover, a:active {
 }
 
 #admin-menu {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 @media (max-width: 767px) {
   #admin-menu {
@@ -1264,7 +1266,8 @@ ul {
 
 body fieldset {
   background: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .field-collection-container {
@@ -1284,7 +1287,8 @@ body fieldset {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 label, legend {
@@ -1316,7 +1320,8 @@ input[type="submit"] {
 input[type="submit"].active, input[type="submit"]:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
@@ -1331,8 +1336,10 @@ body .vertical-tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   margin: 0;
   border: none;
   background-color: none;
@@ -1350,8 +1357,10 @@ body .vertical-tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1424,7 +1433,8 @@ p {
 }
 .menu a:hover, .menu a.active {
   color: #333333;
-  box-shadow: inset 0 -1px 0px #ff424d;
+  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
+          box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .button, .field-name-node-link a {
@@ -1447,7 +1457,8 @@ p {
 .button.active, .field-name-node-link a.active, .button:hover, .field-name-node-link a:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button-small {
@@ -1475,7 +1486,8 @@ p {
 .button-small.active, .button-small:hover {
   background-color: #777777;
   color: white;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 body .owl-theme .owl-dots .owl-dot.active span, body .owl-theme .owl-dots .owl-dot:hover span {
@@ -1509,7 +1521,6 @@ body .owl-theme .owl-dots .owl-dot span {
   display: inline-block;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(40deg, #ff757d 0%, #ff424d 51%, #ff757d 75%);
   background-image: linear-gradient(50deg, #ff757d 0%, #ff424d 51%, #ff757d 75%);
 }
 @media (min-width: 767px) {
@@ -1640,7 +1651,8 @@ body .owl-theme .owl-dots .owl-dot span {
 .field-name-field-tickets .buy-button.active, .field-name-field-tickets .buy-button:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .node-type-concert .button, .node-type-concert .field-name-node-link a, .field-name-node-link .node-type-concert a, .node-type-concert .buy-button {
@@ -1706,7 +1718,8 @@ body .owl-theme .owl-dots .owl-dot span {
 .prices-pdfs a.active, .prices-pdfs a:hover {
   background-color: #777777;
   color: white;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .right-col .field-name-field-recommendation {
@@ -1939,16 +1952,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .side-left .navbar-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .navbar-link {
@@ -1959,7 +1976,8 @@ body {
 }
 .navbar-link:hover, .navbar-link.active {
   color: #333333;
-  box-shadow: inset 0 -1px 0px #ff424d;
+  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
+          box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 .main-menu {
@@ -2109,7 +2127,8 @@ input[type="submit"].button {
 input[type="submit"].button.active, input[type="submit"].button:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #block-block-1, #block-block-2 label {
@@ -2176,21 +2195,27 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 @media (min-width: 767px) {
   .page-concerts .view-concerts .view-content {
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }
 .page-concerts .view-concerts .view-content .views-row {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -2255,7 +2280,6 @@ input[type="submit"].button.active, input[type="submit"].button:hover {
   display: inline-block;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(40deg, #ff757d 0%, #ff424d 51%, #ff757d 75%);
   background-image: linear-gradient(50deg, #ff757d 0%, #ff424d 51%, #ff757d 75%);
 }
 @media (min-width: 767px) {
@@ -2740,7 +2764,8 @@ body .button.button-primary, body .field-name-node-link a.button-primary, .field
 body .button.button-primary.active, body .field-name-node-link a.button-primary.active, .field-name-node-link body a.button-primary.active, body .button.button-primary:hover, body .field-name-node-link a.button-primary:hover, .field-name-node-link body a.button-primary:hover, body button.button-primary.active, body button.button-primary:hover, body input[type="submit"].button-primary.active, body input[type="submit"].button-primary:hover, body input[type="reset"].button-primary.active, body input[type="reset"].button-primary:hover, body input[type="button"].button-primary.active, body input[type="button"].button-primary:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .webform-component--concert {
@@ -2827,8 +2852,10 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     margin-left: -5px;
     margin-right: -5px;
   }
@@ -2892,15 +2919,37 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   text-align: center;
 }
 @media (max-width: 767px) {
-  .page-abonnements .view-concerts .view-content {
+  .page-abonnements .pane-concerts-panel-pane-1 {
+    margin: 0 -23px 0;
+    width: 100vw;
+    padding: 0;
+  }
+  .page-abonnements .view-concerts {
+    padding: 0;
+  }
+  .page-abonnements .view-concerts .views-row-last {
+    padding-right: 23px !important;
+  }
+  .page-abonnements .view-content {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-left: -5px;
     margin-right: -5px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 23px;
+    -webkit-scroll-snap-type: proximity;
+        -ms-scroll-snap-type: proximity;
+            scroll-snap-type: proximity;
+    -webkit-scroll-snap-points-x: repeat(60vw);
+        -ms-scroll-snap-points-x: repeat(60vw);
+            scroll-snap-points-x: repeat(60vw);
   }
-  .page-abonnements .view-concerts .field:not(.field-name-field-main-image) {
-    display: none;
+  .page-abonnements .views-row {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60vw;
+            flex: 0 0 60vw;
   }
 }
 .page-abonnements .view-concerts .views-row {
@@ -2910,8 +2959,10 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 .page-abonnements .view-concerts .field-name-field-date {
   display: -webkit-box;
@@ -3037,7 +3088,8 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 .page-abonnements .form-actions input.active, .page-abonnements .form-actions input:hover {
   background-color: #333333;
   color: #ff424d;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .page-abonnements .webform-component--facturation- {
   float: none !important;
@@ -3063,16 +3115,20 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 .page-abonnements #edit-abonnes-0-table tr {
   padding: 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3332,7 +3388,6 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 @media (min-width: 767px) {
   .page-node-116 .field-name-body, .page-node-115 .field-name-body {
     -webkit-column-count: 2;
-       -moz-column-count: 2;
             column-count: 2;
     line-height: 1.42;
   }
@@ -3340,7 +3395,6 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 @media (min-width: 767px) and (min-width: 1120px) {
   .page-node-115 .field-name-body {
     -webkit-column-count: 4;
-       -moz-column-count: 4;
             column-count: 4;
   }
 }
@@ -3444,15 +3498,19 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 .page-media .views-row {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 .page-media .views-field-title {
   -webkit-box-flex: 10;
@@ -3514,7 +3572,8 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
 
 .node-type-concert [data-mid="219"], .page-reserver [data-mid="219"], .node-type-concert [data-mid="583"] .navbar-link, .page-reserver [data-mid="583"] .navbar-link {
   color: #333333;
-  box-shadow: inset 0 -1px 0px #ff424d;
+  -webkit-box-shadow: inset 0 -1px 0px #ff424d;
+          box-shadow: inset 0 -1px 0px #ff424d;
 }
 
 @media (max-width: 767px) {
@@ -3539,6 +3598,134 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
     white-space: normal;
   }
 }
+.i18n-fr [data-type="5"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-fr [data-type="5"]:after {
+  content: "Prestige Concerts";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-fr [data-type="4"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-fr [data-type="4"]:after {
+  content: "Concerts Sauvages";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-fr [data-type="1"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-fr [data-type="1"]:after {
+  content: "Concerts en Famille";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-fr [data-type="31"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-fr [data-type="31"]:after {
+  content: "Les Musiques du Coeur";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-fr [data-type="61"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-fr [data-type="61"]:after {
+  content: "Rencontres Magiques";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-fr [data-type="6"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-fr [data-type="6"]:after {
+  content: "GECA en Tournée";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-fr [data-type="49"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-fr [data-type="49"]:after {
+  content: "GECA en tournée - Nouvel Album";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+
+.i18n-en [data-type="5"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-en [data-type="5"]:after {
+  content: "Concerts Prestige";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-en [data-type="4"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-en [data-type="4"]:after {
+  content: "Crazy Concerts";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-en [data-type="1"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-en [data-type="1"]:after {
+  content: "Family Concerts";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-en [data-type="31"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-en [data-type="31"]:after {
+  content: "Music of the Heart";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-en [data-type="61"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-en [data-type="61"]:after {
+  content: "Magical Encounters";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-en [data-type="6"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-en [data-type="6"]:after {
+  content: "GECA on Tour";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+.i18n-en [data-type="49"] {
+  display: none;
+  font-size: 0 !important;
+}
+.i18n-en [data-type="49"]:after {
+  content: "GECA en tournée - New Album";
+  font-size: 0.75rem;
+  margin-left: -30px;
+}
+
 .ajax-progress .throbber {
   background-image: url("/sites/all/themes/light_skeleton/resources/loader.gif");
   background-position: center;
@@ -3616,7 +3803,6 @@ img:before {
   content: '';
   width: 100%;
   padding-bottom: 100%;
-  background: -webkit-linear-gradient(40deg, #ff757d 0%, #ff424d 51%, #ff757d);
   background: linear-gradient(50deg, #ff757d 0%, #ff424d 51%, #ff757d);
   display: block;
 }
@@ -3639,7 +3825,8 @@ img:before {
   padding: 5px;
   background: white;
   color: #111111;
-  box-shadow: inset 0px 0px 1px #111111;
+  -webkit-box-shadow: inset 0px 0px 1px #111111;
+          box-shadow: inset 0px 0px 1px #111111;
   display: inline-block;
 }
 .logged-in .debug-helpers .size {

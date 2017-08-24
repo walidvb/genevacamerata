@@ -92,3 +92,40 @@
 	}
 
 }
+
+$translations: (
+	fr: (
+		5: 'Prestige Concerts',
+		4: "Concerts Sauvages",
+		1: "Concerts en Famille",
+		31: "Les Musiques du Coeur",
+		61: "Rencontres Magiques",
+		6: "GECA en Tournée",
+		49: "GECA en tournée - Nouvel Album",
+	),
+	en: (
+		5: 'Concerts Prestige',
+		4: "Crazy Concerts",
+		1: "Family Concerts",
+		31: "Music of the Heart",
+		61: "Magical Encounters",
+		6: "GECA on Tour",
+		49: "GECA en tournée - New Album",
+	)
+);
+
+@each $lang, $terms in $translations {
+	.i18n-#{$lang}{
+		@each $termID, $content in $terms{
+			[data-type="#{$termID}"]{
+				display: none;
+				font-size: 0!important;
+				&:after{
+					content: $content;
+					font-size: 0.75rem;
+					margin-left: -30px;
+				}
+			}
+		}
+	}
+}
