@@ -10,6 +10,6 @@ files[] = flippy.module
 ; Information added by Drupal.org packaging script on 2015-03-10
 version = "7.x-1.4"
 core = "7.x"
-project = "flippy"
+project = "flippy_walid"
 datestamp = "1425979172"
 

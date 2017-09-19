@@ -349,9 +349,19 @@ function flippy_build_list($node) {
     // Also decide what up and down means
     $up   = ($order == 'ASC') ? 'ASC' : 'DESC';
     $down = ($order == 'ASC') ? 'DESC' : 'ASC';
+
+    // Get node tags
+    $field = $node->field_type;
+    $terms = $field['und'];
+    $term_ids = [];
+    foreach ($terms as $term) {
+      $terms_ids[] = $term['tid'];
+    }
+    // /Get node tags
     // Create a starting-point EntityFieldQuery object
     global $language;
     $query = db_select('node', 'n');
+    $query->join('field_data_field_type', 't', 't.entity_id=n.nid');// walid
     $query->condition('type', $node->type)
       ->condition('status', 1)
       ->condition('n.nid', $node->nid, '!=')
@@ -359,6 +369,8 @@ function flippy_build_list($node) {
         ->condition('n.language', array($language->language, LANGUAGE_NONE), 'IN')
         ->condition('n.language', $node->language, '=')
       )
+      ->condition('field_type_tid', $terms_ids) // walid
+      ->fields('t', array('entity_type', 'bundle', 'field_type_tid', 'entity_id')) // walid
       ->fields('n', array('nid', 'title'))
       ->range(0, 1)
       ->addTag('node_access')

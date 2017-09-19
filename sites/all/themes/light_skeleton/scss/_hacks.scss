@@ -129,3 +129,8 @@ $translations: (
 		}
 	}
 }
+
+// grey out prestige concert
+.page-abonnements .view-concerts .views-row-1{
+	opacity: .2;
+}
