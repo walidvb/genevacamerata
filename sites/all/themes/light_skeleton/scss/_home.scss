@@ -21,16 +21,17 @@
 		@media #{$tablet}{
 			flex-flow: row wrap;
 		}
-		.views-row{
+
+		.node-concert{
 			@extend .col-sm-6;
 			@extend .col-md-12;
 			@extend .col-lg-6;
 			display: inline-flex;
-	    flex-flow: column;
-	    justify-content: space-around;
-	    @media #{$sm}{
-		    // only first 2 elements should have 0
-		    margin-top: 2rem;
+			flex-flow: column;
+			justify-content: space-around;
+			@media #{$sm}{
+				// only first 2 elements should have 0
+				margin-top: 2rem;
 		    &:first-child, &:nth-child(2){
 		    	margin-top: 0;
 		    }
@@ -42,14 +43,14 @@
 		    	margin-top: 0;
 		    }
 		  }
-	    @media #{$lg}{
-		    // only first 2 elements should have 0
-		    margin-top: 2rem;
-		    &:first-child, &:nth-child(2){
-		    	margin-top: 0;
-		    }
-		  }
-		}
+			@media #{$lg}{
+				// only first 2 elements should have 0
+				margin-top: 2rem;
+				&:first-child, &:nth-child(2){
+					margin-top: 0;
+				}
+			}
+			}
 		.button, .buy-button{
 			@media #{$md}{
 				margin-bottom: 1rem;
