@@ -55,30 +55,30 @@ function gc_custom_form_alter(&$form, &$form_state, $form_id) {
 }
 
 function gc_i18n_string_list_taxonomy_alter(&$strings, $type, $object) {
-  
-    if ($type == 'taxonomy_term' && $object) {
-      // Retrieve vocabulary and potential field instances 
-      // for this vocabulary.
-      $vid = $object->vid;
-      $vocabulary = taxonomy_vocabulary_load($vid);
-      $field_instances = field_info_instances($type, $vocabulary->machine_name);
-  
-      // Iterate over each fields to check if textfield(s) exists.
-      foreach ($field_instances as $field_name => $field_instance) {
-        if ($field_instance['widget']['type'] == 'text_textfield'|| true) {
-  
-          // Retrieve data for the field.
-          $term_data = field_get_items($type, $object, $field_name);
-  
-          // Add new entry into strings array to reflect
-          // values from current processed field.
-          $strings['taxonomy']['term'][$object->tid][$field_name] = array(
-            'string' => $term_data[0]['value'],
-            'title' => $field_instance['label'],
-            'format' => NULL,
-            'name' => array('taxonomy', 'term', $object->tid, $field_name),
-          );
-        }
+
+  if ($type == 'taxonomy_term' && $object) {
+    // Retrieve vocabulary and potential field instances 
+    // for this vocabulary.
+    $vid = $object->vid;
+    $vocabulary = taxonomy_vocabulary_load($vid);
+    $field_instances = field_info_instances($type, $vocabulary->machine_name);
+
+    // Iterate over each fields to check if textfield(s) exists.
+    foreach ($field_instances as $field_name => $field_instance) {
+      if ($field_instance['widget']['type'] == 'text_textfield'|| true) {
+
+        // Retrieve data for the field.
+        $term_data = field_get_items($type, $object, $field_name);
+
+        // Add new entry into strings array to reflect
+        // values from current processed field.
+        $strings['taxonomy']['term'][$object->tid][$field_name] = array(
+          'string' => $term_data[0]['value'],
+          'title' => $field_instance['label'],
+          'format' => NULL,
+          'name' => array('taxonomy', 'term', $object->tid, $field_name),
+        );
       }
     }
   }
+}
