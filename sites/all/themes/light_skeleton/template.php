@@ -470,9 +470,11 @@ function light_skeleton_preprocess_node(&$vars) {
     $vars['classes_array'][] = 'node-preview';
   }
 
-  $date = new DateTime($node->field_date['und'][0]['value']);
-  $now = new DateTime();
-  $vars['classes_array'][] = $date < $now ? 'past-concert' : 'future-concert';
+  if($node->type == 'concert'){
+    $date = new DateTime($node->field_date['und'][0]['value']);
+    $now = new DateTime();
+    $vars['classes_array'][] = $date < $now ? 'past-concert' : 'future-concert';
+  }
   // Clean up name so there are no underscores.
   $vars['theme_hook_suggestions'][] = 'node__' . $node->type;
   $vars['theme_hook_suggestions'][] = 'node__' . $node->nid;
