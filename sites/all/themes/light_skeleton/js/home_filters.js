@@ -12,6 +12,7 @@ GECA = window.GECA || {};
 		// });
 	});
 	GECA.filters = function(context, settings){
+		return;
 		// dates
 
 		// types

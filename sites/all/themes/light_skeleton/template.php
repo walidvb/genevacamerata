@@ -643,3 +643,20 @@ function light_skeleton_date_nav_title($granularity, $view, $link = FALSE, $form
     return $title;
   }
 }
+
+function light_skeleton_views_view_field($vars){
+  if($vars['view']->name == 'types_list'){
+    $name = $vars['field']->original_value;
+    $tid = $vars['field']->last_tokens['[tid]'];
+    $url = "/concerts";
+    $classes = $_GET['field_type'] == $tid ? ' active' : '';
+    return l($name, $url, array(
+      "attributes" => array(
+        "data-type" => $tid,
+        "class" => "button $classes"
+      ),
+      "query" => array("field_type" => $tid),
+      "language" => $language,
+    ));
+  }
+}
