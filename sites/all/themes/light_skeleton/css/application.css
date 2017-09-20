@@ -3726,8 +3726,12 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   margin-left: -20px;
 }
 
-.page-abonnements .view-concerts .views-row-1 {
-  opacity: .2;
+.page-abonnements .past-concert {
+  opacity: .3;
+}
+
+.past-concert .buy-link {
+  display: none !important;
 }
 
 .ajax-progress .throbber {

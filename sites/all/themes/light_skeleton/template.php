@@ -95,8 +95,6 @@ function light_skeleton_preprocess_page(&$vars) {
   }
 
   $page = $vars['page'];
-
-
   $content_class = 'col-xs-12';
 
   $container_class = "";
@@ -391,7 +389,7 @@ function light_skeleton_pager($vars) {
 }
 
 function light_skeleton_preprocess_field(&$vars) { //Replace your theme name MYTHEME here.
-  // relace tickets by reservation
+  // add book button if it's empty
   if($vars['element']['#field_name'] == 'field_tickets' && empty($vars['items'])){
     $node = $vars['element']['#object'];
     $nid = $node->nid;
@@ -472,6 +470,9 @@ function light_skeleton_preprocess_node(&$vars) {
     $vars['classes_array'][] = 'node-preview';
   }
 
+  $date = new DateTime($node->field_date['und'][0]['value']);
+  $now = new DateTime();
+  $vars['classes_array'][] = $date < $now ? 'past-concert' : 'future-concert';
   // Clean up name so there are no underscores.
   $vars['theme_hook_suggestions'][] = 'node__' . $node->type;
   $vars['theme_hook_suggestions'][] = 'node__' . $node->nid;
@@ -480,7 +481,6 @@ function light_skeleton_preprocess_node(&$vars) {
   if($vars['page'] && $node->type == 'concert'){
 
     $menu_item = menu_get_item('/fr');
-    dpm($menu_item);
     // menu_set_item(NULL, $menu_item);
     // $trail = array();
     // $trail[] = array(
