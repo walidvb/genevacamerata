@@ -2797,7 +2797,7 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   .page-abonnements .view-concerts {
     padding: 0;
   }
-  .page-abonnements .view-concerts .views-row-last {
+  .page-abonnements .view-concerts .node:last-child {
     padding-right: 23px !important;
   }
   .page-abonnements .view-content {
@@ -2810,11 +2810,11 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
     scroll-snap-type: proximity;
     scroll-snap-points-x: repeat(60vw);
   }
-  .page-abonnements .views-row {
+  .page-abonnements .node-concert {
     flex: 0 0 60vw;
   }
 }
-.page-abonnements .view-concerts .views-row {
+.page-abonnements .view-concerts .node-concert {
   pointer-events: none;
   padding-left: 5px !important;
   padding-right: 5px !important;

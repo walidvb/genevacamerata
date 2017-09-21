@@ -198,7 +198,7 @@ body{
 		}
 		.view-concerts{
 			padding: 0;
-			.views-row-last{
+			.node:last-child{
 				padding-right: $padding-container-mobile!important;
 			}
 		}
@@ -212,7 +212,7 @@ body{
 			scroll-snap-type: proximity;
 			scroll-snap-points-x: repeat($views-width);
 		}
-		.views-row{
+		.node-concert{
 			flex: 0 0 $views-width;
 		}
 	}
@@ -221,7 +221,7 @@ body{
 		@extend .col-sm-offset-1;
 		@extend .col-md-8;
 		@extend .col-md-offset-2;
-		.views-row{
+		.node-concert{
 			pointer-events: none;
 			padding-left: 5px!important;
 			padding-right: 5px!important;
