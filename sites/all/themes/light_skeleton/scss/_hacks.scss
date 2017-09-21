@@ -118,14 +118,22 @@ $translations: (
 	.i18n-#{$lang}{
 		@each $termID, $content in $terms{
 			[data-type="#{$termID}"]{
-				display: none;
-				font-size: 0!important;
 				&:after{
 					content: $content;
-					font-size: 0.75rem;
-					margin-left: -20px;
 				}
 			}
+		}
+	}
+}
+
+[data-type]{
+	font-size: 0!important;
+	&:after{
+		font-size: 0.75rem;
+		margin-left: -20px;
+		.view-id-types &{
+			font-size: 1rem;
+			margin-left: -15px;
 		}
 	}
 }

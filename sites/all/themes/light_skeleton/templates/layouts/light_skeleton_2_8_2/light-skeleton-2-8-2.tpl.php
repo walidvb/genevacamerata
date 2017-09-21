@@ -17,7 +17,8 @@
     </div>
   </div>
   <?php if(!empty($content['right'])): ?>
-    <div id="filters" class="section right-column col-xs-12 col-sm-4 col-md-2">
+    <div id="filters" class="section right-column col-xs-12 col-sm-4 col-md-2 yes">
+      <div class="trigger trigger-right trigger-close" data-panel-target="#filters"></div>
       <?php print $content['right']; ?>
     </div>
   <?php endif; ?>
