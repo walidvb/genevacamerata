@@ -138,3 +138,20 @@ $translations: (
 .past-concert .buy-link{
 	display: none!important;
 }
+
+
+// Musique du coeur
+.concert-type-31{
+	.left-column.section{
+		@extend .col-md-12;
+		@extend .col-lg-12;
+	}
+	.view-types{
+		@extend .row;
+		.views-field-field-image{
+			@extend .col-sm-7;
+			@extend .col-md-5;
+			@extend .col-lg-5;
+		}
+	}
+}

@@ -270,25 +270,25 @@ body {
   }
 }
 
-.row, .node-type-artist .page-content, .page-concerts .view-concerts, .page-become-a-friend .panel-2col, .webform-client-form > div, .page-artists .page-content, .page-menu .page-content, .page-partners .page-content, .page-menu .panel-1col ul, .node-type-page .page-content, .page-media .view-content {
+.row, .node-type-artist .page-content, .page-concerts .view-concerts, .page-become-a-friend .panel-2col, .webform-client-form > div, .page-artists .page-content, .page-menu .page-content, .page-partners .page-content, .page-menu .panel-1col ul, .node-type-page .page-content, .page-media .view-content, .concert-type-31 .view-types {
   margin-left: -23px;
   margin-right: -23px;
 }
 @media (min-width: 767px) {
-  .row, .node-type-artist .page-content, .page-concerts .view-concerts, .page-become-a-friend .panel-2col, .webform-client-form > div, .page-artists .page-content, .page-menu .page-content, .page-partners .page-content, .page-menu .panel-1col ul, .node-type-page .page-content, .page-media .view-content {
+  .row, .node-type-artist .page-content, .page-concerts .view-concerts, .page-become-a-friend .panel-2col, .webform-client-form > div, .page-artists .page-content, .page-menu .page-content, .page-partners .page-content, .page-menu .panel-1col ul, .node-type-page .page-content, .page-media .view-content, .concert-type-31 .view-types {
     margin-left: -15px;
     margin-right: -15px;
   }
 }
 
-.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .page-media .views-row, .col-lg-2, .col-xs-3, .col-sm-3, .page-become-a-friend .panel-2col .panel-col-first, .page-media .views-row, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .page-media .views-row, .col-sm-6, .page-concerts .view-concerts .view-content .node-concert, .view-geca .views-row, .col-md-6, .page-become-a-friend .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .node-concert, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-become-a-friend .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .webform-component--info, .page-become-a-friend .webform-component-field-wrapper:not(.inline-wrapper), .page-become-a-friend .panel-2col .panel-col-first, .page-become-a-friend .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-menu .panel-1col, .view-geca .views-row, .page-partners .panel-1col li.first, .col-sm-12, .ds-2col-fluid, .col-md-12, .page-concerts .view-concerts .view-content .node-concert, .col-lg-12 {
+.col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .page-media .views-row, .col-lg-2, .col-xs-3, .col-sm-3, .page-become-a-friend .panel-2col .panel-col-first, .page-media .views-row, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .concert-type-31 .view-types .views-field-field-image, .col-lg-5, .concert-type-31 .view-types .views-field-field-image, .col-xs-6, .page-media .views-row, .col-sm-6, .page-concerts .view-concerts .view-content .node-concert, .view-geca .views-row, .col-md-6, .page-become-a-friend .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .node-concert, .col-xs-7, .col-sm-7, .concert-type-31 .view-types .views-field-field-image, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-become-a-friend .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .webform-component--info, .page-become-a-friend .webform-component-field-wrapper:not(.inline-wrapper), .page-become-a-friend .panel-2col .panel-col-first, .page-become-a-friend .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-menu .panel-1col, .view-geca .views-row, .page-partners .panel-1col li.first, .col-sm-12, .ds-2col-fluid, .col-md-12, .page-concerts .view-concerts .view-content .node-concert, .concert-type-31 .left-column.section, .concert-type-31 .left-column.group-left, .concert-type-31 .left-column.group-right, .col-lg-12, .concert-type-31 .left-column.section, .concert-type-31 .left-column.group-left, .concert-type-31 .left-column.group-right {
   position: relative;
   min-height: 1px;
   padding-left: 23px;
   padding-right: 23px;
 }
 @media (min-width: 767px) {
-  .col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .page-media .views-row, .col-lg-2, .col-xs-3, .col-sm-3, .page-become-a-friend .panel-2col .panel-col-first, .page-media .views-row, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .page-media .views-row, .col-sm-6, .page-concerts .view-concerts .view-content .node-concert, .view-geca .views-row, .col-md-6, .page-become-a-friend .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .node-concert, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-become-a-friend .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .webform-component--info, .page-become-a-friend .webform-component-field-wrapper:not(.inline-wrapper), .page-become-a-friend .panel-2col .panel-col-first, .page-become-a-friend .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-menu .panel-1col, .view-geca .views-row, .page-partners .panel-1col li.first, .col-sm-12, .ds-2col-fluid, .col-md-12, .page-concerts .view-concerts .view-content .node-concert, .col-lg-12 {
+  .col, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .page-media .views-row, .col-lg-2, .col-xs-3, .col-sm-3, .page-become-a-friend .panel-2col .panel-col-first, .page-media .views-row, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .concert-type-31 .view-types .views-field-field-image, .col-lg-5, .concert-type-31 .view-types .views-field-field-image, .col-xs-6, .page-media .views-row, .col-sm-6, .page-concerts .view-concerts .view-content .node-concert, .view-geca .views-row, .col-md-6, .page-become-a-friend .webform-component-field-wrapper:not(.inline-wrapper), .col-lg-6, .page-concerts .view-concerts .view-content .node-concert, .col-xs-7, .col-sm-7, .concert-type-31 .view-types .views-field-field-image, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .page-abonnements .view-concerts, .col-lg-8, .col-xs-9, .col-sm-9, .page-become-a-friend .panel-2col .panel-col-last, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .page-abonnements .view-concerts, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .page-reserver .webform-component-field-wrapper, .webform-component-matrix, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .webform-component--info, .page-become-a-friend .webform-component-field-wrapper:not(.inline-wrapper), .page-become-a-friend .panel-2col .panel-col-first, .page-become-a-friend .panel-2col .panel-col-last, .webform-client-form > div body:not(.page-reserver) .form-actions, .page-menu .panel-1col, .view-geca .views-row, .page-partners .panel-1col li.first, .col-sm-12, .ds-2col-fluid, .col-md-12, .page-concerts .view-concerts .view-content .node-concert, .concert-type-31 .left-column.section, .concert-type-31 .left-column.group-left, .concert-type-31 .left-column.group-right, .col-lg-12, .concert-type-31 .left-column.section, .concert-type-31 .left-column.group-left, .concert-type-31 .left-column.group-right {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -503,7 +503,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .col, .col-sm-1, .col-sm-2, .col-sm-3, .page-become-a-friend .panel-2col .panel-col-first, .page-media .views-row, .col-sm-4, .col-sm-5, .col-sm-6, .page-concerts .view-concerts .view-content .node-concert, .view-geca .views-row, .col-sm-7, .col-sm-8, .col-sm-9, .page-become-a-friend .panel-2col .panel-col-last, .col-sm-10, .page-abonnements .view-concerts, .col-sm-11, .col-sm-12, .ds-2col-fluid {
+  .col, .col-sm-1, .col-sm-2, .col-sm-3, .page-become-a-friend .panel-2col .panel-col-first, .page-media .views-row, .col-sm-4, .col-sm-5, .col-sm-6, .page-concerts .view-concerts .view-content .node-concert, .view-geca .views-row, .col-sm-7, .concert-type-31 .view-types .views-field-field-image, .col-sm-8, .col-sm-9, .page-become-a-friend .panel-2col .panel-col-last, .col-sm-10, .page-abonnements .view-concerts, .col-sm-11, .col-sm-12, .ds-2col-fluid {
     float: left;
   }
 
@@ -527,7 +527,7 @@ body {
     width: 66.66666667%;
   }
 
-  .col-sm-7 {
+  .col-sm-7, .concert-type-31 .view-types .views-field-field-image {
     width: 58.33333333%;
   }
 
@@ -712,11 +712,11 @@ body {
   }
 }
 @media (min-width: 1120px) {
-  .col, .col-md-1, .col-md-2, .page-media .views-row, .col-md-3, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-md-5, .col-md-6, .page-become-a-friend .webform-component-field-wrapper:not(.inline-wrapper), .col-md-7, .col-md-8, .page-abonnements .view-concerts, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .page-concerts .view-concerts .view-content .node-concert {
+  .col, .col-md-1, .col-md-2, .page-media .views-row, .col-md-3, .col-md-4, .page-abonnements .webform-component-field-wrapper:not(.inline-wrapper), .page-abonnements .webform-component--info, .view-geca .views-row, .col-md-5, .concert-type-31 .view-types .views-field-field-image, .col-md-6, .page-become-a-friend .webform-component-field-wrapper:not(.inline-wrapper), .col-md-7, .col-md-8, .page-abonnements .view-concerts, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .page-concerts .view-concerts .view-content .node-concert, .concert-type-31 .left-column.section, .concert-type-31 .left-column.group-left, .concert-type-31 .left-column.group-right {
     float: left;
   }
 
-  .col-md-12, .page-concerts .view-concerts .view-content .node-concert {
+  .col-md-12, .page-concerts .view-concerts .view-content .node-concert, .concert-type-31 .left-column.section, .concert-type-31 .left-column.group-left, .concert-type-31 .left-column.group-right {
     width: 100%;
   }
 
@@ -744,7 +744,7 @@ body {
     width: 50%;
   }
 
-  .col-md-5 {
+  .col-md-5, .concert-type-31 .view-types .views-field-field-image {
     width: 41.66666667%;
   }
 
@@ -921,11 +921,11 @@ body {
   }
 }
 @media (min-width: 1400px) {
-  .col, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .page-concerts .view-concerts .view-content .node-concert, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .concert-type-31 .view-types .views-field-field-image, .col-lg-6, .page-concerts .view-concerts .view-content .node-concert, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .concert-type-31 .left-column.section, .concert-type-31 .left-column.group-left, .concert-type-31 .left-column.group-right {
     float: left;
   }
 
-  .col-lg-12 {
+  .col-lg-12, .concert-type-31 .left-column.section, .concert-type-31 .left-column.group-left, .concert-type-31 .left-column.group-right {
     width: 100%;
   }
 
@@ -953,7 +953,7 @@ body {
     width: 50%;
   }
 
-  .col-lg-5 {
+  .col-lg-5, .concert-type-31 .view-types .views-field-field-image {
     width: 41.66666667%;
   }
 
@@ -1147,6 +1147,7 @@ body {
 .page-menu .panel-1col ul:before,
 .node-type-page .page-content:before,
 .page-media .view-content:before,
+.concert-type-31 .view-types:before,
 .row:after,
 .node-type-artist .page-content:after,
 .page-concerts .view-concerts:after,
@@ -1157,7 +1158,8 @@ body {
 .page-partners .page-content:after,
 .page-menu .panel-1col ul:after,
 .node-type-page .page-content:after,
-.page-media .view-content:after {
+.page-media .view-content:after,
+.concert-type-31 .view-types:after {
   content: " ";
   display: table;
 }
@@ -1175,7 +1177,8 @@ body {
 .page-partners .page-content:after,
 .page-menu .panel-1col ul:after,
 .node-type-page .page-content:after,
-.page-media .view-content:after {
+.page-media .view-content:after,
+.concert-type-31 .view-types:after {
   clear: both;
 }
 
