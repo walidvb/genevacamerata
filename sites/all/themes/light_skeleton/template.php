@@ -646,17 +646,22 @@ function light_skeleton_date_nav_title($granularity, $view, $link = FALSE, $form
 
 function light_skeleton_views_view_field($vars){
   if($vars['view']->name == 'types_list'){
-    $name = $vars['field']->original_value;
-    $tid = $vars['field']->last_tokens['[tid]'];
-    $url = "/concerts";
-    $classes = $_GET['field_type'] == $tid ? ' active' : '';
-    return l($name, $url, array(
-      "attributes" => array(
-        "data-type" => $tid,
-        "class" => "button $classes"
-      ),
-      "query" => array("field_type" => $tid),
-      "language" => $language,
-    ));
+    $field = $vars['field'];
+    if($field->field_alias == 'taxonomy_term_data_name'){
+      $name = $field->original_value;
+      $tid = $field->last_tokens['[tid]'];
+      $url = "/concerts";
+      $classes = (isset($_GET['field_type']) && $_GET['field_type'] == $tid) ? ' active' : '';
+      global $language;
+      return l($name, $url, array(
+        "attributes" => array(
+          "data-type" => $tid,
+          "class" => "button $classes"
+        ),
+        "query" => array("field_type" => $tid),
+        "language" => $language,
+      ));
+    }
   }
+  return theme_views_view_field($vars);
 }

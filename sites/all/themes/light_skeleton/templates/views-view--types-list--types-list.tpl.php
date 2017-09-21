@@ -26,7 +26,7 @@
  *
  * @ingroup views_templates
  */
- $header_active_class = $_GET['field_type'] ? '' : 'active';
+ $header_active_class = isset($_GET['field_type']) ? '' : 'active';
 ?>
 <div class="<?php print $classes; ?>">
   <?php print render($title_prefix); ?>

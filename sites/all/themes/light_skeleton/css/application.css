@@ -3737,6 +3737,17 @@ body .button.button-primary.active, body .field-name-node-link a.button-primary.
   display: none !important;
 }
 
+@media (max-width: 767px) {
+  .concert-type-31 .view-types {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .concert-type-31 .view-types .views-field-field-image {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .ajax-progress .throbber {
   background-image: url("/sites/all/themes/light_skeleton/resources/loader.gif");
   background-position: center;

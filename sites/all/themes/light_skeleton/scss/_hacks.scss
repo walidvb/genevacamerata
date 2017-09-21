@@ -154,4 +154,14 @@ $translations: (
 			@extend .col-lg-5;
 		}
 	}
+	@media #{$mobile}{
+		.view-types{
+			margin-left: 0;
+			margin-right: 0;
+			.views-field-field-image{
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
 }
