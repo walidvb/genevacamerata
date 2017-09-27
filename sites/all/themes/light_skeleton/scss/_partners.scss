@@ -4,9 +4,6 @@
   }
   .partner-group-container{
     margin-bottom: 3*$padding-xs;
-    @media #{$mobile}{
-      padding: 0;
-    }
   }
   .partner-group{
     display: flex;

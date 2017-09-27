@@ -536,7 +536,7 @@ function _menu_link_with_image($vars){
       )
     ) 
   );
-  return "<li class='col-xs-12 col-sm-4'>$l</li>";
+  return "<li class='col-xs-6 col-md-3'>$l</li>";
 }
 
 function light_skeleton_menu_link(array $vars) {

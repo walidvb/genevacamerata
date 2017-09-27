@@ -158,7 +158,7 @@ input[type="submit"].button{
 
 .main-menu .navbar{
 	display: none;
-	@media #{$sm}{
+	@media #{$md}{
 		display: inline-flex;
 	}
 }

@@ -27,6 +27,10 @@
 	}
 	li{
 		margin-bottom: 3rem;
+		flex: 0 0 50%;
+		@media #{$md}{
+			flex: 0 0 25%;
+		}
 	}
 	h3{
 		margin-top: 1.5rem;
@@ -36,7 +40,8 @@
 		text-transform: uppercase;
 	}
 	#menu{
-		display: block;
+		display: flex;
+		flex-flow: row wrap;
 	}
 }
 
