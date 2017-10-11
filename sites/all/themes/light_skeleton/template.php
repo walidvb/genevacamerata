@@ -9,6 +9,8 @@ function light_skeleton_preprocess_views_view(&$vars) {
 	}
 }
 
+
+// unused since reservation page shows all concerts
 function check_if_can_book($contexts){
   // condition for the reservation:
   $node = $contexts['argument_node_title_1']->data;
@@ -394,14 +396,14 @@ function light_skeleton_preprocess_field(&$vars) { //Replace your theme name MYT
     $node = $vars['element']['#object'];
     $nid = $node->nid;
     $text = t('book');
+    $term_name = $node->field_type['und'][0]['taxonomy_term']->name;
     global $language;
     $locale = $language->language;
-    $alias = drupal_get_path_alias("node/$nid", $locale);
-    $subpath = t('reserver');
-    $url = url($alias) . "/" . $subpath;
+    $alias = drupal_get_path_alias("tickets/$term_name", $locale);
+    $url = url($alias);
     $vars['items'] = array(
       0 => array(
-        '#markup' => "<a href='$url' class='button'>$text</a>"
+        '#markup' => "<a data-nid='$nid' href='$url' class='button'>$text</a>"
       )
     );
 

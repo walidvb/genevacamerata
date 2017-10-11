@@ -142,12 +142,13 @@ $translations: (
 }
 
 // grey out prestige concert
-.page-abonnements .past-concert{
+.page-abonnements .past-concert, .page-tickets .past-concert{
 	opacity: .3;
 }
 
-.past-concert .buy-link{
-	display: none!important;
+.past-concert .buy-link a{
+	pointer-events: none;
+	color: $dark-grey;
 }
 
 

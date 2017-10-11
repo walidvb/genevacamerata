@@ -8,10 +8,10 @@
 
 // THEME
 
-@mixin underlined-link(){
-	color: $black;
+@mixin underlined-link($color: $black){
+	color: $color;
 	&:hover, &.active{
-		color: $black;
+		color: $color;
 		box-shadow: inset 0 -1px 0px $brand-color;
 	}
 }

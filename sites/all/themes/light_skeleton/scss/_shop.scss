@@ -1,0 +1,42 @@
+.page-shop .view-id-products{
+        @extend .row;
+}
+.product-title{
+    text-transform: uppercase;
+    font-weight: $bold;
+    font-size: inherit;
+    margin-bottom: 0;
+    margin-top: .5rem;
+}
+.product{
+    margin-bottom: 2rem;
+    font-size: $font-small;
+    p{
+        margin-bottom: 0;
+    }
+
+    .order{
+        display: inline-block;
+        line-height: 2.5rem;
+        margin-top: -.5rem;
+        @include underlined-link($color: $brand-color);
+        margin-right: 1rem;
+        font-weight: bold;
+    }
+    .shop-url img{
+        max-height: 1.33rem;
+    }
+    .shop-links{
+        display: flex;
+        .itunes{
+            margin-right: .5rem;
+        }
+        .field-content{
+            display: inline;
+            margin-top: .3rem;
+            a{
+                display: inline-block;
+            }
+        }
+    }
+}
