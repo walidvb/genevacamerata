@@ -115,7 +115,8 @@ function webform_matrix_component_form_webform_admin_settings_alter(&$form, &$fo
 function webform_matrix_component_form_alter(&$form, &$form_state, $form_id) {
   if (strpos($form_id, 'webform_client_form_') === 0) {
     module_load_include('inc', 'webform', '/components/date');
-
+    print_r($_POST);
+    dpm($_POST);
     foreach ($form['#node']->webform['components'] as $cid => $component) {
       if ($component['type'] == 'matrix' && $form['details']['page_num']['#value'] == $component['page_num']) {
         $nid = $component['nid'];
@@ -353,7 +354,7 @@ function webform_matrix_component_form_alter(&$form, &$form_state, $form_id) {
                 drupal_alter('webform_render_matrix', $component, $elevalue, $element[$prow][$i]);
               }
             }
-            
+
             if (isset($component['extra']['remove_row_feature']) && $component['extra']['remove_row_feature'] == 2) {
                 $element['remove_row_line_' . $formkey."_".$prow] = array(
                   '#type' => 'submit',

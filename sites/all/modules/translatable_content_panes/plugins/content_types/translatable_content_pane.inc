@@ -96,8 +96,20 @@ function translatable_content_panes_translatable_content_pane_content_type_rende
     return;
   }
 
-  // Ensure a language key.
-  $pane += array('language' => LANGUAGE_NONE);
+  // If they can edit panes, and this isn't in code, set some placeholder content.
+  $default_content = '';
+  if (user_access('edit translatable content panes') && empty($pane['code_content'])) {
+    $default_content = '{PLACEHOLDER CONTENT}';
+    drupal_alter('translatable_content_panes_placeholder_content', $default_content, $conf['id']);
+  }
+
+  // Ensure keys are defined.
+  $pane += array(
+    'language' => LANGUAGE_NONE,
+    'title' => '',
+    'content' => $default_content,
+    'format' => NULL,
+  );
 
   // If the locale module is on.
   if (module_exists('locale')) {

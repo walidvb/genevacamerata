@@ -60,6 +60,11 @@ body{
 
 // RESERVATION
 
+.ds-1col.node.node-webform{
+	@media #{$lg}{
+		margin: auto;
+	}
+}
 // hide as this is set via JS
 .webform-component--concert	{
 	display: none;
@@ -67,7 +72,7 @@ body{
 
 .page-tickets{
 	.view-concerts .node-concert.selected{
-		background: $light-grey;
+		background: transparentize($light-grey, .5);
 		// MONSTER HACK MAHHAMAHAMAH
 		box-shadow: inset 0 0 0 5px white;
 

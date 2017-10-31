@@ -8,9 +8,9 @@ dependencies[] = views
 
 files[] = views_handler_field_translatable_content_pane_edit.inc
 
-; Information added by Drupal.org packaging script on 2014-03-27
-version = "7.x-1.2"
+; Information added by Drupal.org packaging script on 2017-09-28
+version = "7.x-1.3"
 core = "7.x"
 project = "translatable_content_panes"
-datestamp = "1395915544"
+datestamp = "1506590951"
 

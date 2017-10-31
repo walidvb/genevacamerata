@@ -396,10 +396,11 @@ function light_skeleton_preprocess_field(&$vars) { //Replace your theme name MYT
     $node = $vars['element']['#object'];
     $nid = $node->nid;
     $text = t('book');
-    $term_name = $node->field_type['und'][0]['taxonomy_term']->name;
+    $term_name = drupal_clean_css_identifier(strtolower($node->field_type['und'][0]['taxonomy_term']->name));
     global $language;
     $locale = $language->language;
-    $alias = drupal_get_path_alias("tickets/$term_name", $locale);
+
+    $alias = drupal_get_path_alias("ticketing/$term_name", $locale);
     $url = url($alias);
     $vars['items'] = array(
       0 => array(
@@ -498,6 +499,9 @@ function light_skeleton_preprocess_node(&$vars) {
   }
 }
 
+function light_skeleton_menu_link__menu_tickets($vars){
+  return _menu_link_with_image($vars);
+}
 function light_skeleton_menu_link__menu_media($vars){
   return _menu_link_with_image($vars);
 }

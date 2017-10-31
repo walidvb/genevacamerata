@@ -30,9 +30,6 @@ function translatable_content_panes_schema() {
       ),
     ),
     'primary key' => array('id'),
-    'indexes' => array(
-      'code_content' => array('code_content'),
-    ),
   );
 
   $schema['translatable_content_pane_data'] = array(
@@ -139,6 +136,7 @@ function translatable_content_panes_schema() {
       'identifier' => array('id'),
       'revision_identifier' => array('revision_id'),
       'language' => array('language'),
+      'code_content' => array('code_content'),
     ),
   );
 
