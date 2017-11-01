@@ -115,8 +115,7 @@ function webform_matrix_component_form_webform_admin_settings_alter(&$form, &$fo
 function webform_matrix_component_form_alter(&$form, &$form_state, $form_id) {
   if (strpos($form_id, 'webform_client_form_') === 0) {
     module_load_include('inc', 'webform', '/components/date');
-    print_r($_POST);
-    dpm($_POST);
+
     foreach ($form['#node']->webform['components'] as $cid => $component) {
       if ($component['type'] == 'matrix' && $form['details']['page_num']['#value'] == $component['page_num']) {
         $nid = $component['nid'];
@@ -354,7 +353,7 @@ function webform_matrix_component_form_alter(&$form, &$form_state, $form_id) {
                 drupal_alter('webform_render_matrix', $component, $elevalue, $element[$prow][$i]);
               }
             }
-
+            
             if (isset($component['extra']['remove_row_feature']) && $component['extra']['remove_row_feature'] == 2) {
                 $element['remove_row_line_' . $formkey."_".$prow] = array(
                   '#type' => 'submit',
@@ -386,7 +385,7 @@ function webform_matrix_component_form_alter(&$form, &$form_state, $form_id) {
               ),
           );
         }
-        
+
         if (isset($component['extra']['remove_row_feature']) && $component['extra']['remove_row_feature'] == 1) {
           $element['remove_row_' . $formkey] = array(
               '#type' => 'submit',
@@ -589,6 +588,7 @@ function _webform_matrix_component_get_remove_row($form, &$form_state) {
 }
 
 function _webform_matrix_component_get_remove_row_line_submit($form, &$form_state){
+
   // The matrix is the previous to last element on the #parents array:
   end($form_state['triggering_element']['#parents']);
   $form_key = prev($form_state['triggering_element']['#parents']);

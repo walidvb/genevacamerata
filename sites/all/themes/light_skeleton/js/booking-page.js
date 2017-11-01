@@ -4,7 +4,7 @@ GECA = window.GECA || {};
 	var loading = false;
 	GECA.setupBookingForm = function(context, settings){
 		$('form').on('submit', function(evt){
-			$(this).find('.webform-submit').attr('disabled', true).addClass('disabled');
+			$(this).find('.webform-submit').css('pointer-events', 'none').addClass('disabled');
 		});
 		$('.page-tickets .node-concert a').attr('target', '_blank');
 		$('.page-tickets:not(.page-tickets-5) .buy-link a').on('click', function(evt){
